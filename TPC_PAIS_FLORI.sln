@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPC_PAIS_FLORI", "TPC_PAIS_FLORI.csproj", "{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{7ABB3344-0244-493B-A0CE-D8F3930879D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D37ADD79-75A7-46E8-B02A-A9FBEE4189F2}
+	EndGlobalSection
+EndGlobal
