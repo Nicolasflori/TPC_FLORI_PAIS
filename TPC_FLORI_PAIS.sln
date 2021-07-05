@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPC_FLORI_PAIS", "TPC_FLORI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{7ABB3344-0244-493B-A0CE-D8F3930879D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "..\Negocio\Negocio.csproj", "{DECF064C-E9B6-45E8-A0E2-20686AF89DD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ABB3344-0244-493B-A0CE-D8F3930879D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECF064C-E9B6-45E8-A0E2-20686AF89DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECF064C-E9B6-45E8-A0E2-20686AF89DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECF064C-E9B6-45E8-A0E2-20686AF89DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECF064C-E9B6-45E8-A0E2-20686AF89DD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
