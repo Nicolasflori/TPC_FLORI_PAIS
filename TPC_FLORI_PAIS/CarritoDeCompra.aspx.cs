@@ -13,5 +13,10 @@ namespace TPC_PAIS_FLORI
         {
 
         }
+
+        protected void Unnamed_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
     }
 }

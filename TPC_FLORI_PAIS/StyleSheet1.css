@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.jumbotron {
+    background-image: url("https://wallpapercave.com/wp/wp3130193.jpg");
+    background-color: #17234E;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
