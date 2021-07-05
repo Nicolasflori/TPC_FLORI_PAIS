@@ -8,6 +8,11 @@ namespace Dominio
 {
     public class Carrito
     {
+        public List<ItemCarrito> Items { get; set; }
+    }
+
+    public class ItemCarrito
+    {
         public int ID { get; set; }
         public int IDUsuario { get; set; }
         public List<Producto> Items { get; set; }
