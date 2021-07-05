@@ -44,13 +44,13 @@ INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) V
 (1, 5, 1, GETDATE()),
 (2, 6, 2, GETDATE())
 
-INSERT INTO CostosEnvio (Zona, Precio) VALUES
+INSERT INTO CostosDeEnvio (Zona, Precio) VALUES
 (1, 405.14),
 (2, 438.26),
 (3, 439.86),
 (4, 443.29)
 
-INSERT INTO Provincias (IDCostosEnvio, Descripcion) VALUES
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
 (2, 'Buenos Aires'),
 (2, 'Buenos Aires-GBA'),
 (2, 'Capital Federal'),
@@ -77,7 +77,7 @@ INSERT INTO Provincias (IDCostosEnvio, Descripcion) VALUES
 (4, 'Tierra del Fuego'),
 (3, 'Tucumán');
 
-INSERT INTO Ciudades (IdPrivincia, Descripcion) VALUES
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES
 (1, '25 de Mayo'),
 (1, '3 de febrero'),
 (1, 'A. Alsina'),
@@ -1076,7 +1076,8 @@ INSERT INTO Ciudades (IdPrivincia, Descripcion) VALUES
 (9, 'Aldea San Rafael'),
 (9, 'Aldea Spatzenkutter'),
 (9, 'Aldea Sta. María'),
-(9, 'Aldea Sta. Rosa'),
+(9, 'Aldea Sta. Rosa');
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES
 (9, 'Aldea Valle María'),
 (9, 'Altamirano Sur'),
 (9, 'Antelo'),
@@ -2076,7 +2077,8 @@ INSERT INTO Ciudades (IdPrivincia, Descripcion) VALUES
 (22, 'Intiyaco'),
 (22, 'Ituzaingó'),
 (22, 'Jacinto L. Aráuz'),
-(22, 'Josefina'),
+(22, 'Josefina');
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES
 (22, 'Juan B. Molina'),
 (22, 'Juan de Garay'),
 (22, 'Juncal'),
@@ -2150,8 +2152,7 @@ INSERT INTO Ciudades (IdPrivincia, Descripcion) VALUES
 (22, 'Oliveros'),
 (22, 'Palacios'),
 (22, 'Pavón'),
-(22, 'Pavón Arriba');
-IINTO `localidades` (`id`, `id_privincia`, `localidad`) VALUES
+(22, 'Pavón Arriba'),
 (22, 'Pedro Gómez Cello'),
 (22, 'Pérez'),
 (22, 'Peyrano'),
@@ -2462,12 +2463,13 @@ IINTO `localidades` (`id`, `id_privincia`, `localidad`) VALUES
 (25, 'Yerba Buena'),
 (25, 'Yerba Buena (S)')
 
-INSERT INTO Direcciones(IDCiudad, Calle, Numeracion, Depto, Piso, CP) VALUES
-(249, 'Talcahuano', 2285, NULL, NULL, '1610')
+INSERT INTO Direcciones(IDCiudad, IDProvincia, Calle, Numeracion, Depto, Piso, CP) VALUES
+(10, 1, 'Calle Test', 1234, NULL, NULL, '1610')
 
 INSERT INTO Permisos (Descripcion) VALUES
 ('Administrador'),
 ('Cliente')
 
 INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES
-('admin', 'admin', 'Manuel', 'Pais', 38326830, 'manupais22@gmail.com', '+54 9 11 6518 8743', 1, 1, false)
+('admin', 'admin', 'Manuel', 'Pais', 38326830, 'manupais22@gmail.com', '+54 9 11 6518 8743', 1, 1, 0),
+('admin2', 'admin2', 'Nicolas', 'Flori', 38429158, 'nicolasflori@hotmail.com', '+54 9 11 6580 5444', 1, 1, 0)
