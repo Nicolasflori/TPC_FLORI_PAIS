@@ -42,17 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categoria.cs" />
-    <Compile Include="Ciudad.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="CostoEnvio.cs" />
     <Compile Include="Direccion.cs" />
     <Compile Include="Estampado.cs" />
-    <Compile Include="Pedido.cs" />
-    <Compile Include="PedidoDet.cs" />
+    <Compile Include="Carrito.cs" />
+    <Compile Include="Producto.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="ProductoPreCargado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provincia.cs" />
     <Compile Include="Talle.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

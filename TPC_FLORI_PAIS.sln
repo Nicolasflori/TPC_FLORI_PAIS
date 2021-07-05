@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPC_PAIS_FLORI", "TPC_PAIS_FLORI.csproj", "{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPC_FLORI_PAIS", "TPC_FLORI_PAIS.csproj", "{C5CAF7BA-65CF-46E6-A32E-860CD56DC70C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{7ABB3344-0244-493B-A0CE-D8F3930879D7}"
 EndProject

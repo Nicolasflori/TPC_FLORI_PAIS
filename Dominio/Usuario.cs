@@ -9,7 +9,6 @@ namespace Dominio
     public class Usuario
     {
         public int ID { get; set; }
-
         public string Username{ get; set; }
         public string Contraseña { get; set; }
         public string Nombre { get; set; }
@@ -19,7 +18,6 @@ namespace Dominio
         public string Telefono { get; set; }
         public int IDDireccion { get; set; }
         public int IDPermiso { get; set; }
-
         public bool Baja { get; set; }
 
     }
