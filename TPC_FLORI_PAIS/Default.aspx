@@ -16,13 +16,17 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-3" >
-        <% foreach (Dominio.ProductoPreCargado item in listaProductoPreCargado)
-            {%>
+        <% Negocio.NegocioColores NegocioColores = new Negocio.NegocioColores();
+            string varColor = null;
+            foreach (Dominio.ProductoPreCargado item in listaProductoPreCargado)
+            {
+                varColor = NegocioColores.descripcionxid(item.ID);
+                %>
         <div class="card mb-4">
             <div class="card-body">
                 <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_787464-MLA31562482896_072019-O.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title"><%= item.IDColor%></h5>
+                    <h5 class="card-title"><%= varColor%></h5>
                     <p class="card-text">Black Sabbath - Master of Reality</p>
                     <div class="btn-group btn-group-sm">
                         <a class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>

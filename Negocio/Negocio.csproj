@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
+    <Compile Include="NegocioCategorias.cs" />
     <Compile Include="NegocioColores.cs" />
+    <Compile Include="NegocioCostoEnvio.cs" />
+    <Compile Include="NegocioEstampado.cs" />
     <Compile Include="NegocioProductoPreCargado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

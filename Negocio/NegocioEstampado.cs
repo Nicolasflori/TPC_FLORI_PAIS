@@ -4,26 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
-
 namespace Negocio
 {
-    public class NegocioColores
+   public class NegocioEstampado
     {
-        public List<Color> listar()
+
+
+        public List<Estampado> listar()
         {
-            List<Color> lista = new List<Color>();
+            List<Estampado> lista = new List<Estampado>();
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, Descripcion FROM Colores;");
+                datos.setearConsulta("SELECT ID, Descripcion, Precio FROM Estampados;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
-                    var aux = new Color
+                    var aux = new Estampado
                     {
                         ID = (int)datos.Lector["ID"],
                         Descripcion = (string)datos.Lector["Descripcion"],
+                        Precio = (decimal)datos.Lector["Precio"],
+
                     };
 
                     lista.Add(aux);
@@ -41,13 +44,13 @@ namespace Negocio
             }
         }
 
-        public void agregar(Color nuevo)
+        public void agregar(Estampado nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                string valores = "values(" + "'" + nuevo.Descripcion + "'" + "')";
-                datos.setearConsulta("insert into ProductoPreCargado (Descripcion)" + valores);
+                string valores = "values(" + "'" + nuevo.Descripcion + "'" + ", '" + nuevo.Precio + "')";
+                datos.setearConsulta("insert into Estampados (Descripcion, Precio)" + valores);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -60,12 +63,12 @@ namespace Negocio
             }
         }
 
-        public void modificar(Color nuevo)
+        public void modificar(Estampado nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update Colores SET Descripcion= '" + nuevo.Descripcion );
+                datos.setearConsulta("Update Estampados SET Descripcion= '" + nuevo.Descripcion + "', Precio= '" + nuevo.Precio);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -83,7 +86,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Delete From Color Where Id = " + id);
+                datos.setearConsulta("Delete From Estampados Where Id = " + id);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -99,28 +102,29 @@ namespace Negocio
         public string descripcionxid(int id)
         {
             string descripcion = null;
-            List<Color> lista = new List<Color>();
+            List<Estampado> lista = new List<Estampado>();
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, Descripcion FROM Colores;");
+                datos.setearConsulta("SELECT ID, Descripcion, Precio FROM Estampados;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
-                    var aux = new Color
+                    var aux = new Estampado
                     {
                         ID = (int)datos.Lector["ID"],
                         Descripcion = (string)datos.Lector["Descripcion"],
+                        Precio = (decimal)datos.Lector["Precio"],
                     };
 
                     lista.Add(aux);
                 }
-                foreach (Color item in lista)
+                foreach (Estampado item in lista)
                 {
                     if (id == item.ID)
                         return item.Descripcion;
-                
+
                 }
 
             }
@@ -138,3 +142,4 @@ namespace Negocio
         }
     }
 }
+
