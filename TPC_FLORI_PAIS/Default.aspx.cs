@@ -23,18 +23,7 @@ namespace TPC_PAIS_FLORI
                 Session.Add("listadoProductoPreCargado", listaProductoPreCargado);
 
                
-               /// listaColores = NegocioColores.listar();
-                ///Session.Add("listadoColores", listaColores);
-
-                //Estampados
-                //listaEstampados = negocio.listar();
-                //Session.Add("listadoProductoPreCargado", lista);
-
-                //Categorias
-                //listaCategorias = negocio.listar();
-                //Session.Add("listadoProductoPreCargado", lista);
-
-                //LINQ para cruzar la info y dejar armada la lista final
+               
             }
             catch (Exception ex)
             {
