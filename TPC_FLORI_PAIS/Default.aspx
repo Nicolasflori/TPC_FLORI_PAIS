@@ -15,19 +15,27 @@
         </div>
     </div>
 
-
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-3" >
         <% foreach (Dominio.ProductoPreCargado item in listaProductoPreCargado)
             {%>
-        <div class="card-deck">
-            <div class="card">
+        <div class="card mb-4">
+            <div class="card-body">
                 <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_787464-MLA31562482896_072019-O.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><%= item.IDColor%></h5>
                     <p class="card-text">Black Sabbath - Master of Reality</p>
+                    <div class="btn-group btn-group-sm">
+                        <a class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>
+                        <a class="btn btn-secondary btn-sm mr-1 my-1"><i class="fas fa-info-circle ml-1"></i>Ver Detalle</a>
+                    </div>
                 </div>
             </div>
         </div>
         <%} %>
+    </div>
+
+        <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Búsqueda por tipo de estampado, prenda, etc." aria-label="search" name="search" id="search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary" runat="server" id="button1" >Buscar</button>
     </div>
 </asp:Content>
