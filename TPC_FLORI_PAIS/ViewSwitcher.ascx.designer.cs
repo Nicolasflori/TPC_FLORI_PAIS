@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TPC_PAIS_FLORI {
+namespace TPC_FLORI_PAIS {
     
     
     public partial class ViewSwitcher {

@@ -18,2458 +18,2496 @@ insert into Colores (Descripcion)
 values('Naranja')
 
 INSERT INTO Talles (Descripcion) VALUES
-('XS'),
-('S'),
-('M'),
-('L'),
-('XL'),
+('XS')
+INSERT INTO Talles (Descripcion) VALUES
+('S')
+INSERT INTO Talles (Descripcion) VALUES
+('M')
+INSERT INTO Talles (Descripcion) VALUES
+('L')
+INSERT INTO Talles (Descripcion) VALUES
+('XL')
+INSERT INTO Talles (Descripcion) VALUES
 ('XXL')
 
 INSERT INTO Categorias (Descripcion, Precio) VALUES
-('Remera', 700),
-('Buzo Corte Clasico', 1500),
-('Buzo Canguro Capucha', 2200),
+('Remera', 700)
+INSERT INTO Categorias (Descripcion, Precio) VALUES
+('Buzo Corte Clasico', 1500)
+INSERT INTO Categorias (Descripcion, Precio) VALUES
+('Buzo Canguro Capucha', 2200)
+INSERT INTO Categorias (Descripcion, Precio) VALUES
 ('Campera Canguro Capucha', 2400)
 
 INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
-('Esqueleto', '1.png', 400),
-('Calavera Cuerpo Completo', '2.png', 400),
+('Esqueleto', '1.png', 400)
+INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
+('Calavera Cuerpo Completo', '2.png', 400)
+INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
 ('Calavera centrada', '3.png', 400)
 
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
-(1, 1, 1, GETDATE()),
-(2, 2, 2, GETDATE()),
-(1, 3, 3, GETDATE()),
-(2, 4, 4, GETDATE()),
-(1, 5, 1, GETDATE()),
+(1, 1, 1, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(2, 2, 2, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(1, 3, 3, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(2, 4, 4, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(1, 5, 1, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
 (2, 6, 2, GETDATE())
 
 INSERT INTO CostosDeEnvio (Zona, Precio) VALUES
-(1, 405.14),
-(2, 438.26),
-(3, 439.86),
+(1, 405.14)
+INSERT INTO CostosDeEnvio (Zona, Precio) VALUES
+(2, 438.26)
+INSERT INTO CostosDeEnvio (Zona, Precio) VALUES
+(3, 439.86)
+INSERT INTO CostosDeEnvio (Zona, Precio) VALUES
 (4, 443.29)
 
 INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
-(2, 'Buenos Aires'),
-(2, 'Buenos Aires-GBA'),
-(2, 'Capital Federal'),
-(3, 'Catamarca'),
-(3, 'Chaco'),
-(4, 'Chubut'),
-(2, 'Córdoba'),
-(3, 'Corrientes'),
-(2, 'Entre Ríos'),
-(3, 'Formosa'),
-(4, 'Jujuy'),
-(2, 'La Pampa'),
-(3, 'La Rioja'),
-(3, 'Mendoza'),
-(3, 'Misiones'),
-(3, 'Neuquén'),
-(3, 'Río Negro'),
-(4, 'Salta'),
-(3, 'San Juan'),
-(3, 'San Luis'),
-(4, 'Santa Cruz'),
-(2, 'Santa Fe'),
-(3, 'Santiago del Estero'),
-(4, 'Tierra del Fuego'),
-(3, 'Tucumán');
+(2, 'Buenos Aires')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(2, 'Buenos Aires-GBA')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(2, 'Capital Federal')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Catamarca')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Chaco')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(4, 'Chubut')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(2, 'Córdoba')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Corrientes')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(2, 'Entre Ríos')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Formosa')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(4, 'Jujuy')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(2, 'La Pampa')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'La Rioja')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Mendoza')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Misiones')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Neuquén')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Río Negro')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(4, 'Salta')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'San Juan')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'San Luis')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(4, 'Santa Cruz')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(2, 'Santa Fe')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Santiago del Estero')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(4, 'Tierra del Fuego')
+INSERT INTO Provincias (IDCostoEnvio, Descripcion) VALUES
+(3, 'Tucumán')
 
-INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES
-(1, '25 de Mayo'),
-(1, '3 de febrero'),
-(1, 'A. Alsina'),
-(1, 'A. Gonzáles Cháves'),
-(1, 'Aguas Verdes'),
-(1, 'Alberti'),
-(1, 'Arrecifes'),
-(1, 'Ayacucho'),
-(1, 'Azul'),
-(1, 'Bahía Blanca'),
-(1, 'Balcarce'),
-(1, 'Baradero'),
-(1, 'Benito Juárez'),
-(1, 'Berisso'),
-(1, 'Bolívar'),
-(1, 'Bragado'),
-(1, 'Brandsen'),
-(1, 'Campana'),
-(1, 'Cañuelas'),
-(1, 'Capilla del Señor'),
-(1, 'Capitán Sarmiento'),
-(1, 'Carapachay'),
-(1, 'Carhue'),
-(1, 'Cariló'),
-(1, 'Carlos Casares'),
-(1, 'Carlos Tejedor'),
-(1, 'Carmen de Areco'),
-(1, 'Carmen de Patagones'),
-(1, 'Castelli'),
-(1, 'Chacabuco'),
-(1, 'Chascomús'),
-(1, 'Chivilcoy'),
-(1, 'Colón'),
-(1, 'Coronel Dorrego'),
-(1, 'Coronel Pringles'),
-(1, 'Coronel Rosales'),
-(1, 'Coronel Suarez'),
-(1, 'Costa Azul'),
-(1, 'Costa Chica'),
-(1, 'Costa del Este'),
-(1, 'Costa Esmeralda'),
-(1, 'Daireaux'),
-(1, 'Darregueira'),
-(1, 'Del Viso'),
-(1, 'Dolores'),
-(1, 'Don Torcuato'),
-(1, 'Ensenada'),
-(1, 'Escobar'),
-(1, 'Exaltación de la Cruz'),
-(1, 'Florentino Ameghino'),
-(1, 'Garín'),
-(1, 'Gral. Alvarado'),
-(1, 'Gral. Alvear'),
-(1, 'Gral. Arenales'),
-(1, 'Gral. Belgrano'),
-(1, 'Gral. Guido'),
-(1, 'Gral. Lamadrid'),
-(1, 'Gral. Las Heras'),
-(1, 'Gral. Lavalle'),
-(1, 'Gral. Madariaga'),
-(1, 'Gral. Pacheco'),
-(1, 'Gral. Paz'),
-(1, 'Gral. Pinto'),
-(1, 'Gral. Pueyrredón'),
-(1, 'Gral. Rodríguez'),
-(1, 'Gral. Viamonte'),
-(1, 'Gral. Villegas'),
-(1, 'Guaminí'),
-(1, 'Guernica'),
-(1, 'Hipólito Yrigoyen'),
-(1, 'Ing. Maschwitz'),
-(1, 'Junín'),
-(1, 'La Plata'),
-(1, 'Laprida'),
-(1, 'Las Flores'),
-(1, 'Las Toninas'),
-(1, 'Leandro N. Alem'),
-(1, 'Lincoln'),
-(1, 'Loberia'),
-(1, 'Lobos'),
-(1, 'Los Cardales'),
-(1, 'Los Toldos'),
-(1, 'Lucila del Mar'),
-(1, 'Luján'),
-(1, 'Magdalena'),
-(1, 'Maipú'),
-(1, 'Mar Chiquita'),
-(1, 'Mar de Ajó'),
-(1, 'Mar de las Pampas'),
-(1, 'Mar del Plata'),
-(1, 'Mar del Tuyú'),
-(1, 'Marcos Paz'),
-(1, 'Mercedes'),
-(1, 'Miramar'),
-(1, 'Monte'),
-(1, 'Monte Hermoso'),
-(1, 'Munro'),
-(1, 'Navarro'),
-(1, 'Necochea'),
-(1, 'Olavarría'),
-(1, 'Partido de la Costa'),
-(1, 'Pehuajó'),
-(1, 'Pellegrini'),
-(1, 'Pergamino'),
-(1, 'Pigüé'),
-(1, 'Pila'),
-(1, 'Pilar'),
-(1, 'Pinamar'),
-(1, 'Pinar del Sol'),
-(1, 'Polvorines'),
-(1, 'Pte. Perón'),
-(1, 'Puán'),
-(1, 'Punta Indio'),
-(1, 'Ramallo'),
-(1, 'Rauch'),
-(1, 'Rivadavia'),
-(1, 'Rojas'),
-(1, 'Roque Pérez'),
-(1, 'Saavedra'),
-(1, 'Saladillo'),
-(1, 'Salliqueló'),
-(1, 'Salto'),
-(1, 'San Andrés de Giles'),
-(1, 'San Antonio de Areco'),
-(1, 'San Antonio de Padua'),
-(1, 'San Bernardo'),
-(1, 'San Cayetano'),
-(1, 'San Clemente del Tuyú'),
-(1, 'San Nicolás'),
-(1, 'San Pedro'),
-(1, 'San Vicente'),
-(1, 'Santa Teresita'),
-(1, 'Suipacha'),
-(1, 'Tandil'),
-(1, 'Tapalqué'),
-(1, 'Tordillo'),
-(1, 'Tornquist'),
-(1, 'Trenque Lauquen'),
-(1, 'Tres Lomas'),
-(1, 'Villa Gesell'),
-(1, 'Villarino'),
-(1, 'Zárate'),
-(2, '11 de Septiembre'),
-(2, '20 de Junio'),
-(2, '25 de Mayo'),
-(2, 'Acassuso'),
-(2, 'Adrogué'),
-(2, 'Aldo Bonzi'),
-(2, 'Área Reserva Cinturón Ecológico'),
-(2, 'Avellaneda'),
-(2, 'Banfield'),
-(2, 'Barrio Parque'),
-(2, 'Barrio Santa Teresita'),
-(2, 'Beccar'),
-(2, 'Bella Vista'),
-(2, 'Berazategui'),
-(2, 'Bernal Este'),
-(2, 'Bernal Oeste'),
-(2, 'Billinghurst'),
-(2, 'Boulogne'),
-(2, 'Burzaco'),
-(2, 'Carapachay'),
-(2, 'Caseros'),
-(2, 'Castelar'),
-(2, 'Churruca'),
-(2, 'Ciudad Evita'),
-(2, 'Ciudad Madero'),
-(2, 'Ciudadela'),
-(2, 'Claypole'),
-(2, 'Crucecita'),
-(2, 'Dock Sud'),
-(2, 'Don Bosco'),
-(2, 'Don Orione'),
-(2, 'El Jagüel'),
-(2, 'El Libertador'),
-(2, 'El Palomar'),
-(2, 'El Tala'),
-(2, 'El Trébol'),
-(2, 'Ezeiza'),
-(2, 'Ezpeleta'),
-(2, 'Florencio Varela'),
-(2, 'Florida'),
-(2, 'Francisco Álvarez'),
-(2, 'Gerli'),
-(2, 'Glew'),
-(2, 'González Catán'),
-(2, 'Gral. Lamadrid'),
-(2, 'Grand Bourg'),
-(2, 'Gregorio de Laferrere'),
-(2, 'Guillermo Enrique Hudson'),
-(2, 'Haedo'),
-(2, 'Hurlingham'),
-(2, 'Ing. Sourdeaux'),
-(2, 'Isidro Casanova'),
-(2, 'Ituzaingó'),
-(2, 'José C. Paz'),
-(2, 'José Ingenieros'),
-(2, 'José Marmol'),
-(2, 'La Lucila'),
-(2, 'La Reja'),
-(2, 'La Tablada'),
-(2, 'Lanús'),
-(2, 'Llavallol'),
-(2, 'Loma Hermosa'),
-(2, 'Lomas de Zamora'),
-(2, 'Lomas del Millón'),
-(2, 'Lomas del Mirador'),
-(2, 'Longchamps'),
-(2, 'Los Polvorines'),
-(2, 'Luis Guillón'),
-(2, 'Malvinas Argentinas'),
-(2, 'Martín Coronado'),
-(2, 'Martínez'),
-(2, 'Merlo'),
-(2, 'Ministro Rivadavia'),
-(2, 'Monte Chingolo'),
-(2, 'Monte Grande'),
-(2, 'Moreno'),
-(2, 'Morón'),
-(2, 'Muñiz'),
-(2, 'Olivos'),
-(2, 'Pablo Nogués'),
-(2, 'Pablo Podestá'),
-(2, 'Paso del Rey'),
-(2, 'Pereyra'),
-(2, 'Piñeiro'),
-(2, 'Plátanos'),
-(2, 'Pontevedra'),
-(2, 'Quilmes'),
-(2, 'Rafael Calzada'),
-(2, 'Rafael Castillo'),
-(2, 'Ramos Mejía'),
-(2, 'Ranelagh'),
-(2, 'Remedios de Escalada'),
-(2, 'Sáenz Peña'),
-(2, 'San Antonio de Padua'),
-(2, 'San Fernando'),
-(2, 'San Francisco Solano'),
-(2, 'San Isidro'),
-(2, 'San José'),
-(2, 'San Justo'),
-(2, 'San Martín'),
-(2, 'San Miguel'),
-(2, 'Santos Lugares'),
-(2, 'Sarandí'),
-(2, 'Sourigues'),
-(2, 'Tapiales'),
-(2, 'Temperley'),
-(2, 'Tigre'),
-(2, 'Tortuguitas'),
-(2, 'Tristán Suárez'),
-(2, 'Trujui'),
-(2, 'Turdera'),
-(2, 'Valentín Alsina'),
-(2, 'Vicente López'),
-(2, 'Villa Adelina'),
-(2, 'Villa Ballester'),
-(2, 'Villa Bosch'),
-(2, 'Villa Caraza'),
-(2, 'Villa Celina'),
-(2, 'Villa Centenario'),
-(2, 'Villa de Mayo'),
-(2, 'Villa Diamante'),
-(2, 'Villa Domínico'),
-(2, 'Villa España'),
-(2, 'Villa Fiorito'),
-(2, 'Villa Guillermina'),
-(2, 'Villa Insuperable'),
-(2, 'Villa José León Suárez'),
-(2, 'Villa La Florida'),
-(2, 'Villa Luzuriaga'),
-(2, 'Villa Martelli'),
-(2, 'Villa Obrera'),
-(2, 'Villa Progreso'),
-(2, 'Villa Raffo'),
-(2, 'Villa Sarmiento'),
-(2, 'Villa Tesei'),
-(2, 'Villa Udaondo'),
-(2, 'Virrey del Pino'),
-(2, 'Wilde'),
-(2, 'William Morris'),
-(3, 'Agronomía'),
-(3, 'Almagro'),
-(3, 'Balvanera'),
-(3, 'Barracas'),
-(3, 'Belgrano'),
-(3, 'Boca'),
-(3, 'Boedo'),
-(3, 'Caballito'),
-(3, 'Chacarita'),
-(3, 'Coghlan'),
-(3, 'Colegiales'),
-(3, 'Constitución'),
-(3, 'Flores'),
-(3, 'Floresta'),
-(3, 'La Paternal'),
-(3, 'Liniers'),
-(3, 'Mataderos'),
-(3, 'Monserrat'),
-(3, 'Monte Castro'),
-(3, 'Nueva Pompeya'),
-(3, 'Núñez'),
-(3, 'Palermo'),
-(3, 'Parque Avellaneda'),
-(3, 'Parque Chacabuco'),
-(3, 'Parque Chas'),
-(3, 'Parque Patricios'),
-(3, 'Puerto Madero'),
-(3, 'Recoleta'),
-(3, 'Retiro'),
-(3, 'Saavedra'),
-(3, 'San Cristóbal'),
-(3, 'San Nicolás'),
-(3, 'San Telmo'),
-(3, 'Vélez Sársfield'),
-(3, 'Versalles'),
-(3, 'Villa Crespo'),
-(3, 'Villa del Parque'),
-(3, 'Villa Devoto'),
-(3, 'Villa Gral. Mitre'),
-(3, 'Villa Lugano'),
-(3, 'Villa Luro'),
-(3, 'Villa Ortúzar'),
-(3, 'Villa Pueyrredón'),
-(3, 'Villa Real'),
-(3, 'Villa Riachuelo'),
-(3, 'Villa Santa Rita'),
-(3, 'Villa Soldati'),
-(3, 'Villa Urquiza'),
-(4, 'Aconquija'),
-(4, 'Ancasti'),
-(4, 'Andalgalá'),
-(4, 'Antofagasta'),
-(4, 'Belén'),
-(4, 'Capayán'),
-(4, 'Capital'),
-(4, '4'),
-(4, 'Corral Quemado'),
-(4, 'El Alto'),
-(4, 'El Rodeo'),
-(4, 'F.Mamerto Esquiú'),
-(4, 'Fiambalá'),
-(4, 'Hualfín'),
-(4, 'Huillapima'),
-(4, 'Icaño'),
-(4, 'La Puerta'),
-(4, 'Las Juntas'),
-(4, 'Londres'),
-(4, 'Los Altos'),
-(4, 'Los Varela'),
-(4, 'Mutquín'),
-(4, 'Paclín'),
-(4, 'Poman'),
-(4, 'Pozo de La Piedra'),
-(4, 'Puerta de Corral'),
-(4, 'Puerta San José'),
-(4, 'Recreo'),
-(4, 'S.F.V de 4'),
-(4, 'San Fernando'),
-(4, 'San Fernando del Valle'),
-(4, 'San José'),
-(4, 'Santa María'),
-(4, 'Santa Rosa'),
-(4, 'Saujil'),
-(4, 'Tapso'),
-(4, 'Tinogasta'),
-(4, 'Valle Viejo'),
-(4, 'Villa Vil'),
-(5, 'Aviá Teraí'),
-(5, 'Barranqueras'),
-(5, 'Basail'),
-(5, 'Campo Largo'),
-(5, 'Capital'),
-(5, 'Capitán Solari'),
-(5, 'Charadai'),
-(5, 'Charata'),
-(5, 'Chorotis'),
-(5, 'Ciervo Petiso'),
-(5, 'Cnel. Du Graty'),
-(5, 'Col. Benítez'),
-(5, 'Col. Elisa'),
-(5, 'Col. Popular'),
-(5, 'Colonias Unidas'),
-(5, 'Concepción'),
-(5, 'Corzuela'),
-(5, 'Cote Lai'),
-(5, 'El Sauzalito'),
-(5, 'Enrique Urien'),
-(5, 'Fontana'),
-(5, 'Fte. Esperanza'),
-(5, 'Gancedo'),
-(5, 'Gral. Capdevila'),
-(5, 'Gral. Pinero'),
-(5, 'Gral. San Martín'),
-(5, 'Gral. Vedia'),
-(5, 'Hermoso Campo'),
-(5, 'I. del Cerrito'),
-(5, 'J.J. Castelli'),
-(5, 'La Clotilde'),
-(5, 'La Eduvigis'),
-(5, 'La Escondida'),
-(5, 'La Leonesa'),
-(5, 'La Tigra'),
-(5, 'La Verde'),
-(5, 'Laguna Blanca'),
-(5, 'Laguna Limpia'),
-(5, 'Lapachito'),
-(5, 'Las Breñas'),
-(5, 'Las Garcitas'),
-(5, 'Las Palmas'),
-(5, 'Los Frentones'),
-(5, 'Machagai'),
-(5, 'Makallé'),
-(5, 'Margarita Belén'),
-(5, 'Miraflores'),
-(5, 'Misión N. Pompeya'),
-(5, 'Napenay'),
-(5, 'Pampa Almirón'),
-(5, 'Pampa del Indio'),
-(5, 'Pampa del Infierno'),
-(5, 'Pdcia. de La Plaza'),
-(5, 'Pdcia. Roca'),
-(5, 'Pdcia. Roque Sáenz Peña'),
-(5, 'Pto. Bermejo'),
-(5, 'Pto. Eva Perón'),
-(5, 'Puero Tirol'),
-(5, 'Puerto Vilelas'),
-(5, 'Quitilipi'),
-(5, 'Resistencia'),
-(5, 'Sáenz Peña'),
-(5, 'Samuhú'),
-(5, 'San Bernardo'),
-(5, 'Santa Sylvina'),
-(5, 'Taco Pozo'),
-(5, 'Tres Isletas'),
-(5, 'Villa Ángela'),
-(5, 'Villa Berthet'),
-(5, 'Villa R. Bermejito'),
-(6, 'Aldea Apeleg'),
-(6, 'Aldea Beleiro'),
-(6, 'Aldea Epulef'),
-(6, 'Alto Río Sengerr'),
-(6, 'Buen Pasto'),
-(6, 'Camarones'),
-(6, 'Carrenleufú'),
-(6, 'Cholila'),
-(6, 'Co. Centinela'),
-(6, 'Colan Conhué'),
-(6, 'Comodoro Rivadavia'),
-(6, 'Corcovado'),
-(6, 'Cushamen'),
-(6, 'Dique F. Ameghino'),
-(6, 'Dolavón'),
-(6, 'Dr. R. Rojas'),
-(6, 'El Hoyo'),
-(6, 'El Maitén'),
-(6, 'Epuyén'),
-(6, 'Esquel'),
-(6, 'Facundo'),
-(6, 'Gaimán'),
-(6, 'Gan Gan'),
-(6, 'Gastre'),
-(6, 'Gdor. Costa'),
-(6, 'Gualjaina'),
-(6, 'J. de San Martín'),
-(6, 'Lago Blanco'),
-(6, 'Lago Puelo'),
-(6, 'Lagunita Salada'),
-(6, 'Las Plumas'),
-(6, 'Los Altares'),
-(6, 'Paso de los Indios'),
-(6, 'Paso del Sapo'),
-(6, 'Pto. Madryn'),
-(6, 'Pto. Pirámides'),
-(6, 'Rada Tilly'),
-(6, 'Rawson'),
-(6, 'Río Mayo'),
-(6, 'Río Pico'),
-(6, 'Sarmiento'),
-(6, 'Tecka'),
-(6, 'Telsen'),
-(6, 'Trelew'),
-(6, 'Trevelin'),
-(6, 'Veintiocho de Julio'),
-(7, 'Achiras'),
-(7, 'Adelia Maria'),
-(7, 'Agua de Oro'),
-(7, 'Alcira Gigena'),
-(7, 'Aldea Santa Maria'),
-(7, 'Alejandro Roca'),
-(7, 'Alejo Ledesma'),
-(7, 'Alicia'),
-(7, 'Almafuerte'),
-(7, 'Alpa Corral'),
-(7, 'Alta Gracia'),
-(7, 'Alto Alegre'),
-(7, 'Alto de Los Quebrachos'),
-(7, 'Altos de Chipion'),
-(7, 'Amboy'),
-(7, 'Ambul'),
-(7, 'Ana Zumaran'),
-(7, 'Anisacate'),
-(7, 'Arguello'),
-(7, 'Arias'),
-(7, 'Arroyito'),
-(7, 'Arroyo Algodon'),
-(7, 'Arroyo Cabral'),
-(7, 'Arroyo Los Patos'),
-(7, 'Assunta'),
-(7, 'Atahona'),
-(7, 'Ausonia'),
-(7, 'Avellaneda'),
-(7, 'Ballesteros'),
-(7, 'Ballesteros Sud'),
-(7, 'Balnearia'),
-(7, 'Bañado de Soto'),
-(7, 'Bell Ville'),
-(7, 'Bengolea'),
-(7, 'Benjamin Gould'),
-(7, 'Berrotaran'),
-(7, 'Bialet Masse'),
-(7, 'Bouwer'),
-(7, 'Brinkmann'),
-(7, 'Buchardo'),
-(7, 'Bulnes'),
-(7, 'Cabalango'),
-(7, 'Calamuchita'),
-(7, 'Calchin'),
-(7, 'Calchin Oeste'),
-(7, 'Calmayo'),
-(7, 'Camilo Aldao'),
-(7, 'Caminiaga'),
-(7, 'Cañada de Luque'),
-(7, 'Cañada de Machado'),
-(7, 'Cañada de Rio Pinto'),
-(7, 'Cañada del Sauce'),
-(7, 'Canals'),
-(7, 'Candelaria Sud'),
-(7, 'Capilla de Remedios'),
-(7, 'Capilla de Siton'),
-(7, 'Capilla del Carmen'),
-(7, 'Capilla del Monte'),
-(7, 'Capital'),
-(7, 'Capitan Gral B. O´Higgins'),
-(7, 'Carnerillo'),
-(7, 'Carrilobo'),
-(7, 'Casa Grande'),
-(7, 'Cavanagh'),
-(7, 'Cerro Colorado'),
-(7, 'Chaján'),
-(7, 'Chalacea'),
-(7, 'Chañar Viejo'),
-(7, 'Chancaní'),
-(7, 'Charbonier'),
-(7, 'Charras'),
-(7, 'Chazón'),
-(7, 'Chilibroste'),
-(7, 'Chucul'),
-(7, 'Chuña'),
-(7, 'Chuña Huasi'),
-(7, 'Churqui Cañada'),
-(7, 'Cienaga Del Coro'),
-(7, 'Cintra'),
-(7, 'Col. Almada'),
-(7, 'Col. Anita'),
-(7, 'Col. Barge'),
-(7, 'Col. Bismark'),
-(7, 'Col. Bremen'),
-(7, 'Col. Caroya'),
-(7, 'Col. Italiana'),
-(7, 'Col. Iturraspe'),
-(7, 'Col. Las Cuatro Esquinas'),
-(7, 'Col. Las Pichanas'),
-(7, 'Col. Marina'),
-(7, 'Col. Prosperidad'),
-(7, 'Col. San Bartolome'),
-(7, 'Col. San Pedro'),
-(7, 'Col. Tirolesa'),
-(7, 'Col. Vicente Aguero'),
-(7, 'Col. Videla'),
-(7, 'Col. Vignaud'),
-(7, 'Col. Waltelina'),
-(7, 'Colazo'),
-(7, 'Comechingones'),
-(7, 'Conlara'),
-(7, 'Copacabana'),
-(7, '7'),
-(7, 'Coronel Baigorria'),
-(7, 'Coronel Moldes'),
-(7, 'Corral de Bustos'),
-(7, 'Corralito'),
-(7, 'Cosquín'),
-(7, 'Costa Sacate'),
-(7, 'Cruz Alta'),
-(7, 'Cruz de Caña'),
-(7, 'Cruz del Eje'),
-(7, 'Cuesta Blanca'),
-(7, 'Dean Funes'),
-(7, 'Del Campillo'),
-(7, 'Despeñaderos'),
-(7, 'Devoto'),
-(7, 'Diego de Rojas'),
-(7, 'Dique Chico'),
-(7, 'El Arañado'),
-(7, 'El Brete'),
-(7, 'El Chacho'),
-(7, 'El Crispín'),
-(7, 'El Fortín'),
-(7, 'El Manzano'),
-(7, 'El Rastreador'),
-(7, 'El Rodeo'),
-(7, 'El Tío'),
-(7, 'Elena'),
-(7, 'Embalse'),
-(7, 'Esquina'),
-(7, 'Estación Gral. Paz'),
-(7, 'Estación Juárez Celman'),
-(7, 'Estancia de Guadalupe'),
-(7, 'Estancia Vieja'),
-(7, 'Etruria'),
-(7, 'Eufrasio Loza'),
-(7, 'Falda del Carmen'),
-(7, 'Freyre'),
-(7, 'Gral. Baldissera'),
-(7, 'Gral. Cabrera'),
-(7, 'Gral. Deheza'),
-(7, 'Gral. Fotheringham'),
-(7, 'Gral. Levalle'),
-(7, 'Gral. Roca'),
-(7, 'Guanaco Muerto'),
-(7, 'Guasapampa'),
-(7, 'Guatimozin'),
-(7, 'Gutenberg'),
-(7, 'Hernando'),
-(7, 'Huanchillas'),
-(7, 'Huerta Grande'),
-(7, 'Huinca Renanco'),
-(7, 'Idiazabal'),
-(7, 'Impira'),
-(7, 'Inriville'),
-(7, 'Isla Verde'),
-(7, 'Italó'),
-(7, 'James Craik'),
-(7, 'Jesús María'),
-(7, 'Jovita'),
-(7, 'Justiniano Posse'),
-(7, 'Km 658'),
-(7, 'L. V. Mansilla'),
-(7, 'La Batea'),
-(7, 'La Calera'),
-(7, 'La Carlota'),
-(7, 'La Carolina'),
-(7, 'La Cautiva'),
-(7, 'La Cesira'),
-(7, 'La Cruz'),
-(7, 'La Cumbre'),
-(7, 'La Cumbrecita'),
-(7, 'La Falda'),
-(7, 'La Francia'),
-(7, 'La Granja'),
-(7, 'La Higuera'),
-(7, 'La Laguna'),
-(7, 'La Paisanita'),
-(7, 'La Palestina'),
-(7, '12'),
-(7, 'La Paquita'),
-(7, 'La Para'),
-(7, 'La Paz'),
-(7, 'La Playa'),
-(7, 'La Playosa'),
-(7, 'La Población'),
-(7, 'La Posta'),
-(7, 'La Puerta'),
-(7, 'La Quinta'),
-(7, 'La Rancherita'),
-(7, 'La Rinconada'),
-(7, 'La Serranita'),
-(7, 'La Tordilla'),
-(7, 'Laborde'),
-(7, 'Laboulaye'),
-(7, 'Laguna Larga'),
-(7, 'Las Acequias'),
-(7, 'Las Albahacas'),
-(7, 'Las Arrias'),
-(7, 'Las Bajadas'),
-(7, 'Las Caleras'),
-(7, 'Las Calles'),
-(7, 'Las Cañadas'),
-(7, 'Las Gramillas'),
-(7, 'Las Higueras'),
-(7, 'Las Isletillas'),
-(7, 'Las Junturas'),
-(7, 'Las Palmas'),
-(7, 'Las Peñas'),
-(7, 'Las Peñas Sud'),
-(7, 'Las Perdices'),
-(7, 'Las Playas'),
-(7, 'Las Rabonas'),
-(7, 'Las Saladas'),
-(7, 'Las Tapias'),
-(7, 'Las Varas'),
-(7, 'Las Varillas'),
-(7, 'Las Vertientes'),
-(7, 'Leguizamón'),
-(7, 'Leones'),
-(7, 'Los Cedros'),
-(7, 'Los Cerrillos'),
-(7, 'Los Chañaritos (C.E)'),
-(7, 'Los Chanaritos (R.S)'),
-(7, 'Los Cisnes'),
-(7, 'Los Cocos'),
-(7, 'Los Cóndores'),
-(7, 'Los Hornillos'),
-(7, 'Los Hoyos'),
-(7, 'Los Mistoles'),
-(7, 'Los Molinos'),
-(7, 'Los Pozos'),
-(7, 'Los Reartes'),
-(7, 'Los Surgentes'),
-(7, 'Los Talares'),
-(7, 'Los Zorros'),
-(7, 'Lozada'),
-(7, 'Luca'),
-(7, 'Luque'),
-(7, 'Luyaba'),
-(7, 'Malagueño'),
-(7, 'Malena'),
-(7, 'Malvinas Argentinas'),
-(7, 'Manfredi'),
-(7, 'Maquinista Gallini'),
-(7, 'Marcos Juárez'),
-(7, 'Marull'),
-(7, 'Matorrales'),
-(7, 'Mattaldi'),
-(7, 'Mayu Sumaj'),
-(7, 'Media Naranja'),
-(7, 'Melo'),
-(7, 'Mendiolaza'),
-(7, 'Mi Granja'),
-(7, 'Mina Clavero'),
-(7, 'Miramar'),
-(7, 'Morrison'),
-(7, 'Morteros'),
-(7, 'Mte. Buey'),
-(7, 'Mte. Cristo'),
-(7, 'Mte. De Los Gauchos'),
-(7, 'Mte. Leña'),
-(7, 'Mte. Maíz'),
-(7, 'Mte. Ralo'),
-(7, 'Nicolás Bruzone'),
-(7, 'Noetinger'),
-(7, 'Nono'),
-(7, 'Nueva 7'),
-(7, 'Obispo Trejo'),
-(7, 'Olaeta'),
-(7, 'Oliva'),
-(7, 'Olivares San Nicolás'),
-(7, 'Onagolty'),
-(7, 'Oncativo'),
-(7, 'Ordoñez'),
-(7, 'Pacheco De Melo'),
-(7, 'Pampayasta N.'),
-(7, 'Pampayasta S.'),
-(7, 'Panaholma'),
-(7, 'Pascanas'),
-(7, 'Pasco'),
-(7, 'Paso del Durazno'),
-(7, 'Paso Viejo'),
-(7, 'Pilar'),
-(7, 'Pincén'),
-(7, 'Piquillín'),
-(7, 'Plaza de Mercedes'),
-(7, 'Plaza Luxardo'),
-(7, 'Porteña'),
-(7, 'Potrero de Garay'),
-(7, 'Pozo del Molle'),
-(7, 'Pozo Nuevo'),
-(7, 'Pueblo Italiano'),
-(7, 'Puesto de Castro'),
-(7, 'Punta del Agua'),
-(7, 'Quebracho Herrado'),
-(7, 'Quilino'),
-(7, 'Rafael García'),
-(7, 'Ranqueles'),
-(7, 'Rayo Cortado'),
-(7, 'Reducción'),
-(7, 'Rincón'),
-(7, 'Río Bamba'),
-(7, 'Río Ceballos'),
-(7, 'Río Cuarto'),
-(7, 'Río de Los Sauces'),
-(7, 'Río Primero'),
-(7, 'Río Segundo'),
-(7, 'Río Tercero'),
-(7, 'Rosales'),
-(7, 'Rosario del Saladillo'),
-(7, 'Sacanta'),
-(7, 'Sagrada Familia'),
-(7, 'Saira'),
-(7, 'Saladillo'),
-(7, 'Saldán'),
-(7, 'Salsacate'),
-(7, 'Salsipuedes'),
-(7, 'Sampacho'),
-(7, 'San Agustín'),
-(7, 'San Antonio de Arredondo'),
-(7, 'San Antonio de Litín'),
-(7, 'San Basilio'),
-(7, 'San Carlos Minas'),
-(7, 'San Clemente'),
-(7, 'San Esteban'),
-(7, 'San Francisco'),
-(7, 'San Ignacio'),
-(7, 'San Javier'),
-(7, 'San Jerónimo'),
-(7, 'San Joaquín'),
-(7, 'San José de La Dormida'),
-(7, 'San José de Las Salinas'),
-(7, 'San Lorenzo'),
-(7, 'San Marcos Sierras'),
-(7, 'San Marcos Sud'),
-(7, 'San Pedro'),
-(7, 'San Pedro N.'),
-(7, 'San Roque'),
-(7, 'San Vicente'),
-(7, 'Santa Catalina'),
-(7, 'Santa Elena'),
-(7, 'Santa Eufemia'),
-(7, 'Santa Maria'),
-(7, 'Sarmiento'),
-(7, 'Saturnino M.Laspiur'),
-(7, 'Sauce Arriba'),
-(7, 'Sebastián Elcano'),
-(7, 'Seeber'),
-(7, 'Segunda Usina'),
-(7, 'Serrano'),
-(7, 'Serrezuela'),
-(7, 'Sgo. Temple'),
-(7, 'Silvio Pellico'),
-(7, 'Simbolar'),
-(7, 'Sinsacate'),
-(7, 'Sta. Rosa de Calamuchita'),
-(7, 'Sta. Rosa de Río Primero'),
-(7, 'Suco'),
-(7, 'Tala Cañada'),
-(7, 'Tala Huasi'),
-(7, 'Talaini'),
-(7, 'Tancacha'),
-(7, 'Tanti'),
-(7, 'Ticino'),
-(7, 'Tinoco'),
-(7, 'Tío Pujio'),
-(7, 'Toledo'),
-(7, 'Toro Pujio'),
-(7, 'Tosno'),
-(7, 'Tosquita'),
-(7, 'Tránsito'),
-(7, 'Tuclame'),
-(7, 'Tutti'),
-(7, 'Ucacha'),
-(7, 'Unquillo'),
-(7, 'Valle de Anisacate'),
-(7, 'Valle Hermoso'),
-(7, 'Vélez Sarfield'),
-(7, 'Viamonte'),
-(7, 'Vicuña Mackenna'),
-(7, 'Villa Allende'),
-(7, 'Villa Amancay'),
-(7, 'Villa Ascasubi'),
-(7, 'Villa Candelaria N.'),
-(7, 'Villa Carlos Paz'),
-(7, 'Villa Cerro Azul'),
-(7, 'Villa Ciudad de América'),
-(7, 'Villa Ciudad Pque Los Reartes'),
-(7, 'Villa Concepción del Tío'),
-(7, 'Villa Cura Brochero'),
-(7, 'Villa de Las Rosas'),
-(7, 'Villa de María'),
-(7, 'Villa de Pocho'),
-(7, 'Villa de Soto'),
-(7, 'Villa del Dique'),
-(7, 'Villa del Prado'),
-(7, 'Villa del Rosario'),
-(7, 'Villa del Totoral'),
-(7, 'Villa Dolores'),
-(7, 'Villa El Chancay'),
-(7, 'Villa Elisa'),
-(7, 'Villa Flor Serrana'),
-(7, 'Villa Fontana'),
-(7, 'Villa Giardino'),
-(7, 'Villa Gral. Belgrano'),
-(7, 'Villa Gutierrez'),
-(7, 'Villa Huidobro'),
-(7, 'Villa La Bolsa'),
-(7, 'Villa Los Aromos'),
-(7, 'Villa Los Patos'),
-(7, 'Villa María'),
-(7, 'Villa Nueva'),
-(7, 'Villa Pque. Santa Ana'),
-(7, 'Villa Pque. Siquiman'),
-(7, 'Villa Quillinzo'),
-(7, 'Villa Rossi'),
-(7, 'Villa Rumipal'),
-(7, 'Villa San Esteban'),
-(7, 'Villa San Isidro'),
-(7, 'Villa 21'),
-(7, 'Villa Sarmiento (G.R)'),
-(7, 'Villa Sarmiento (S.A)'),
-(7, 'Villa Tulumba'),
-(7, 'Villa Valeria'),
-(7, 'Villa Yacanto'),
-(7, 'Washington'),
-(7, 'Wenceslao Escalante'),
-(7, 'Ycho Cruz Sierras'),
-(8, 'Alvear'),
-(8, 'Bella Vista'),
-(8, 'Berón de Astrada'),
-(8, 'Bonpland'),
-(8, 'Caá Cati'),
-(8, 'Capital'),
-(8, 'Chavarría'),
-(8, 'Col. C. Pellegrini'),
-(8, 'Col. Libertad'),
-(8, 'Col. Liebig'),
-(8, 'Col. Sta Rosa'),
-(8, 'Concepción'),
-(8, 'Cruz de Los Milagros'),
-(8, 'Curuzú-Cuatiá'),
-(8, 'Empedrado'),
-(8, 'Esquina'),
-(8, 'Estación Torrent'),
-(8, 'Felipe Yofré'),
-(8, 'Garruchos'),
-(8, 'Gdor. Agrónomo'),
-(8, 'Gdor. Martínez'),
-(8, 'Goya'),
-(8, 'Guaviravi'),
-(8, 'Herlitzka'),
-(8, 'Ita-Ibate'),
-(8, 'Itatí'),
-(8, 'Ituzaingó'),
-(8, 'José Rafael Gómez'),
-(8, 'Juan Pujol'),
-(8, 'La Cruz'),
-(8, 'Lavalle'),
-(8, 'Lomas de Vallejos'),
-(8, 'Loreto'),
-(8, 'Mariano I. Loza'),
-(8, 'Mburucuyá'),
-(8, 'Mercedes'),
-(8, 'Mocoretá'),
-(8, 'Mte. Caseros'),
-(8, 'Nueve de Julio'),
-(8, 'Palmar Grande'),
-(8, 'Parada Pucheta'),
-(8, 'Paso de La Patria'),
-(8, 'Paso de Los Libres'),
-(8, 'Pedro R. Fernandez'),
-(8, 'Perugorría'),
-(8, 'Pueblo Libertador'),
-(8, 'Ramada Paso'),
-(8, 'Riachuelo'),
-(8, 'Saladas'),
-(8, 'San Antonio'),
-(8, 'San Carlos'),
-(8, 'San Cosme'),
-(8, 'San Lorenzo'),
-(8, '20 del Palmar'),
-(8, 'San Miguel'),
-(8, 'San Roque'),
-(8, 'Santa Ana'),
-(8, 'Santa Lucía'),
-(8, 'Santo Tomé'),
-(8, 'Sauce'),
-(8, 'Tabay'),
-(8, 'Tapebicuá'),
-(8, 'Tatacua'),
-(8, 'Virasoro'),
-(8, 'Yapeyú'),
-(8, 'Yataití Calle'),
-(9, 'Alarcón'),
-(9, 'Alcaraz'),
-(9, 'Alcaraz N.'),
-(9, 'Alcaraz S.'),
-(9, 'Aldea Asunción'),
-(9, 'Aldea Brasilera'),
-(9, 'Aldea Elgenfeld'),
-(9, 'Aldea Grapschental'),
-(9, 'Aldea Ma. Luisa'),
-(9, 'Aldea Protestante'),
-(9, 'Aldea Salto'),
-(9, 'Aldea San Antonio (G)'),
-(9, 'Aldea San Antonio (P)'),
-(9, 'Aldea 19'),
-(9, 'Aldea San Miguel'),
-(9, 'Aldea San Rafael'),
-(9, 'Aldea Spatzenkutter'),
-(9, 'Aldea Sta. María'),
-(9, 'Aldea Sta. Rosa');
-INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES
-(9, 'Aldea Valle María'),
-(9, 'Altamirano Sur'),
-(9, 'Antelo'),
-(9, 'Antonio Tomás'),
-(9, 'Aranguren'),
-(9, 'Arroyo Barú'),
-(9, 'Arroyo Burgos'),
-(9, 'Arroyo Clé'),
-(9, 'Arroyo Corralito'),
-(9, 'Arroyo del Medio'),
-(9, 'Arroyo Maturrango'),
-(9, 'Arroyo Palo Seco'),
-(9, 'Banderas'),
-(9, 'Basavilbaso'),
-(9, 'Betbeder'),
-(9, 'Bovril'),
-(9, 'Caseros'),
-(9, 'Ceibas'),
-(9, 'Cerrito'),
-(9, 'Chajarí'),
-(9, 'Chilcas'),
-(9, 'Clodomiro Ledesma'),
-(9, 'Col. Alemana'),
-(9, 'Col. Avellaneda'),
-(9, 'Col. Avigdor'),
-(9, 'Col. Ayuí'),
-(9, 'Col. Baylina'),
-(9, 'Col. Carrasco'),
-(9, 'Col. Celina'),
-(9, 'Col. Cerrito'),
-(9, 'Col. Crespo'),
-(9, 'Col. Elia'),
-(9, 'Col. Ensayo'),
-(9, 'Col. Gral. Roca'),
-(9, 'Col. La Argentina'),
-(9, 'Col. Merou'),
-(9, 'Col. Oficial Nª3'),
-(9, 'Col. Oficial Nº13'),
-(9, 'Col. Oficial Nº14'),
-(9, 'Col. Oficial Nº5'),
-(9, 'Col. Reffino'),
-(9, 'Col. Tunas'),
-(9, 'Col. Viraró'),
-(9, 'Colón'),
-(9, 'Concepción del Uruguay'),
-(9, 'Concordia'),
-(9, 'Conscripto Bernardi'),
-(9, 'Costa Grande'),
-(9, 'Costa San Antonio'),
-(9, 'Costa Uruguay N.'),
-(9, 'Costa Uruguay S.'),
-(9, 'Crespo'),
-(9, 'Crucecitas 3ª'),
-(9, 'Crucecitas 7ª'),
-(9, 'Crucecitas 8ª'),
-(9, 'Cuchilla Redonda'),
-(9, 'Curtiembre'),
-(9, 'Diamante'),
-(9, 'Distrito 6º'),
-(9, 'Distrito Chañar'),
-(9, 'Distrito Chiqueros'),
-(9, 'Distrito Cuarto'),
-(9, 'Distrito Diego López'),
-(9, 'Distrito Pajonal'),
-(9, 'Distrito Sauce'),
-(9, 'Distrito Tala'),
-(9, 'Distrito Talitas'),
-(9, 'Don Cristóbal 1ª Sección'),
-(9, 'Don Cristóbal 2ª Sección'),
-(9, 'Durazno'),
-(9, 'El Cimarrón'),
-(9, 'El Gramillal'),
-(9, 'El Palenque'),
-(9, 'El Pingo'),
-(9, 'El Quebracho'),
-(9, 'El Redomón'),
-(9, 'El Solar'),
-(9, 'Enrique Carbo'),
-(9, '9'),
-(9, 'Espinillo N.'),
-(9, 'Estación Campos'),
-(9, 'Estación Escriña'),
-(9, 'Estación Lazo'),
-(9, 'Estación Raíces'),
-(9, 'Estación Yerúa'),
-(9, 'Estancia Grande'),
-(9, 'Estancia Líbaros'),
-(9, 'Estancia Racedo'),
-(9, 'Estancia Solá'),
-(9, 'Estancia Yuquerí'),
-(9, 'Estaquitas'),
-(9, 'Faustino M. Parera'),
-(9, 'Febre'),
-(9, 'Federación'),
-(9, 'Federal'),
-(9, 'Gdor. Echagüe'),
-(9, 'Gdor. Mansilla'),
-(9, 'Gilbert'),
-(9, 'González Calderón'),
-(9, 'Gral. Almada'),
-(9, 'Gral. Alvear'),
-(9, 'Gral. Campos'),
-(9, 'Gral. Galarza'),
-(9, 'Gral. Ramírez'),
-(9, 'Gualeguay'),
-(9, 'Gualeguaychú'),
-(9, 'Gualeguaycito'),
-(9, 'Guardamonte'),
-(9, 'Hambis'),
-(9, 'Hasenkamp'),
-(9, 'Hernandarias'),
-(9, 'Hernández'),
-(9, 'Herrera'),
-(9, 'Hinojal'),
-(9, 'Hocker'),
-(9, 'Ing. Sajaroff'),
-(9, 'Irazusta'),
-(9, 'Isletas'),
-(9, 'J.J De Urquiza'),
-(9, 'Jubileo'),
-(9, 'La Clarita'),
-(9, 'La Criolla'),
-(9, 'La Esmeralda'),
-(9, 'La Florida'),
-(9, 'La Fraternidad'),
-(9, 'La Hierra'),
-(9, 'La Ollita'),
-(9, 'La Paz'),
-(9, 'La Picada'),
-(9, 'La Providencia'),
-(9, 'La Verbena'),
-(9, 'Laguna Benítez'),
-(9, 'Larroque'),
-(9, 'Las Cuevas'),
-(9, 'Las Garzas'),
-(9, 'Las Guachas'),
-(9, 'Las Mercedes'),
-(9, 'Las Moscas'),
-(9, 'Las Mulitas'),
-(9, 'Las Toscas'),
-(9, 'Laurencena'),
-(9, 'Libertador San Martín'),
-(9, 'Loma Limpia'),
-(9, 'Los Ceibos'),
-(9, 'Los Charruas'),
-(9, 'Los Conquistadores'),
-(9, 'Lucas González'),
-(9, 'Lucas N.'),
-(9, 'Lucas S. 1ª'),
-(9, 'Lucas S. 2ª'),
-(9, 'Maciá'),
-(9, 'María Grande'),
-(9, 'María Grande 2ª'),
-(9, 'Médanos'),
-(9, 'Mojones N.'),
-(9, 'Mojones S.'),
-(9, 'Molino Doll'),
-(9, 'Monte Redondo'),
-(9, 'Montoya'),
-(9, 'Mulas Grandes'),
-(9, 'Ñancay'),
-(9, 'Nogoyá'),
-(9, 'Nueva Escocia'),
-(9, 'Nueva Vizcaya'),
-(9, 'Ombú'),
-(9, 'Oro Verde'),
-(9, 'Paraná'),
-(9, 'Pasaje Guayaquil'),
-(9, 'Pasaje Las Tunas'),
-(9, 'Paso de La Arena'),
-(9, 'Paso de La Laguna'),
-(9, 'Paso de Las Piedras'),
-(9, 'Paso Duarte'),
-(9, 'Pastor Britos'),
-(9, 'Pedernal'),
-(9, 'Perdices'),
-(9, 'Picada Berón'),
-(9, 'Piedras Blancas'),
-(9, 'Primer Distrito Cuchilla'),
-(9, 'Primero de Mayo'),
-(9, 'Pronunciamiento'),
-(9, 'Pto. Algarrobo'),
-(9, 'Pto. Ibicuy'),
-(9, 'Pueblo Brugo'),
-(9, 'Pueblo Cazes'),
-(9, 'Pueblo Gral. Belgrano'),
-(9, 'Pueblo Liebig'),
-(9, 'Puerto Yeruá'),
-(9, 'Punta del Monte'),
-(9, 'Quebracho'),
-(9, 'Quinto Distrito'),
-(9, 'Raices Oeste'),
-(9, 'Rincón de Nogoyá'),
-(9, 'Rincón del Cinto'),
-(9, 'Rincón del Doll'),
-(9, 'Rincón del Gato'),
-(9, 'Rocamora'),
-(9, 'Rosario del Tala'),
-(9, 'San Benito'),
-(9, 'San Cipriano'),
-(9, 'San Ernesto'),
-(9, 'San Gustavo'),
-(9, 'San Jaime'),
-(9, 'San José'),
-(9, 'San José de Feliciano'),
-(9, 'San Justo'),
-(9, 'San Marcial'),
-(9, 'San Pedro'),
-(9, 'San Ramírez'),
-(9, 'San Ramón'),
-(9, 'San Roque'),
-(9, 'San Salvador'),
-(9, 'San Víctor'),
-(9, 'Santa Ana'),
-(9, 'Santa Anita'),
-(9, 'Santa Elena'),
-(9, 'Santa Lucía'),
-(9, 'Santa Luisa'),
-(9, 'Sauce de Luna'),
-(9, 'Sauce Montrull'),
-(9, 'Sauce Pinto'),
-(9, 'Sauce Sur'),
-(9, 'Seguí'),
-(9, 'Sir Leonard'),
-(9, 'Sosa'),
-(9, 'Tabossi'),
-(9, 'Tezanos Pinto'),
-(9, 'Ubajay'),
-(9, 'Urdinarrain'),
-(9, 'Veinte de Septiembre'),
-(9, 'Viale'),
-(9, 'Victoria'),
-(9, 'Villa Clara'),
-(9, 'Villa del Rosario'),
-(9, 'Villa Domínguez'),
-(9, 'Villa Elisa'),
-(9, 'Villa Fontana'),
-(9, 'Villa Gdor. Etchevehere'),
-(9, 'Villa Mantero'),
-(9, 'Villa Paranacito'),
-(9, 'Villa Urquiza'),
-(9, 'Villaguay'),
-(9, 'Walter Moss'),
-(9, 'Yacaré'),
-(9, 'Yeso Oeste'),
-(10, 'Buena Vista'),
-(10, 'Clorinda'),
-(10, 'Col. Pastoril'),
-(10, 'Cte. Fontana'),
-(10, 'El Colorado'),
-(10, 'El Espinillo'),
-(10, 'Estanislao Del Campo'),
-(10, '10'),
-(10, 'Fortín Lugones'),
-(10, 'Gral. Lucio V. Mansilla'),
-(10, 'Gral. Manuel Belgrano'),
-(10, 'Gral. Mosconi'),
-(10, 'Gran Guardia'),
-(10, 'Herradura'),
-(10, 'Ibarreta'),
-(10, 'Ing. Juárez'),
-(10, 'Laguna Blanca'),
-(10, 'Laguna Naick Neck'),
-(10, 'Laguna Yema'),
-(10, 'Las Lomitas'),
-(10, 'Los Chiriguanos'),
-(10, 'Mayor V. Villafañe'),
-(10, 'Misión San Fco.'),
-(10, 'Palo Santo'),
-(10, 'Pirané'),
-(10, 'Pozo del Maza'),
-(10, 'Riacho He-He'),
-(10, 'San Hilario'),
-(10, 'San Martín II'),
-(10, 'Siete Palmas'),
-(10, 'Subteniente Perín'),
-(10, 'Tres Lagunas'),
-(10, 'Villa Dos Trece'),
-(10, 'Villa Escolar'),
-(10, 'Villa Gral. Güemes'),
-(11, 'Abdon Castro Tolay'),
-(11, 'Abra Pampa'),
-(11, 'Abralaite'),
-(11, 'Aguas Calientes'),
-(11, 'Arrayanal'),
-(11, 'Barrios'),
-(11, 'Caimancito'),
-(11, 'Calilegua'),
-(11, 'Cangrejillos'),
-(11, 'Caspala'),
-(11, 'Catuá'),
-(11, 'Cieneguillas'),
-(11, 'Coranzulli'),
-(11, 'Cusi-Cusi'),
-(11, 'El Aguilar'),
-(11, 'El Carmen'),
-(11, 'El Cóndor'),
-(11, 'El Fuerte'),
-(11, 'El Piquete'),
-(11, 'El Talar'),
-(11, 'Fraile Pintado'),
-(11, 'Hipólito Yrigoyen'),
-(11, 'Huacalera'),
-(11, 'Humahuaca'),
-(11, 'La Esperanza'),
-(11, 'La Mendieta'),
-(11, 'La Quiaca'),
-(11, 'Ledesma'),
-(11, 'Libertador Gral. San Martin'),
-(11, 'Maimara'),
-(11, 'Mina Pirquitas'),
-(11, 'Monterrico'),
-(11, 'Palma Sola'),
-(11, 'Palpalá'),
-(11, 'Pampa Blanca'),
-(11, 'Pampichuela'),
-(11, 'Perico'),
-(11, 'Puesto del Marqués'),
-(11, 'Puesto Viejo'),
-(11, 'Pumahuasi'),
-(11, 'Purmamarca'),
-(11, 'Rinconada'),
-(11, 'Rodeitos'),
-(11, 'Rosario de Río Grande'),
-(11, 'San Antonio'),
-(11, 'San Francisco'),
-(11, 'San Pedro'),
-(11, 'San Rafael'),
-(11, 'San Salvador'),
-(11, 'Santa Ana'),
-(11, 'Santa Catalina'),
-(11, 'Santa Clara'),
-(11, 'Susques'),
-(11, 'Tilcara'),
-(11, 'Tres Cruces'),
-(11, 'Tumbaya'),
-(11, 'Valle Grande'),
-(11, 'Vinalito'),
-(11, 'Volcán'),
-(11, 'Yala'),
-(11, 'Yaví'),
-(11, 'Yuto'),
-(12, 'Abramo'),
-(12, 'Adolfo Van Praet'),
-(12, 'Agustoni'),
-(12, 'Algarrobo del Aguila'),
-(12, 'Alpachiri'),
-(12, 'Alta Italia'),
-(12, 'Anguil'),
-(12, 'Arata'),
-(12, 'Ataliva Roca'),
-(12, 'Bernardo Larroude'),
-(12, 'Bernasconi'),
-(12, 'Caleufú'),
-(12, 'Carro Quemado'),
-(12, 'Catriló'),
-(12, 'Ceballos'),
-(12, 'Chacharramendi'),
-(12, 'Col. Barón'),
-(12, 'Col. Santa María'),
-(12, 'Conhelo'),
-(12, 'Coronel Hilario Lagos'),
-(12, 'Cuchillo-Có'),
-(12, 'Doblas'),
-(12, 'Dorila'),
-(12, 'Eduardo Castex'),
-(12, 'Embajador Martini'),
-(12, 'Falucho'),
-(12, 'Gral. Acha'),
-(12, 'Gral. Manuel Campos'),
-(12, 'Gral. Pico'),
-(12, 'Guatraché'),
-(12, 'Ing. Luiggi'),
-(12, 'Intendente Alvear'),
-(12, 'Jacinto Arauz'),
-(12, 'La Adela'),
-(12, 'La Humada'),
-(12, 'La Maruja'),
-(12, '12'),
-(12, 'La Reforma'),
-(12, 'Limay Mahuida'),
-(12, 'Lonquimay'),
-(12, 'Loventuel'),
-(12, 'Luan Toro'),
-(12, 'Macachín'),
-(12, 'Maisonnave'),
-(12, 'Mauricio Mayer'),
-(12, 'Metileo'),
-(12, 'Miguel Cané'),
-(12, 'Miguel Riglos'),
-(12, 'Monte Nievas'),
-(12, 'Parera'),
-(12, 'Perú'),
-(12, 'Pichi-Huinca'),
-(12, 'Puelches'),
-(12, 'Puelén'),
-(12, 'Quehue'),
-(12, 'Quemú Quemú'),
-(12, 'Quetrequén'),
-(12, 'Rancul'),
-(12, 'Realicó'),
-(12, 'Relmo'),
-(12, 'Rolón'),
-(12, 'Rucanelo'),
-(12, 'Sarah'),
-(12, 'Speluzzi'),
-(12, 'Sta. Isabel'),
-(12, 'Sta. Rosa'),
-(12, 'Sta. Teresa'),
-(12, 'Telén'),
-(12, 'Toay'),
-(12, 'Tomas M. de Anchorena'),
-(12, 'Trenel'),
-(12, 'Unanue'),
-(12, 'Uriburu'),
-(12, 'Veinticinco de Mayo'),
-(12, 'Vertiz'),
-(12, 'Victorica'),
-(12, 'Villa Mirasol'),
-(12, 'Winifreda'),
-(13, 'Arauco'),
-(13, 'Capital'),
-(13, 'Castro Barros'),
-(13, 'Chamical'),
-(13, 'Chilecito'),
-(13, 'Coronel F. Varela'),
-(13, 'Famatina'),
-(13, 'Gral. A.V.Peñaloza'),
-(13, 'Gral. Belgrano'),
-(13, 'Gral. J.F. Quiroga'),
-(13, 'Gral. Lamadrid'),
-(13, 'Gral. Ocampo'),
-(13, 'Gral. San Martín'),
-(13, 'Independencia'),
-(13, 'Rosario Penaloza'),
-(13, 'San Blas de Los Sauces'),
-(13, 'Sanagasta'),
-(13, 'Vinchina'),
-(14, 'Capital'),
-(14, 'Chacras de Coria'),
-(14, 'Dorrego'),
-(14, 'Gllen'),
-(14, 'Godoy Cruz'),
-(14, 'Gral. Alvear'),
-(14, 'Guaymallén'),
-(14, 'Junín'),
-(14, 'La Paz'),
-(14, 'Las Heras'),
-(14, 'Lavalle'),
-(14, 'Luján'),
-(14, 'Luján De Cuyo'),
-(14, 'Maipú'),
-(14, 'Malargüe'),
-(14, 'Rivadavia'),
-(14, 'San Carlos'),
-(14, 'San Martín'),
-(14, 'San Rafael'),
-(14, 'Sta. Rosa'),
-(14, 'Tunuyán'),
-(14, 'Tupungato'),
-(14, 'Villa Nueva'),
-(15, 'Alba Posse'),
-(15, 'Almafuerte'),
-(15, 'Apóstoles'),
-(15, 'Aristóbulo Del Valle'),
-(15, 'Arroyo Del Medio'),
-(15, 'Azara'),
-(15, 'Bdo. De Irigoyen'),
-(15, 'Bonpland'),
-(15, 'Caá Yari'),
-(15, 'Campo Grande'),
-(15, 'Campo Ramón'),
-(15, 'Campo Viera'),
-(15, 'Candelaria'),
-(15, 'Capioví'),
-(15, 'Caraguatay'),
-(15, 'Cdte. Guacurarí'),
-(15, 'Cerro Azul'),
-(15, 'Cerro Corá'),
-(15, 'Col. Alberdi'),
-(15, 'Col. Aurora'),
-(15, 'Col. Delicia'),
-(15, 'Col. Polana'),
-(15, 'Col. Victoria'),
-(15, 'Col. Wanda'),
-(15, 'Concepción De La Sierra'),
-(15, 'Corpus'),
-(15, 'Dos Arroyos'),
-(15, 'Dos de Mayo'),
-(15, 'El Alcázar'),
-(15, 'El Dorado'),
-(15, 'El Soberbio'),
-(15, 'Esperanza'),
-(15, 'F. Ameghino'),
-(15, 'Fachinal'),
-(15, 'Garuhapé'),
-(15, 'Garupá'),
-(15, 'Gdor. López'),
-(15, 'Gdor. Roca'),
-(15, 'Gral. Alvear'),
-(15, 'Gral. Urquiza'),
-(15, 'Guaraní'),
-(15, 'H. Yrigoyen'),
-(15, 'Iguazú'),
-(15, 'Itacaruaré'),
-(15, 'Jardín América'),
-(15, 'Leandro N. Alem'),
-(15, 'Libertad'),
-(15, 'Loreto'),
-(15, 'Los Helechos'),
-(15, 'Mártires'),
-(15, '15'),
-(15, 'Mojón Grande'),
-(15, 'Montecarlo'),
-(15, 'Nueve de Julio'),
-(15, 'Oberá'),
-(15, 'Olegario V. Andrade'),
-(15, 'Panambí'),
-(15, 'Posadas'),
-(15, 'Profundidad'),
-(15, 'Pto. Iguazú'),
-(15, 'Pto. Leoni'),
-(15, 'Pto. Piray'),
-(15, 'Pto. Rico'),
-(15, 'Ruiz de Montoya'),
-(15, 'San Antonio'),
-(15, 'San Ignacio'),
-(15, 'San Javier'),
-(15, 'San José'),
-(15, 'San Martín'),
-(15, 'San Pedro'),
-(15, 'San Vicente'),
-(15, 'Santiago De Liniers'),
-(15, 'Santo Pipo'),
-(15, 'Sta. Ana'),
-(15, 'Sta. María'),
-(15, 'Tres Capones'),
-(15, 'Veinticinco de Mayo'),
-(15, 'Wanda'),
-(16, 'Aguada San Roque'),
-(16, 'Aluminé'),
-(16, 'Andacollo'),
-(16, 'Añelo'),
-(16, 'Bajada del Agrio'),
-(16, 'Barrancas'),
-(16, 'Buta Ranquil'),
-(16, 'Capital'),
-(16, 'Caviahué'),
-(16, 'Centenario'),
-(16, 'Chorriaca'),
-(16, 'Chos Malal'),
-(16, 'Cipolletti'),
-(16, 'Covunco Abajo'),
-(16, 'Coyuco Cochico'),
-(16, 'Cutral Có'),
-(16, 'El Cholar'),
-(16, 'El Huecú'),
-(16, 'El Sauce'),
-(16, 'Guañacos'),
-(16, 'Huinganco'),
-(16, 'Las Coloradas'),
-(16, 'Las Lajas'),
-(16, 'Las Ovejas'),
-(16, 'Loncopué'),
-(16, 'Los Catutos'),
-(16, 'Los Chihuidos'),
-(16, 'Los Miches'),
-(16, 'Manzano Amargo'),
-(16, '16'),
-(16, 'Octavio Pico'),
-(16, 'Paso Aguerre'),
-(16, 'Picún Leufú'),
-(16, 'Piedra del Aguila'),
-(16, 'Pilo Lil'),
-(16, 'Plaza Huincul'),
-(16, 'Plottier'),
-(16, 'Quili Malal'),
-(16, 'Ramón Castro'),
-(16, 'Rincón de Los Sauces'),
-(16, 'San Martín de Los Andes'),
-(16, 'San Patricio del Chañar'),
-(16, 'Santo Tomás'),
-(16, 'Sauzal Bonito'),
-(16, 'Senillosa'),
-(16, 'Taquimilán'),
-(16, 'Tricao Malal'),
-(16, 'Varvarco'),
-(16, 'Villa Curí Leuvu'),
-(16, 'Villa del Nahueve'),
-(16, 'Villa del Puente Picún Leuvú'),
-(16, 'Villa El Chocón'),
-(16, 'Villa La Angostura'),
-(16, 'Villa Pehuenia'),
-(16, 'Villa Traful'),
-(16, 'Vista Alegre'),
-(16, 'Zapala'),
-(17, 'Aguada Cecilio'),
-(17, 'Aguada de Guerra'),
-(17, 'Allén'),
-(17, 'Arroyo de La Ventana'),
-(17, 'Arroyo Los Berros'),
-(17, 'Bariloche'),
-(17, 'Calte. Cordero'),
-(17, 'Campo Grande'),
-(17, 'Catriel'),
-(17, 'Cerro Policía'),
-(17, 'Cervantes'),
-(17, 'Chelforo'),
-(17, 'Chimpay'),
-(17, 'Chinchinales'),
-(17, 'Chipauquil'),
-(17, 'Choele Choel'),
-(17, 'Cinco Saltos'),
-(17, 'Cipolletti'),
-(17, 'Clemente Onelli'),
-(17, 'Colán Conhue'),
-(17, 'Comallo'),
-(17, 'Comicó'),
-(17, 'Cona Niyeu'),
-(17, 'Coronel Belisle'),
-(17, 'Cubanea'),
-(17, 'Darwin'),
-(17, 'Dina Huapi'),
-(17, 'El Bolsón'),
-(17, 'El Caín'),
-(17, 'El Manso'),
-(17, 'Gral. Conesa'),
-(17, 'Gral. Enrique Godoy'),
-(17, 'Gral. Fernandez Oro'),
-(17, 'Gral. Roca'),
-(17, 'Guardia Mitre'),
-(17, 'Ing. Huergo'),
-(17, 'Ing. Jacobacci'),
-(17, 'Laguna Blanca'),
-(17, 'Lamarque'),
-(17, 'Las Grutas'),
-(17, 'Los Menucos'),
-(17, 'Luis Beltrán'),
-(17, 'Mainqué'),
-(17, 'Mamuel Choique'),
-(17, 'Maquinchao'),
-(17, 'Mencué'),
-(17, 'Mtro. Ramos Mexia'),
-(17, 'Nahuel Niyeu'),
-(17, 'Naupa Huen'),
-(17, 'Ñorquinco'),
-(17, 'Ojos de Agua'),
-(17, 'Paso de Agua'),
-(17, 'Paso Flores'),
-(17, 'Peñas Blancas'),
-(17, 'Pichi Mahuida'),
-(17, 'Pilcaniyeu'),
-(17, 'Pomona'),
-(17, 'Prahuaniyeu'),
-(17, 'Rincón Treneta'),
-(17, 'Río Chico'),
-(17, 'Río Colorado'),
-(17, 'Roca'),
-(17, 'San Antonio Oeste'),
-(17, 'San Javier'),
-(17, 'Sierra Colorada'),
-(17, 'Sierra Grande'),
-(17, 'Sierra Pailemán'),
-(17, 'Valcheta'),
-(17, 'Valle Azul'),
-(17, 'Viedma'),
-(17, 'Villa Llanquín'),
-(17, 'Villa Mascardi'),
-(17, 'Villa Regina'),
-(17, 'Yaminué'),
-(18, 'A. Saravia'),
-(18, 'Aguaray'),
-(18, 'Angastaco'),
-(18, 'Animaná'),
-(18, 'Cachi'),
-(18, 'Cafayate'),
-(18, 'Campo Quijano'),
-(18, 'Campo Santo'),
-(18, 'Capital'),
-(18, 'Cerrillos'),
-(18, 'Chicoana'),
-(18, 'Col. Sta. Rosa'),
-(18, 'Coronel Moldes'),
-(18, 'El Bordo'),
-(18, 'El Carril'),
-(18, 'El Galpón'),
-(18, 'El Jardín'),
-(18, 'El Potrero'),
-(18, 'El Quebrachal'),
-(18, 'El Tala'),
-(18, 'Embarcación'),
-(18, 'Gral. Ballivian'),
-(18, 'Gral. Güemes'),
-(18, 'Gral. Mosconi'),
-(18, 'Gral. Pizarro'),
-(18, 'Guachipas'),
-(18, 'Hipólito Yrigoyen'),
-(18, 'Iruyá'),
-(18, 'Isla De Cañas'),
-(18, 'J. V. Gonzalez'),
-(18, 'La Caldera'),
-(18, 'La Candelaria'),
-(18, 'La Merced'),
-(18, 'La Poma'),
-(18, 'La Viña'),
-(18, 'Las Lajitas'),
-(18, 'Los Toldos'),
-(18, 'Metán'),
-(18, 'Molinos'),
-(18, 'Nazareno'),
-(18, 'Orán'),
-(18, 'Payogasta'),
-(18, 'Pichanal'),
-(18, 'Prof. S. Mazza'),
-(18, 'Río Piedras'),
-(18, 'Rivadavia Banda Norte'),
-(18, 'Rivadavia Banda Sur'),
-(18, 'Rosario de La Frontera'),
-(18, 'Rosario de Lerma'),
-(18, 'Saclantás'),
-(18, '18'),
-(18, 'San Antonio'),
-(18, 'San Carlos'),
-(18, 'San José De Metán'),
-(18, 'San Ramón'),
-(18, 'Santa Victoria E.'),
-(18, 'Santa Victoria O.'),
-(18, 'Tartagal'),
-(18, 'Tolar Grande'),
-(18, 'Urundel'),
-(18, 'Vaqueros'),
-(18, 'Villa San Lorenzo'),
-(19, 'Albardón'),
-(19, 'Angaco'),
-(19, 'Calingasta'),
-(19, 'Capital'),
-(19, 'Caucete'),
-(19, 'Chimbas'),
-(19, 'Iglesia'),
-(19, 'Jachal'),
-(19, 'Nueve de Julio'),
-(19, 'Pocito'),
-(19, 'Rawson'),
-(19, 'Rivadavia'),
-(19, '19'),
-(19, 'San Martín'),
-(19, 'Santa Lucía'),
-(19, 'Sarmiento'),
-(19, 'Ullum'),
-(19, 'Valle Fértil'),
-(19, 'Veinticinco de Mayo'),
-(19, 'Zonda'),
-(20, 'Alto Pelado'),
-(20, 'Alto Pencoso'),
-(20, 'Anchorena'),
-(20, 'Arizona'),
-(20, 'Bagual'),
-(20, 'Balde'),
-(20, 'Batavia'),
-(20, 'Beazley'),
-(20, 'Buena Esperanza'),
-(20, 'Candelaria'),
-(20, 'Capital'),
-(20, 'Carolina'),
-(20, 'Carpintería'),
-(20, 'Concarán'),
-(20, 'Cortaderas'),
-(20, 'El Morro'),
-(20, 'El Trapiche'),
-(20, 'El Volcán'),
-(20, 'Fortín El Patria'),
-(20, 'Fortuna'),
-(20, 'Fraga'),
-(20, 'Juan Jorba'),
-(20, 'Juan Llerena'),
-(20, 'Juana Koslay'),
-(20, 'Justo Daract'),
-(20, 'La Calera'),
-(20, 'La Florida'),
-(20, 'La Punilla'),
-(20, 'La Toma'),
-(20, 'Lafinur'),
-(20, 'Las Aguadas'),
-(20, 'Las Chacras'),
-(20, 'Las Lagunas'),
-(20, 'Las Vertientes'),
-(20, 'Lavaisse'),
-(20, 'Leandro N. Alem'),
-(20, 'Los Molles'),
-(20, 'Luján'),
-(20, 'Mercedes'),
-(20, 'Merlo'),
-(20, 'Naschel'),
-(20, 'Navia'),
-(20, 'Nogolí'),
-(20, 'Nueva Galia'),
-(20, 'Papagayos'),
-(20, 'Paso Grande'),
-(20, 'Potrero de Los Funes'),
-(20, 'Quines'),
-(20, 'Renca'),
-(20, 'Saladillo'),
-(20, 'San Francisco'),
-(20, 'San Gerónimo'),
-(20, 'San Martín'),
-(20, 'San Pablo'),
-(20, 'Santa Rosa de Conlara'),
-(20, 'Talita'),
-(20, 'Tilisarao'),
-(20, 'Unión'),
-(20, 'Villa de La Quebrada'),
-(20, 'Villa de Praga'),
-(20, 'Villa del Carmen'),
-(20, 'Villa Gral. Roca'),
-(20, 'Villa Larca'),
-(20, 'Villa Mercedes'),
-(20, 'Zanjitas'),
-(21, 'Calafate'),
-(21, 'Caleta Olivia'),
-(21, 'Cañadón Seco'),
-(21, 'Comandante Piedrabuena'),
-(21, 'El Calafate'),
-(21, 'El Chaltén'),
-(21, 'Gdor. Gregores'),
-(21, 'Hipólito Yrigoyen'),
-(21, 'Jaramillo'),
-(21, 'Koluel Kaike'),
-(21, 'Las Heras'),
-(21, 'Los Antiguos'),
-(21, 'Perito Moreno'),
-(21, 'Pico Truncado'),
-(21, 'Pto. Deseado'),
-(21, 'Pto. San Julián'),
-(21, 'Pto. 21'),
-(21, 'Río Cuarto'),
-(21, 'Río Gallegos'),
-(21, 'Río Turbio'),
-(21, 'Tres Lagos'),
-(21, 'Veintiocho De Noviembre'),
-(22, 'Aarón Castellanos'),
-(22, 'Acebal'),
-(22, 'Aguará Grande'),
-(22, 'Albarellos'),
-(22, 'Alcorta'),
-(22, 'Aldao'),
-(22, 'Alejandra'),
-(22, 'Álvarez'),
-(22, 'Ambrosetti'),
-(22, 'Amenábar'),
-(22, 'Angélica'),
-(22, 'Angeloni'),
-(22, 'Arequito'),
-(22, 'Arminda'),
-(22, 'Armstrong'),
-(22, 'Arocena'),
-(22, 'Arroyo Aguiar'),
-(22, 'Arroyo Ceibal'),
-(22, 'Arroyo Leyes'),
-(22, 'Arroyo Seco'),
-(22, 'Arrufó'),
-(22, 'Arteaga'),
-(22, 'Ataliva'),
-(22, 'Aurelia'),
-(22, 'Avellaneda'),
-(22, 'Barrancas'),
-(22, 'Bauer Y Sigel'),
-(22, 'Bella Italia'),
-(22, 'Berabevú'),
-(22, 'Berna'),
-(22, 'Bernardo de Irigoyen'),
-(22, 'Bigand'),
-(22, 'Bombal'),
-(22, 'Bouquet'),
-(22, 'Bustinza'),
-(22, 'Cabal'),
-(22, 'Cacique Ariacaiquin'),
-(22, 'Cafferata'),
-(22, 'Calchaquí'),
-(22, 'Campo Andino'),
-(22, 'Campo Piaggio'),
-(22, 'Cañada de Gómez'),
-(22, 'Cañada del Ucle'),
-(22, 'Cañada Rica'),
-(22, 'Cañada Rosquín'),
-(22, 'Candioti'),
-(22, 'Capital'),
-(22, 'Capitán Bermúdez'),
-(22, 'Capivara'),
-(22, 'Carcarañá'),
-(22, 'Carlos Pellegrini'),
-(22, 'Carmen'),
-(22, 'Carmen Del Sauce'),
-(22, 'Carreras'),
-(22, 'Carrizales'),
-(22, 'Casalegno'),
-(22, 'Casas'),
-(22, 'Casilda'),
-(22, 'Castelar'),
-(22, 'Castellanos'),
-(22, 'Cayastá'),
-(22, 'Cayastacito'),
-(22, 'Centeno'),
-(22, 'Cepeda'),
-(22, 'Ceres'),
-(22, 'Chabás'),
-(22, 'Chañar Ladeado'),
-(22, 'Chapuy'),
-(22, 'Chovet'),
-(22, 'Christophersen'),
-(22, 'Classon'),
-(22, 'Cnel. Arnold'),
-(22, 'Cnel. Bogado'),
-(22, 'Cnel. Dominguez'),
-(22, 'Cnel. Fraga'),
-(22, 'Col. Aldao'),
-(22, 'Col. Ana'),
-(22, 'Col. Belgrano'),
-(22, 'Col. Bicha'),
-(22, 'Col. Bigand'),
-(22, 'Col. Bossi'),
-(22, 'Col. Cavour'),
-(22, 'Col. Cello'),
-(22, 'Col. Dolores'),
-(22, 'Col. Dos Rosas'),
-(22, 'Col. Durán'),
-(22, 'Col. Iturraspe'),
-(22, 'Col. Margarita'),
-(22, 'Col. Mascias'),
-(22, 'Col. Raquel'),
-(22, 'Col. Rosa'),
-(22, 'Col. San José'),
-(22, 'Constanza'),
-(22, 'Coronda'),
-(22, 'Correa'),
-(22, 'Crispi'),
-(22, 'Cululú'),
-(22, 'Curupayti'),
-(22, 'Desvio Arijón'),
-(22, 'Diaz'),
-(22, 'Diego de Alvear'),
-(22, 'Egusquiza'),
-(22, 'El Arazá'),
-(22, 'El Rabón'),
-(22, 'El Sombrerito'),
-(22, 'El Trébol'),
-(22, 'Elisa'),
-(22, 'Elortondo'),
-(22, 'Emilia'),
-(22, 'Empalme San Carlos'),
-(22, 'Empalme Villa Constitucion'),
-(22, 'Esmeralda'),
-(22, 'Esperanza'),
-(22, 'Estación Alvear'),
-(22, 'Estacion Clucellas'),
-(22, 'Esteban Rams'),
-(22, 'Esther'),
-(22, 'Esustolia'),
-(22, 'Eusebia'),
-(22, 'Felicia'),
-(22, 'Fidela'),
-(22, 'Fighiera'),
-(22, 'Firmat'),
-(22, 'Florencia'),
-(22, 'Fortín Olmos'),
-(22, 'Franck'),
-(22, 'Fray Luis Beltrán'),
-(22, 'Frontera'),
-(22, 'Fuentes'),
-(22, 'Funes'),
-(22, 'Gaboto'),
-(22, 'Galisteo'),
-(22, 'Gálvez'),
-(22, 'Garabalto'),
-(22, 'Garibaldi'),
-(22, 'Gato Colorado'),
-(22, 'Gdor. Crespo'),
-(22, 'Gessler'),
-(22, 'Godoy'),
-(22, 'Golondrina'),
-(22, 'Gral. Gelly'),
-(22, 'Gral. Lagos'),
-(22, 'Granadero Baigorria'),
-(22, 'Gregoria Perez De Denis'),
-(22, 'Grutly'),
-(22, 'Guadalupe N.'),
-(22, 'Gödeken'),
-(22, 'Helvecia'),
-(22, 'Hersilia'),
-(22, 'Hipatía'),
-(22, 'Huanqueros'),
-(22, 'Hugentobler'),
-(22, 'Hughes'),
-(22, 'Humberto 1º'),
-(22, 'Humboldt'),
-(22, 'Ibarlucea'),
-(22, 'Ing. Chanourdie'),
-(22, 'Intiyaco'),
-(22, 'Ituzaingó'),
-(22, 'Jacinto L. Aráuz'),
-(22, 'Josefina');
-INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES
-(22, 'Juan B. Molina'),
-(22, 'Juan de Garay'),
-(22, 'Juncal'),
-(22, 'La Brava'),
-(22, 'La Cabral'),
-(22, 'La Camila'),
-(22, 'La Chispa'),
-(22, 'La Clara'),
-(22, 'La Criolla'),
-(22, 'La Gallareta'),
-(22, 'La Lucila'),
-(22, 'La Pelada'),
-(22, 'La Penca'),
-(22, 'La Rubia'),
-(22, 'La Sarita'),
-(22, 'La Vanguardia'),
-(22, 'Labordeboy'),
-(22, 'Laguna Paiva'),
-(22, 'Landeta'),
-(22, 'Lanteri'),
-(22, 'Larrechea'),
-(22, 'Las Avispas'),
-(22, 'Las Bandurrias'),
-(22, 'Las Garzas'),
-(22, 'Las Palmeras'),
-(22, 'Las Parejas'),
-(22, 'Las Petacas'),
-(22, 'Las Rosas'),
-(22, 'Las Toscas'),
-(22, 'Las Tunas'),
-(22, 'Lazzarino'),
-(22, 'Lehmann'),
-(22, 'Llambi Campbell'),
-(22, 'Logroño'),
-(22, 'Loma Alta'),
-(22, 'López'),
-(22, 'Los Amores'),
-(22, 'Los Cardos'),
-(22, 'Los Laureles'),
-(22, 'Los Molinos'),
-(22, 'Los Quirquinchos'),
-(22, 'Lucio V. Lopez'),
-(22, 'Luis Palacios'),
-(22, 'Ma. Juana'),
-(22, 'Ma. Luisa'),
-(22, 'Ma. Susana'),
-(22, 'Ma. Teresa'),
-(22, 'Maciel'),
-(22, 'Maggiolo'),
-(22, 'Malabrigo'),
-(22, 'Marcelino Escalada'),
-(22, 'Margarita'),
-(22, 'Matilde'),
-(22, 'Mauá'),
-(22, 'Máximo Paz'),
-(22, 'Melincué'),
-(22, 'Miguel Torres'),
-(22, 'Moisés Ville'),
-(22, 'Monigotes'),
-(22, 'Monje'),
-(22, 'Monte Obscuridad'),
-(22, 'Monte Vera'),
-(22, 'Montefiore'),
-(22, 'Montes de Oca'),
-(22, 'Murphy'),
-(22, 'Ñanducita'),
-(22, 'Naré'),
-(22, 'Nelson'),
-(22, 'Nicanor E. Molinas'),
-(22, 'Nuevo Torino'),
-(22, 'Oliveros'),
-(22, 'Palacios'),
-(22, 'Pavón'),
-(22, 'Pavón Arriba'),
-(22, 'Pedro Gómez Cello'),
-(22, 'Pérez'),
-(22, 'Peyrano'),
-(22, 'Piamonte'),
-(22, 'Pilar'),
-(22, 'Piñero'),
-(22, 'Plaza Clucellas'),
-(22, 'Portugalete'),
-(22, 'Pozo Borrado'),
-(22, 'Progreso'),
-(22, 'Providencia'),
-(22, 'Pte. Roca'),
-(22, 'Pueblo Andino'),
-(22, 'Pueblo Esther'),
-(22, 'Pueblo Gral. San Martín'),
-(22, 'Pueblo Irigoyen'),
-(22, 'Pueblo Marini'),
-(22, 'Pueblo Muñoz'),
-(22, 'Pueblo Uranga'),
-(22, 'Pujato'),
-(22, 'Pujato N.'),
-(22, 'Rafaela'),
-(22, 'Ramayón'),
-(22, 'Ramona'),
-(22, 'Reconquista'),
-(22, 'Recreo'),
-(22, 'Ricardone'),
-(22, 'Rivadavia'),
-(22, 'Roldán'),
-(22, 'Romang'),
-(22, 'Rosario'),
-(22, 'Rueda'),
-(22, 'Rufino'),
-(22, 'Sa Pereira'),
-(22, 'Saguier'),
-(22, 'Saladero M. Cabal'),
-(22, 'Salto Grande'),
-(22, 'San Agustín'),
-(22, 'San Antonio de Obligado'),
-(22, 'San Bernardo (N.J.)'),
-(22, 'San Bernardo (S.J.)'),
-(22, 'San Carlos Centro'),
-(22, 'San Carlos N.'),
-(22, 'San Carlos S.'),
-(22, 'San Cristóbal'),
-(22, 'San Eduardo'),
-(22, 'San Eugenio'),
-(22, 'San Fabián'),
-(22, 'San Fco. de Santa Fé'),
-(22, 'San Genaro'),
-(22, 'San Genaro N.'),
-(22, 'San Gregorio'),
-(22, 'San Guillermo'),
-(22, 'San Javier'),
-(22, 'San Jerónimo del Sauce'),
-(22, 'San Jerónimo N.'),
-(22, 'San Jerónimo S.'),
-(22, 'San Jorge'),
-(22, 'San José de La Esquina'),
-(22, 'San José del Rincón'),
-(22, 'San Justo'),
-(22, 'San Lorenzo'),
-(22, 'San Mariano'),
-(22, 'San Martín de Las Escobas'),
-(22, 'San Martín N.'),
-(22, 'San Vicente'),
-(22, 'Sancti Spititu'),
-(22, 'Sanford'),
-(22, 'Santo Domingo'),
-(22, 'Santo Tomé'),
-(22, 'Santurce'),
-(22, 'Sargento Cabral'),
-(22, 'Sarmiento'),
-(22, 'Sastre'),
-(22, 'Sauce Viejo'),
-(22, 'Serodino'),
-(22, 'Silva'),
-(22, 'Soldini'),
-(22, 'Soledad'),
-(22, 'Soutomayor'),
-(22, 'Sta. Clara de Buena Vista'),
-(22, 'Sta. Clara de Saguier'),
-(22, 'Sta. Isabel'),
-(22, 'Sta. Margarita'),
-(22, 'Sta. Maria Centro'),
-(22, 'Sta. María N.'),
-(22, 'Sta. Rosa'),
-(22, 'Sta. Teresa'),
-(22, 'Suardi'),
-(22, 'Sunchales'),
-(22, 'Susana'),
-(22, 'Tacuarendí'),
-(22, 'Tacural'),
-(22, 'Tartagal'),
-(22, 'Teodelina'),
-(22, 'Theobald'),
-(22, 'Timbúes'),
-(22, 'Toba'),
-(22, 'Tortugas'),
-(22, 'Tostado'),
-(22, 'Totoras'),
-(22, 'Traill'),
-(22, 'Venado Tuerto'),
-(22, 'Vera'),
-(22, 'Vera y Pintado'),
-(22, 'Videla'),
-(22, 'Vila'),
-(22, 'Villa Amelia'),
-(22, 'Villa Ana'),
-(22, 'Villa Cañas'),
-(22, 'Villa Constitución'),
-(22, 'Villa Eloísa'),
-(22, 'Villa Gdor. Gálvez'),
-(22, 'Villa Guillermina'),
-(22, 'Villa Minetti'),
-(22, 'Villa Mugueta'),
-(22, 'Villa Ocampo'),
-(22, 'Villa San José'),
-(22, 'Villa Saralegui'),
-(22, 'Villa Trinidad'),
-(22, 'Villada'),
-(22, 'Virginia'),
-(22, 'Wheelwright'),
-(22, 'Zavalla'),
-(22, 'Zenón Pereira'),
-(23, 'Añatuya'),
-(23, 'Árraga'),
-(23, 'Bandera'),
-(23, 'Bandera Bajada'),
-(23, 'Beltrán'),
-(23, 'Brea Pozo'),
-(23, 'Campo Gallo'),
-(23, 'Capital'),
-(23, 'Chilca Juliana'),
-(23, 'Choya'),
-(23, 'Clodomira'),
-(23, 'Col. Alpina'),
-(23, 'Col. Dora'),
-(23, 'Col. El Simbolar Robles'),
-(23, 'El Bobadal'),
-(23, 'El Charco'),
-(23, 'El Mojón'),
-(23, 'Estación Atamisqui'),
-(23, 'Estación Simbolar'),
-(23, 'Fernández'),
-(23, 'Fortín Inca'),
-(23, 'Frías'),
-(23, 'Garza'),
-(23, 'Gramilla'),
-(23, 'Guardia Escolta'),
-(23, 'Herrera'),
-(23, 'Icaño'),
-(23, 'Ing. Forres'),
-(23, 'La Banda'),
-(23, 'La Cañada'),
-(23, 'Laprida'),
-(23, 'Lavalle'),
-(23, 'Loreto'),
-(23, 'Los Juríes'),
-(23, 'Los Núñez'),
-(23, 'Los Pirpintos'),
-(23, 'Los Quiroga'),
-(23, 'Los Telares'),
-(23, 'Lugones'),
-(23, 'Malbrán'),
-(23, 'Matara'),
-(23, 'Medellín'),
-(23, 'Monte Quemado'),
-(23, 'Nueva Esperanza'),
-(23, 'Nueva Francia'),
-(23, 'Palo Negro'),
-(23, 'Pampa de Los Guanacos'),
-(23, 'Pinto'),
-(23, 'Pozo Hondo'),
-(23, 'Quimilí'),
-(23, 'Real Sayana'),
-(23, 'Sachayoj'),
-(23, 'San Pedro de Guasayán'),
-(23, 'Selva'),
-(23, 'Sol de Julio'),
-(23, 'Sumampa'),
-(23, 'Suncho Corral'),
-(23, 'Taboada'),
-(23, 'Tapso'),
-(23, 'Termas de Rio Hondo'),
-(23, 'Tintina'),
-(23, 'Tomas Young'),
-(23, 'Vilelas'),
-(23, 'Villa Atamisqui'),
-(23, 'Villa La Punta'),
-(23, 'Villa Ojo de Agua'),
-(23, 'Villa Río Hondo'),
-(23, 'Villa Salavina'),
-(23, 'Villa Unión'),
-(23, 'Vilmer'),
-(23, 'Weisburd'),
-(24, 'Río Grande'),
-(24, 'Tolhuin'),
-(24, 'Ushuaia'),
-(25, 'Acheral'),
-(25, 'Agua Dulce'),
-(25, 'Aguilares'),
-(25, 'Alderetes'),
-(25, 'Alpachiri'),
-(25, 'Alto Verde'),
-(25, 'Amaicha del Valle'),
-(25, 'Amberes'),
-(25, 'Ancajuli'),
-(25, 'Arcadia'),
-(25, 'Atahona'),
-(25, 'Banda del Río Sali'),
-(25, 'Bella Vista'),
-(25, 'Buena Vista'),
-(25, 'Burruyacú'),
-(25, 'Capitán Cáceres'),
-(25, 'Cevil Redondo'),
-(25, 'Choromoro'),
-(25, 'Ciudacita'),
-(25, 'Colalao del Valle'),
-(25, 'Colombres'),
-(25, 'Concepción'),
-(25, 'Delfín Gallo'),
-(25, 'El Bracho'),
-(25, 'El Cadillal'),
-(25, 'El Cercado'),
-(25, 'El Chañar'),
-(25, 'El Manantial'),
-(25, 'El Mojón'),
-(25, 'El Mollar'),
-(25, 'El Naranjito'),
-(25, 'El Naranjo'),
-(25, 'El Polear'),
-(25, 'El Puestito'),
-(25, 'El Sacrificio'),
-(25, 'El Timbó'),
-(25, 'Escaba'),
-(25, 'Esquina'),
-(25, 'Estación Aráoz'),
-(25, 'Famaillá'),
-(25, 'Gastone'),
-(25, 'Gdor. Garmendia'),
-(25, 'Gdor. Piedrabuena'),
-(25, 'Graneros'),
-(25, 'Huasa Pampa'),
-(25, 'J. B. Alberdi'),
-(25, 'La Cocha'),
-(25, 'La Esperanza'),
-(25, 'La Florida'),
-(25, 'La Ramada'),
-(25, 'La Trinidad'),
-(25, 'Lamadrid'),
-(25, 'Las Cejas'),
-(25, 'Las Talas'),
-(25, 'Las Talitas'),
-(25, 'Los Bulacio'),
-(25, 'Los Gómez'),
-(25, 'Los Nogales'),
-(25, 'Los Pereyra'),
-(25, 'Los Pérez'),
-(25, 'Los Puestos'),
-(25, 'Los Ralos'),
-(25, 'Los Sarmientos'),
-(25, 'Los Sosa'),
-(25, 'Lules'),
-(25, 'M. García Fernández'),
-(25, 'Manuela Pedraza'),
-(25, 'Medinas'),
-(25, 'Monte Bello'),
-(25, 'Monteagudo'),
-(25, 'Monteros'),
-(25, 'Padre Monti'),
-(25, 'Pampa Mayo'),
-(25, 'Quilmes'),
-(25, 'Raco'),
-(25, 'Ranchillos'),
-(25, 'Río Chico'),
-(25, 'Río Colorado'),
-(25, 'Río Seco'),
-(25, 'Rumi Punco'),
-(25, 'San Andrés'),
-(25, 'San Felipe'),
-(25, 'San Ignacio'),
-(25, 'San Javier'),
-(25, 'San José'),
-(25, 'San Miguel de 25'),
-(25, 'San Pedro'),
-(25, 'San Pedro de Colalao'),
-(25, 'Santa Rosa de Leales'),
-(25, 'Sgto. Moya'),
-(25, 'Siete de Abril'),
-(25, 'Simoca'),
-(25, 'Soldado Maldonado'),
-(25, 'Sta. Ana'),
-(25, 'Sta. Cruz'),
-(25, 'Sta. Lucía'),
-(25, 'Taco Ralo'),
-(25, 'Tafí del Valle'),
-(25, 'Tafí Viejo'),
-(25, 'Tapia'),
-(25, 'Teniente Berdina'),
-(25, 'Trancas'),
-(25, 'Villa Belgrano'),
-(25, 'Villa Benjamín Araoz'),
-(25, 'Villa Chiligasta'),
-(25, 'Villa de Leales'),
-(25, 'Villa Quinteros'),
-(25, 'Yánima'),
-(25, 'Yerba Buena'),
-(25, 'Yerba Buena (S)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, '25 de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, '3 de febrero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'A. Alsina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'A. Gonzáles Cháves')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Aguas Verdes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Alberti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Arrecifes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Ayacucho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Azul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Bahía Blanca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Balcarce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Baradero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Benito Juárez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Berisso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Bolívar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Bragado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Brandsen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Campana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Cañuelas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Capilla del Señor')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Capitán Sarmiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Carapachay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Carhue')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Cariló')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Carlos Casares')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Carlos Tejedor')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Carmen de Areco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Carmen de Patagones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Castelli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Chacabuco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Chascomús')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Chivilcoy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Colón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Coronel Dorrego')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Coronel Pringles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Coronel Rosales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Coronel Suarez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Costa Azul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Costa Chica')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Costa del Este')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Costa Esmeralda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Daireaux')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Darregueira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Del Viso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Dolores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Don Torcuato')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Ensenada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Escobar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Exaltación de la Cruz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Florentino Ameghino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Garín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Alvarado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Arenales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Guido')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Lamadrid')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Las Heras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Lavalle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Madariaga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Pacheco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Pinto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Pueyrredón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Rodríguez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Viamonte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Gral. Villegas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Guaminí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Guernica')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Hipólito Yrigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Ing. Maschwitz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Junín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'La Plata')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Laprida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Las Flores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Las Toninas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Leandro N. Alem')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Lincoln')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Loberia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Lobos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Los Cardales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Los Toldos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Lucila del Mar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Luján')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Magdalena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Maipú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Mar Chiquita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Mar de Ajó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Mar de las Pampas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Mar del Plata')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Mar del Tuyú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Marcos Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Mercedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Miramar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Monte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Monte Hermoso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Munro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Navarro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Necochea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Olavarría')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Partido de la Costa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pehuajó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pellegrini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pergamino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pigüé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pilar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pinamar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pinar del Sol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Polvorines')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Pte. Perón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Puán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Punta Indio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Ramallo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Rauch')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Rivadavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Rojas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Roque Pérez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Saavedra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Saladillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Salliqueló')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Salto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Andrés de Giles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Antonio de Areco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Antonio de Padua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Bernardo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Cayetano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Clemente del Tuyú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Nicolás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'San Vicente')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Santa Teresita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Suipacha')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Tandil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Tapalqué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Tordillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Tornquist')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Trenque Lauquen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Tres Lomas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Villa Gesell')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Villarino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(1, 'Zárate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, '11 de Septiembre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, '20 de Junio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, '25 de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Acassuso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Adrogué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Aldo Bonzi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Área Reserva Cinturón Ecológico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Avellaneda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Banfield')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Barrio Parque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Barrio Santa Teresita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Beccar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Bella Vista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Berazategui')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Bernal Este')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Bernal Oeste')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Billinghurst')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Boulogne')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Burzaco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Carapachay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Caseros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Castelar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Churruca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ciudad Evita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ciudad Madero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ciudadela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Claypole')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Crucecita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Dock Sud')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Don Bosco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Don Orione')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'El Jagüel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'El Libertador')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'El Palomar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'El Tala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'El Trébol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ezeiza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ezpeleta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Florencio Varela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Florida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Francisco Álvarez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Gerli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Glew')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'González Catán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Gral. Lamadrid')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Grand Bourg')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Gregorio de Laferrere')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Guillermo Enrique Hudson')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Haedo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Hurlingham')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ing. Sourdeaux')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Isidro Casanova')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ituzaingó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'José C. Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'José Ingenieros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'José Marmol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'La Lucila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'La Reja')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'La Tablada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Lanús')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Llavallol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Loma Hermosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Lomas de Zamora')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Lomas del Millón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Lomas del Mirador')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Longchamps')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Los Polvorines')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Luis Guillón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Malvinas Argentinas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Martín Coronado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Martínez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Merlo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ministro Rivadavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Monte Chingolo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Monte Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Moreno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Morón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Muñiz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Olivos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Pablo Nogués')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Pablo Podestá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Paso del Rey')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Pereyra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Piñeiro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Plátanos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Pontevedra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Quilmes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Rafael Calzada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Rafael Castillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ramos Mejía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Ranelagh')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Remedios de Escalada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Sáenz Peña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Antonio de Padua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Fernando')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Francisco Solano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Isidro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Justo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'San Miguel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Santos Lugares')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Sarandí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Sourigues')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Tapiales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Temperley')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Tigre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Tortuguitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Tristán Suárez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Trujui')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Turdera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Valentín Alsina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Vicente López')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Adelina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Ballester')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Bosch')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Caraza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Celina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Centenario')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Diamante')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Domínico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa España')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Fiorito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Guillermina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Insuperable')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa José León Suárez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa La Florida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Luzuriaga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Martelli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Obrera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Progreso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Raffo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Sarmiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Tesei')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Villa Udaondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Virrey del Pino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'Wilde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(2, 'William Morris')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Agronomía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Almagro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Balvanera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Barracas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Boca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Boedo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Caballito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Chacarita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Coghlan')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Colegiales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Constitución')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Flores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Floresta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'La Paternal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Liniers')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Mataderos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Monserrat')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Monte Castro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Nueva Pompeya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Núñez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Palermo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Parque Avellaneda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Parque Chacabuco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Parque Chas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Parque Patricios')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Puerto Madero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Recoleta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Retiro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Saavedra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'San Cristóbal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'San Nicolás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'San Telmo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Vélez Sársfield')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Versalles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Crespo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa del Parque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Devoto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Gral. Mitre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Lugano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Luro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Ortúzar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Pueyrredón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Real')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Riachuelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Santa Rita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Soldati')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(3, 'Villa Urquiza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Aconquija')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Ancasti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Andalgalá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Antofagasta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Belén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Capayán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, '4')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Corral Quemado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'El Alto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'El Rodeo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'F.Mamerto Esquiú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Fiambalá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Hualfín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Huillapima')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Icaño')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'La Puerta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Las Juntas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Londres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Los Altos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Los Varela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Mutquín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Paclín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Poman')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Pozo de La Piedra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Puerta de Corral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Puerta San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Recreo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'S.F.V de 4')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'San Fernando')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'San Fernando del Valle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Santa María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Santa Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Saujil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Tapso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Tinogasta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Valle Viejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(4, 'Villa Vil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Aviá Teraí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Barranqueras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Basail')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Campo Largo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Capitán Solari')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Charadai')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Charata')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Chorotis')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Ciervo Petiso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Cnel. Du Graty')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Col. Benítez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Col. Elisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Col. Popular')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Colonias Unidas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Concepción')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Corzuela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Cote Lai')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'El Sauzalito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Enrique Urien')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Fontana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Fte. Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Gancedo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Gral. Capdevila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Gral. Pinero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Gral. San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Gral. Vedia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Hermoso Campo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'I. del Cerrito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'J.J. Castelli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'La Clotilde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'La Eduvigis')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'La Escondida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'La Leonesa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'La Tigra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'La Verde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Laguna Blanca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Laguna Limpia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Lapachito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Las Breñas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Las Garcitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Las Palmas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Los Frentones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Machagai')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Makallé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Margarita Belén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Miraflores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Misión N. Pompeya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Napenay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pampa Almirón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pampa del Indio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pampa del Infierno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pdcia. de La Plaza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pdcia. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pdcia. Roque Sáenz Peña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pto. Bermejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Pto. Eva Perón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Puero Tirol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Puerto Vilelas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Quitilipi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Resistencia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Sáenz Peña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Samuhú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'San Bernardo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Santa Sylvina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Taco Pozo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Tres Isletas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Villa Ángela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Villa Berthet')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(5, 'Villa R. Bermejito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Aldea Apeleg')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Aldea Beleiro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Aldea Epulef')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Alto Río Sengerr')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Buen Pasto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Camarones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Carrenleufú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Cholila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Co. Centinela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Colan Conhué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Comodoro Rivadavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Corcovado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Cushamen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Dique F. Ameghino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Dolavón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Dr. R. Rojas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'El Hoyo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'El Maitén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Epuyén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Esquel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Facundo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Gaimán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Gan Gan')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Gastre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Gdor. Costa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Gualjaina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'J. de San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Lago Blanco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Lago Puelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Lagunita Salada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Las Plumas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Los Altares')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Paso de los Indios')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Paso del Sapo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Pto. Madryn')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Pto. Pirámides')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Rada Tilly')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Rawson')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Río Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Río Pico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Sarmiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Tecka')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Telsen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Trelew')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Trevelin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(6, 'Veintiocho de Julio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Achiras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Adelia Maria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Agua de Oro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alcira Gigena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Aldea Santa Maria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alejandro Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alejo Ledesma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alicia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Almafuerte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alpa Corral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alta Gracia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alto Alegre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Alto de Los Quebrachos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Altos de Chipion')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Amboy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ambul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ana Zumaran')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Anisacate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Arguello')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Arias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Arroyito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Arroyo Algodon')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Arroyo Cabral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Arroyo Los Patos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Assunta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Atahona')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ausonia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Avellaneda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ballesteros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ballesteros Sud')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Balnearia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Bañado de Soto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Bell Ville')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Bengolea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Benjamin Gould')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Berrotaran')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Bialet Masse')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Bouwer')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Brinkmann')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Buchardo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Bulnes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cabalango')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Calamuchita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Calchin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Calchin Oeste')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Calmayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Camilo Aldao')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Caminiaga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cañada de Luque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cañada de Machado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cañada de Rio Pinto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cañada del Sauce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Canals')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Candelaria Sud')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Capilla de Remedios')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Capilla de Siton')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Capilla del Carmen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Capilla del Monte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Capitan Gral B. O´Higgins')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Carnerillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Carrilobo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Casa Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cavanagh')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cerro Colorado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chaján')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chalacea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chañar Viejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chancaní')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Charbonier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Charras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chazón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chilibroste')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chucul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chuña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Chuña Huasi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Churqui Cañada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cienaga Del Coro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cintra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Almada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Anita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Barge')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Bismark')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Bremen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Caroya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Italiana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Iturraspe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Las Cuatro Esquinas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Las Pichanas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Marina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Prosperidad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. San Bartolome')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Tirolesa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Vicente Aguero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Videla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Vignaud')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Col. Waltelina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Colazo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Comechingones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Conlara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Copacabana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, '7')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Coronel Baigorria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Coronel Moldes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Corral de Bustos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Corralito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cosquín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Costa Sacate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cruz Alta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cruz de Caña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cruz del Eje')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Cuesta Blanca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Dean Funes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Del Campillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Despeñaderos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Devoto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Diego de Rojas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Dique Chico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Arañado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Brete')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Chacho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Crispín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Fortín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Manzano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Rastreador')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Rodeo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'El Tío')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Elena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Embalse')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Esquina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Estación Gral. Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Estación Juárez Celman')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Estancia de Guadalupe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Estancia Vieja')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Etruria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Eufrasio Loza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Falda del Carmen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Freyre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gral. Baldissera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gral. Cabrera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gral. Deheza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gral. Fotheringham')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gral. Levalle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gral. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Guanaco Muerto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Guasapampa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Guatimozin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Gutenberg')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Hernando')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Huanchillas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Huerta Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Huinca Renanco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Idiazabal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Impira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Inriville')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Isla Verde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Italó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'James Craik')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Jesús María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Jovita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Justiniano Posse')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Km 658')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'L. V. Mansilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Batea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Calera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Carlota')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Carolina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Cautiva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Cesira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Cruz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Cumbre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Cumbrecita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Falda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Francia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Granja')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Higuera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Laguna')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Paisanita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Palestina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, '12')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Paquita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Para')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Playa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Playosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Población')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Posta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Puerta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Quinta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Rancherita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Rinconada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Serranita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'La Tordilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Laborde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Laboulaye')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Laguna Larga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Acequias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Albahacas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Arrias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Bajadas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Caleras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Calles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Cañadas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Gramillas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Higueras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Isletillas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Junturas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Palmas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Peñas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Peñas Sud')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Perdices')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Playas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Rabonas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Saladas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Tapias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Varas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Varillas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Las Vertientes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Leguizamón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Leones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Cedros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Cerrillos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Chañaritos (C.E)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Chanaritos (R.S)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Cisnes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Cocos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Cóndores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Hornillos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Hoyos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Mistoles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Molinos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Pozos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Reartes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Surgentes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Talares')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Los Zorros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Lozada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Luca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Luque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Luyaba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Malagueño')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Malena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Malvinas Argentinas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Manfredi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Maquinista Gallini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Marcos Juárez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Marull')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Matorrales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mattaldi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mayu Sumaj')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Media Naranja')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Melo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mendiolaza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mi Granja')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mina Clavero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Miramar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Morrison')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Morteros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mte. Buey')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mte. Cristo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mte. De Los Gauchos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mte. Leña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mte. Maíz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Mte. Ralo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Nicolás Bruzone')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Noetinger')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Nono')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Nueva 7')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Obispo Trejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Olaeta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Oliva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Olivares San Nicolás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Onagolty')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Oncativo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ordoñez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pacheco De Melo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pampayasta N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pampayasta S.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Panaholma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pascanas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pasco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Paso del Durazno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Paso Viejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pilar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pincén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Piquillín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Plaza de Mercedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Plaza Luxardo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Porteña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Potrero de Garay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pozo del Molle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pozo Nuevo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Pueblo Italiano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Puesto de Castro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Punta del Agua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Quebracho Herrado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Quilino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Rafael García')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ranqueles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Rayo Cortado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Reducción')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Rincón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río Bamba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río Ceballos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río Cuarto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río de Los Sauces')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río Primero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río Segundo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Río Tercero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Rosales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Rosario del Saladillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sacanta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sagrada Familia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Saira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Saladillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Saldán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Salsacate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Salsipuedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sampacho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Agustín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Antonio de Arredondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Antonio de Litín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Basilio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Carlos Minas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Clemente')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Esteban')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Francisco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Ignacio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Javier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Jerónimo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Joaquín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San José de La Dormida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San José de Las Salinas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Lorenzo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Marcos Sierras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Marcos Sud')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Pedro N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Roque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'San Vicente')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Santa Catalina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Santa Elena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Santa Eufemia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Santa Maria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sarmiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Saturnino M.Laspiur')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sauce Arriba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sebastián Elcano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Seeber')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Segunda Usina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Serrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Serrezuela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sgo. Temple')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Silvio Pellico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Simbolar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sinsacate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sta. Rosa de Calamuchita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Sta. Rosa de Río Primero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Suco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tala Cañada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tala Huasi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Talaini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tancacha')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tanti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ticino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tinoco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tío Pujio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Toledo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Toro Pujio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tosno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tosquita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tránsito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tuclame')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Tutti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ucacha')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Unquillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Valle de Anisacate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Valle Hermoso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Vélez Sarfield')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Viamonte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Vicuña Mackenna')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Allende')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Amancay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Ascasubi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Candelaria N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Carlos Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Cerro Azul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Ciudad de América')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Ciudad Pque Los Reartes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Concepción del Tío')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Cura Brochero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa de Las Rosas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa de María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa de Pocho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa de Soto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa del Dique')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa del Prado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa del Rosario')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa del Totoral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Dolores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa El Chancay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Elisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Flor Serrana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Fontana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Giardino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Gral. Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Gutierrez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Huidobro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa La Bolsa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Los Aromos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Los Patos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Nueva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Pque. Santa Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Pque. Siquiman')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Quillinzo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Rossi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Rumipal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa San Esteban')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa San Isidro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa 21')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Sarmiento (G.R)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Sarmiento (S.A)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Tulumba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Valeria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Villa Yacanto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Washington')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Wenceslao Escalante')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(7, 'Ycho Cruz Sierras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Bella Vista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Berón de Astrada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Bonpland')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Caá Cati')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Chavarría')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Col. C. Pellegrini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Col. Libertad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Col. Liebig')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Col. Sta Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Concepción')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Cruz de Los Milagros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Curuzú-Cuatiá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Empedrado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Esquina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Estación Torrent')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Felipe Yofré')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Garruchos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Gdor. Agrónomo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Gdor. Martínez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Goya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Guaviravi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Herlitzka')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Ita-Ibate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Itatí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Ituzaingó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'José Rafael Gómez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Juan Pujol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'La Cruz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Lavalle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Lomas de Vallejos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Loreto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Mariano I. Loza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Mburucuyá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Mercedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Mocoretá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Mte. Caseros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Nueve de Julio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Palmar Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Parada Pucheta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Paso de La Patria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Paso de Los Libres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Pedro R. Fernandez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Perugorría')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Pueblo Libertador')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Ramada Paso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Riachuelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Saladas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'San Antonio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'San Carlos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'San Cosme')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'San Lorenzo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, '20 del Palmar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'San Miguel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'San Roque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Santa Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Santa Lucía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Santo Tomé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Sauce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Tabay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Tapebicuá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Tatacua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Virasoro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Yapeyú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(8, 'Yataití Calle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Alarcón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Alcaraz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Alcaraz N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Alcaraz S.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Asunción')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Brasilera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Elgenfeld')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Grapschental')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Ma. Luisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Protestante')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Salto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea San Antonio (G)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea San Antonio (P)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea 19')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea San Miguel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea San Rafael')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Spatzenkutter')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Sta. María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Sta. Rosa');
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aldea Valle María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Altamirano Sur')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Antelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Antonio Tomás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Aranguren')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo Barú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo Burgos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo Clé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo Corralito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo del Medio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo Maturrango')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Arroyo Palo Seco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Banderas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Basavilbaso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Betbeder')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Bovril')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Caseros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Ceibas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Cerrito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Chajarí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Chilcas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Clodomiro Ledesma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Alemana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Avellaneda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Avigdor')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Ayuí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Baylina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Carrasco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Celina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Cerrito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Crespo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Elia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Ensayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Gral. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. La Argentina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Merou')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Oficial Nª3')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Oficial Nº13')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Oficial Nº14')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Oficial Nº5')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Reffino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Tunas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Col. Viraró')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Colón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Concepción del Uruguay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Concordia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Conscripto Bernardi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Costa Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Costa San Antonio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Costa Uruguay N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Costa Uruguay S.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Crespo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Crucecitas 3ª')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Crucecitas 7ª')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Crucecitas 8ª')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Cuchilla Redonda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Curtiembre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Diamante')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito 6º')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Chañar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Chiqueros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Cuarto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Diego López')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Pajonal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Sauce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Tala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Distrito Talitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Don Cristóbal 1ª Sección')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Don Cristóbal 2ª Sección')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Durazno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Cimarrón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Gramillal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Palenque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Pingo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Quebracho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Redomón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'El Solar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Enrique Carbo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, '9')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Espinillo N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estación Campos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estación Escriña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estación Lazo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estación Raíces')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estación Yerúa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estancia Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estancia Líbaros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estancia Racedo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estancia Solá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estancia Yuquerí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Estaquitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Faustino M. Parera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Febre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Federación')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Federal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gdor. Echagüe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gdor. Mansilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gilbert')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'González Calderón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gral. Almada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gral. Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gral. Campos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gral. Galarza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gral. Ramírez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gualeguay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gualeguaychú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Gualeguaycito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Guardamonte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Hambis')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Hasenkamp')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Hernandarias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Hernández')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Herrera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Hinojal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Hocker')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Ing. Sajaroff')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Irazusta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Isletas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'J.J De Urquiza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Jubileo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Clarita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Criolla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Esmeralda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Florida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Fraternidad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Hierra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Ollita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Picada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Providencia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'La Verbena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Laguna Benítez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Larroque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Cuevas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Garzas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Guachas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Mercedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Moscas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Mulitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Las Toscas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Laurencena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Libertador San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Loma Limpia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Los Ceibos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Los Charruas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Los Conquistadores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Lucas González')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Lucas N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Lucas S. 1ª')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Lucas S. 2ª')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Maciá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'María Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'María Grande 2ª')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Médanos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Mojones N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Mojones S.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Molino Doll')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Monte Redondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Montoya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Mulas Grandes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Ñancay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Nogoyá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Nueva Escocia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Nueva Vizcaya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Ombú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Oro Verde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Paraná')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pasaje Guayaquil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pasaje Las Tunas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Paso de La Arena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Paso de La Laguna')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Paso de Las Piedras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Paso Duarte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pastor Britos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pedernal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Perdices')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Picada Berón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Piedras Blancas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Primer Distrito Cuchilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Primero de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pronunciamiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pto. Algarrobo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pto. Ibicuy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pueblo Brugo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pueblo Cazes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pueblo Gral. Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Pueblo Liebig')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Puerto Yeruá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Punta del Monte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Quebracho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Quinto Distrito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Raices Oeste')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Rincón de Nogoyá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Rincón del Cinto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Rincón del Doll')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Rincón del Gato')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Rocamora')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Rosario del Tala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Benito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Cipriano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Ernesto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Gustavo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Jaime')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San José de Feliciano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Justo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Marcial')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Ramírez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Ramón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Roque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Salvador')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'San Víctor')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Santa Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Santa Anita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Santa Elena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Santa Lucía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Santa Luisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Sauce de Luna')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Sauce Montrull')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Sauce Pinto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Sauce Sur')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Seguí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Sir Leonard')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Sosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Tabossi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Tezanos Pinto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Ubajay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Urdinarrain')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Veinte de Septiembre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Viale')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Victoria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Clara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa del Rosario')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Domínguez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Elisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Fontana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Gdor. Etchevehere')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Mantero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Paranacito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villa Urquiza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Villaguay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Walter Moss')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Yacaré')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(9, 'Yeso Oeste')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Buena Vista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Clorinda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Col. Pastoril')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Cte. Fontana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'El Colorado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'El Espinillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Estanislao Del Campo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, '10')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Fortín Lugones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Gral. Lucio V. Mansilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Gral. Manuel Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Gral. Mosconi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Gran Guardia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Herradura')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Ibarreta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Ing. Juárez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Laguna Blanca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Laguna Naick Neck')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Laguna Yema')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Las Lomitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Los Chiriguanos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Mayor V. Villafañe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Misión San Fco.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Palo Santo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Pirané')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Pozo del Maza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Riacho He-He')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'San Hilario')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'San Martín II')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Siete Palmas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Subteniente Perín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Tres Lagunas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Villa Dos Trece')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Villa Escolar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(10, 'Villa Gral. Güemes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Abdon Castro Tolay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Abra Pampa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Abralaite')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Aguas Calientes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Arrayanal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Barrios')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Caimancito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Calilegua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Cangrejillos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Caspala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Catuá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Cieneguillas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Coranzulli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Cusi-Cusi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'El Aguilar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'El Carmen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'El Cóndor')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'El Fuerte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'El Piquete')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'El Talar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Fraile Pintado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Hipólito Yrigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Huacalera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Humahuaca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'La Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'La Mendieta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'La Quiaca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Ledesma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Libertador Gral. San Martin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Maimara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Mina Pirquitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Monterrico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Palma Sola')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Palpalá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Pampa Blanca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Pampichuela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Perico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Puesto del Marqués')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Puesto Viejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Pumahuasi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Purmamarca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Rinconada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Rodeitos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Rosario de Río Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'San Antonio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'San Francisco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'San Rafael')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'San Salvador')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Santa Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Santa Catalina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Santa Clara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Susques')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Tilcara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Tres Cruces')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Tumbaya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Valle Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Vinalito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Volcán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Yala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Yaví')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(11, 'Yuto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Abramo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Adolfo Van Praet')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Agustoni')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Algarrobo del Aguila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Alpachiri')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Alta Italia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Anguil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Arata')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Ataliva Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Bernardo Larroude')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Bernasconi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Caleufú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Carro Quemado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Catriló')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Ceballos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Chacharramendi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Col. Barón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Col. Santa María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Conhelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Coronel Hilario Lagos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Cuchillo-Có')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Doblas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Dorila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Eduardo Castex')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Embajador Martini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Falucho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Gral. Acha')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Gral. Manuel Campos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Gral. Pico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Guatraché')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Ing. Luiggi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Intendente Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Jacinto Arauz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'La Adela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'La Humada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'La Maruja')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, '12')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'La Reforma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Limay Mahuida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Lonquimay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Loventuel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Luan Toro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Macachín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Maisonnave')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Mauricio Mayer')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Metileo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Miguel Cané')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Miguel Riglos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Monte Nievas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Parera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Perú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Pichi-Huinca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Puelches')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Puelén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Quehue')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Quemú Quemú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Quetrequén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Rancul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Realicó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Relmo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Rolón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Rucanelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Sarah')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Speluzzi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Sta. Isabel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Sta. Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Sta. Teresa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Telén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Toay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Tomas M. de Anchorena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Trenel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Unanue')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Uriburu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Veinticinco de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Vertiz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Victorica')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Villa Mirasol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(12, 'Winifreda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Arauco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Castro Barros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Chamical')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Chilecito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Coronel F. Varela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Famatina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Gral. A.V.Peñaloza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Gral. Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Gral. J.F. Quiroga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Gral. Lamadrid')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Gral. Ocampo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Gral. San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Independencia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Rosario Penaloza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'San Blas de Los Sauces')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Sanagasta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(13, 'Vinchina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Chacras de Coria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Dorrego')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Gllen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Godoy Cruz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Gral. Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Guaymallén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Junín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'La Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Las Heras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Lavalle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Luján')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Luján De Cuyo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Maipú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Malargüe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Rivadavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'San Carlos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'San Rafael')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Sta. Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Tunuyán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Tupungato')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(14, 'Villa Nueva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Alba Posse')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Almafuerte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Apóstoles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Aristóbulo Del Valle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Arroyo Del Medio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Azara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Bdo. De Irigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Bonpland')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Caá Yari')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Campo Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Campo Ramón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Campo Viera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Candelaria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Capioví')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Caraguatay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Cdte. Guacurarí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Cerro Azul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Cerro Corá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Col. Alberdi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Col. Aurora')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Col. Delicia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Col. Polana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Col. Victoria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Col. Wanda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Concepción De La Sierra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Corpus')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Dos Arroyos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Dos de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'El Alcázar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'El Dorado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'El Soberbio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'F. Ameghino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Fachinal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Garuhapé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Garupá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Gdor. López')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Gdor. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Gral. Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Gral. Urquiza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Guaraní')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'H. Yrigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Iguazú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Itacaruaré')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Jardín América')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Leandro N. Alem')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Libertad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Loreto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Los Helechos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Mártires')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, '15')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Mojón Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Montecarlo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Nueve de Julio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Oberá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Olegario V. Andrade')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Panambí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Posadas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Profundidad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Pto. Iguazú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Pto. Leoni')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Pto. Piray')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Pto. Rico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Ruiz de Montoya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San Antonio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San Ignacio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San Javier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'San Vicente')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Santiago De Liniers')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Santo Pipo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Sta. Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Sta. María')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Tres Capones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Veinticinco de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(15, 'Wanda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Aguada San Roque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Aluminé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Andacollo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Añelo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Bajada del Agrio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Barrancas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Buta Ranquil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Caviahué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Centenario')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Chorriaca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Chos Malal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Cipolletti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Covunco Abajo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Coyuco Cochico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Cutral Có')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'El Cholar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'El Huecú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'El Sauce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Guañacos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Huinganco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Las Coloradas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Las Lajas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Las Ovejas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Loncopué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Los Catutos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Los Chihuidos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Los Miches')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Manzano Amargo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, '16')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Octavio Pico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Paso Aguerre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Picún Leufú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Piedra del Aguila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Pilo Lil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Plaza Huincul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Plottier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Quili Malal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Ramón Castro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Rincón de Los Sauces')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'San Martín de Los Andes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'San Patricio del Chañar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Santo Tomás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Sauzal Bonito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Senillosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Taquimilán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Tricao Malal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Varvarco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa Curí Leuvu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa del Nahueve')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa del Puente Picún Leuvú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa El Chocón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa La Angostura')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa Pehuenia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Villa Traful')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Vista Alegre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(16, 'Zapala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Aguada Cecilio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Aguada de Guerra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Allén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Arroyo de La Ventana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Arroyo Los Berros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Bariloche')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Calte. Cordero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Campo Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Catriel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Cerro Policía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Cervantes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Chelforo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Chimpay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Chinchinales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Chipauquil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Choele Choel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Cinco Saltos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Cipolletti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Clemente Onelli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Colán Conhue')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Comallo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Comicó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Cona Niyeu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Coronel Belisle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Cubanea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Darwin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Dina Huapi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'El Bolsón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'El Caín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'El Manso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Gral. Conesa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Gral. Enrique Godoy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Gral. Fernandez Oro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Gral. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Guardia Mitre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Ing. Huergo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Ing. Jacobacci')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Laguna Blanca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Lamarque')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Las Grutas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Los Menucos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Luis Beltrán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Mainqué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Mamuel Choique')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Maquinchao')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Mencué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Mtro. Ramos Mexia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Nahuel Niyeu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Naupa Huen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Ñorquinco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Ojos de Agua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Paso de Agua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Paso Flores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Peñas Blancas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Pichi Mahuida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Pilcaniyeu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Pomona')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Prahuaniyeu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Rincón Treneta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Río Chico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Río Colorado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'San Antonio Oeste')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'San Javier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Sierra Colorada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Sierra Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Sierra Pailemán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Valcheta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Valle Azul')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Viedma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Villa Llanquín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Villa Mascardi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Villa Regina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(17, 'Yaminué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'A. Saravia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Aguaray')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Angastaco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Animaná')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Cachi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Cafayate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Campo Quijano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Campo Santo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Cerrillos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Chicoana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Col. Sta. Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Coronel Moldes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Bordo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Carril')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Galpón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Jardín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Potrero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Quebrachal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'El Tala')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Embarcación')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Gral. Ballivian')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Gral. Güemes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Gral. Mosconi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Gral. Pizarro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Guachipas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Hipólito Yrigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Iruyá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Isla De Cañas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'J. V. Gonzalez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'La Caldera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'La Candelaria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'La Merced')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'La Poma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'La Viña')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Las Lajitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Los Toldos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Metán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Molinos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Nazareno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Orán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Payogasta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Pichanal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Prof. S. Mazza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Río Piedras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Rivadavia Banda Norte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Rivadavia Banda Sur')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Rosario de La Frontera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Rosario de Lerma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Saclantás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, '18')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'San Antonio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'San Carlos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'San José De Metán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'San Ramón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Santa Victoria E.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Santa Victoria O.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Tartagal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Tolar Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Urundel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Vaqueros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(18, 'Villa San Lorenzo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Albardón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Angaco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Calingasta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Caucete')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Chimbas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Iglesia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Jachal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Nueve de Julio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Pocito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Rawson')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Rivadavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, '19')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Santa Lucía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Sarmiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Ullum')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Valle Fértil')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Veinticinco de Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(19, 'Zonda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Alto Pelado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Alto Pencoso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Anchorena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Arizona')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Bagual')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Balde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Batavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Beazley')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Buena Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Candelaria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Carolina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Carpintería')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Concarán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Cortaderas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'El Morro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'El Trapiche')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'El Volcán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Fortín El Patria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Fortuna')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Fraga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Juan Jorba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Juan Llerena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Juana Koslay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Justo Daract')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'La Calera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'La Florida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'La Punilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'La Toma')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Lafinur')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Las Aguadas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Las Chacras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Las Lagunas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Las Vertientes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Lavaisse')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Leandro N. Alem')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Los Molles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Luján')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Mercedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Merlo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Naschel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Navia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Nogolí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Nueva Galia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Papagayos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Paso Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Potrero de Los Funes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Quines')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Renca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Saladillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'San Francisco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'San Gerónimo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'San Pablo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Santa Rosa de Conlara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Talita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Tilisarao')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Unión')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Villa de La Quebrada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Villa de Praga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Villa del Carmen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Villa Gral. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Villa Larca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Villa Mercedes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(20, 'Zanjitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Calafate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Caleta Olivia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Cañadón Seco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Comandante Piedrabuena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'El Calafate')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'El Chaltén')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Gdor. Gregores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Hipólito Yrigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Jaramillo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Koluel Kaike')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Las Heras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Los Antiguos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Perito Moreno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Pico Truncado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Pto. Deseado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Pto. San Julián')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Pto. 21')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Río Cuarto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Río Gallegos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Río Turbio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Tres Lagos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(21, 'Veintiocho De Noviembre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Aarón Castellanos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Acebal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Aguará Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Albarellos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Alcorta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Aldao')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Alejandra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Álvarez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ambrosetti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Amenábar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Angélica')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Angeloni')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arequito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arminda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Armstrong')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arocena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arroyo Aguiar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arroyo Ceibal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arroyo Leyes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arroyo Seco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arrufó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Arteaga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ataliva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Aurelia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Avellaneda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Barrancas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bauer Y Sigel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bella Italia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Berabevú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Berna')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bernardo de Irigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bigand')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bombal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bouquet')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Bustinza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cabal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cacique Ariacaiquin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cafferata')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Calchaquí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Campo Andino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Campo Piaggio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cañada de Gómez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cañada del Ucle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cañada Rica')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cañada Rosquín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Candioti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Capitán Bermúdez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Capivara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Carcarañá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Carlos Pellegrini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Carmen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Carmen Del Sauce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Carreras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Carrizales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Casalegno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Casas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Casilda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Castelar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Castellanos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cayastá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cayastacito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Centeno')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cepeda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ceres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Chabás')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Chañar Ladeado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Chapuy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Chovet')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Christophersen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Classon')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cnel. Arnold')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cnel. Bogado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cnel. Dominguez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cnel. Fraga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Aldao')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Bicha')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Bigand')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Bossi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Cavour')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Cello')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Dolores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Dos Rosas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Durán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Iturraspe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Margarita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Mascias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Raquel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Col. San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Constanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Coronda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Correa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Crispi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Cululú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Curupayti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Desvio Arijón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Diaz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Diego de Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Egusquiza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'El Arazá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'El Rabón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'El Sombrerito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'El Trébol')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Elisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Elortondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Emilia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Empalme San Carlos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Empalme Villa Constitucion')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Esmeralda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Estación Alvear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Estacion Clucellas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Esteban Rams')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Esther')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Esustolia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Eusebia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Felicia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Fidela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Fighiera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Firmat')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Florencia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Fortín Olmos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Franck')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Fray Luis Beltrán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Frontera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Fuentes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Funes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gaboto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Galisteo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gálvez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Garabalto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Garibaldi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gato Colorado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gdor. Crespo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gessler')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Godoy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Golondrina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gral. Gelly')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gral. Lagos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Granadero Baigorria')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gregoria Perez De Denis')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Grutly')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Guadalupe N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Gödeken')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Helvecia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Hersilia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Hipatía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Huanqueros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Hugentobler')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Hughes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Humberto 1º')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Humboldt')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ibarlucea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ing. Chanourdie')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Intiyaco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ituzaingó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Jacinto L. Aráuz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Josefina');
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Juan B. Molina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Juan de Garay')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Juncal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Brava')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Cabral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Camila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Chispa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Clara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Criolla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Gallareta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Lucila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Pelada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Penca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Rubia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Sarita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'La Vanguardia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Labordeboy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Laguna Paiva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Landeta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Lanteri')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Larrechea')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Avispas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Bandurrias')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Garzas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Palmeras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Parejas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Petacas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Rosas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Toscas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Las Tunas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Lazzarino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Lehmann')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Llambi Campbell')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Logroño')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Loma Alta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'López')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Los Amores')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Los Cardos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Los Laureles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Los Molinos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Los Quirquinchos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Lucio V. Lopez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Luis Palacios')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ma. Juana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ma. Luisa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ma. Susana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ma. Teresa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Maciel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Maggiolo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Malabrigo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Marcelino Escalada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Margarita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Matilde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Mauá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Máximo Paz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Melincué')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Miguel Torres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Moisés Ville')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Monigotes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Monje')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Monte Obscuridad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Monte Vera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Montefiore')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Montes de Oca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Murphy')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ñanducita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Naré')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Nelson')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Nicanor E. Molinas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Nuevo Torino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Oliveros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Palacios')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pavón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pavón Arriba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pedro Gómez Cello')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pérez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Peyrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Piamonte')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pilar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Piñero')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Plaza Clucellas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Portugalete')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pozo Borrado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Progreso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Providencia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pte. Roca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Andino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Esther')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Gral. San Martín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Irigoyen')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Marini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Muñoz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pueblo Uranga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pujato')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Pujato N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Rafaela')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ramayón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ramona')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Reconquista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Recreo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Ricardone')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Rivadavia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Roldán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Romang')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Rosario')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Rueda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Rufino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sa Pereira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Saguier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Saladero M. Cabal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Salto Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Agustín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Antonio de Obligado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Bernardo (N.J.)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Bernardo (S.J.)')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Carlos Centro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Carlos N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Carlos S.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Cristóbal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Eduardo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Eugenio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Fabián')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Fco. de Santa Fé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Genaro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Genaro N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Gregorio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Guillermo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Javier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Jerónimo del Sauce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Jerónimo N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Jerónimo S.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Jorge')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San José de La Esquina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San José del Rincón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Justo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Lorenzo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Mariano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Martín de Las Escobas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Martín N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'San Vicente')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sancti Spititu')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sanford')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Santo Domingo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Santo Tomé')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Santurce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sargento Cabral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sarmiento')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sastre')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sauce Viejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Serodino')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Silva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Soldini')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Soledad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Soutomayor')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Clara de Buena Vista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Clara de Saguier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Isabel')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Margarita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Maria Centro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. María N.')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Rosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sta. Teresa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Suardi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Sunchales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Susana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Tacuarendí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Tacural')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Tartagal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Teodelina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Theobald')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Timbúes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Toba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Tortugas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Tostado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Totoras')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Traill')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Venado Tuerto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Vera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Vera y Pintado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Videla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Vila')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Amelia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Cañas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Constitución')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Eloísa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Gdor. Gálvez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Guillermina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Minetti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Mugueta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Ocampo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Saralegui')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villa Trinidad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Villada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Virginia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Wheelwright')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Zavalla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(22, 'Zenón Pereira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Añatuya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Árraga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Bandera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Bandera Bajada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Beltrán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Brea Pozo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Campo Gallo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Capital')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Chilca Juliana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Choya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Clodomira')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Col. Alpina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Col. Dora')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Col. El Simbolar Robles')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'El Bobadal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'El Charco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'El Mojón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Estación Atamisqui')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Estación Simbolar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Fernández')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Fortín Inca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Frías')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Garza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Gramilla')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Guardia Escolta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Herrera')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Icaño')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Ing. Forres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'La Banda')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'La Cañada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Laprida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Lavalle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Loreto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Los Juríes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Los Núñez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Los Pirpintos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Los Quiroga')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Los Telares')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Lugones')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Malbrán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Matara')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Medellín')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Monte Quemado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Nueva Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Nueva Francia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Palo Negro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Pampa de Los Guanacos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Pinto')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Pozo Hondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Quimilí')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Real Sayana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Sachayoj')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'San Pedro de Guasayán')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Selva')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Sol de Julio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Sumampa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Suncho Corral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Taboada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Tapso')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Termas de Rio Hondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Tintina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Tomas Young')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Vilelas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Villa Atamisqui')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Villa La Punta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Villa Ojo de Agua')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Villa Río Hondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Villa Salavina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Villa Unión')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Vilmer')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(23, 'Weisburd')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(24, 'Río Grande')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(24, 'Tolhuin')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(24, 'Ushuaia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Acheral')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Agua Dulce')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Aguilares')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Alderetes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Alpachiri')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Alto Verde')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Amaicha del Valle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Amberes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Ancajuli')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Arcadia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Atahona')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Banda del Río Sali')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Bella Vista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Buena Vista')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Burruyacú')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Capitán Cáceres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Cevil Redondo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Choromoro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Ciudacita')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Colalao del Valle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Colombres')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Concepción')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Delfín Gallo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Bracho')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Cadillal')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Cercado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Chañar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Manantial')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Mojón')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Mollar')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Naranjito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Naranjo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Polear')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Puestito')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Sacrificio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'El Timbó')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Escaba')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Esquina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Estación Aráoz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Famaillá')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Gastone')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Gdor. Garmendia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Gdor. Piedrabuena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Graneros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Huasa Pampa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'J. B. Alberdi')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'La Cocha')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'La Esperanza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'La Florida')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'La Ramada')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'La Trinidad')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Lamadrid')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Las Cejas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Las Talas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Las Talitas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Bulacio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Gómez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Nogales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Pereyra')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Pérez')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Puestos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Ralos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Sarmientos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Los Sosa')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Lules')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'M. García Fernández')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Manuela Pedraza')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Medinas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Monte Bello')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Monteagudo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Monteros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Padre Monti')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Pampa Mayo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Quilmes')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Raco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Ranchillos')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Río Chico')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Río Colorado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Río Seco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Rumi Punco')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Andrés')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Felipe')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Ignacio')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Javier')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San José')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Miguel de 25')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Pedro')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'San Pedro de Colalao')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Santa Rosa de Leales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Sgto. Moya')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Siete de Abril')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Simoca')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Soldado Maldonado')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Sta. Ana')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Sta. Cruz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Sta. Lucía')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Taco Ralo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Tafí del Valle')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Tafí Viejo')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Tapia')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Teniente Berdina')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Trancas')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Villa Belgrano')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Villa Benjamín Araoz')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Villa Chiligasta')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Villa de Leales')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Villa Quinteros')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Yánima')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Yerba Buena')
+INSERT INTO Ciudades (IdProvincia, Descripcion) VALUES(25, 'Yerba Buena (S)')
 
 INSERT INTO Direcciones(IDCiudad, IDProvincia, Calle, Numeracion, Depto, Piso, CP) VALUES
 (10, 1, 'Calle Test', 1234, NULL, NULL, '1610')
 
-INSERT INTO Permisos (Descripcion) VALUES
-('Administrador'),
-('Cliente')
+INSERT INTO Permisos (Descripcion) VALUES('Administrador')
+INSERT INTO Permisos (Descripcion) VALUES('Cliente')
 
-INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES
-('admin', 'admin', 'Manuel', 'Pais', 38326830, 'manupais22@gmail.com', '+54 9 11 6518 8743', 1, 1, 0),
-('admin2', 'admin2', 'Nicolas', 'Flori', 38429158, 'nicolasflori@hotmail.com', '+54 9 11 6580 5444', 1, 1, 0)
+INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES('admin', 'admin', 'Manuel', 'Pais', 38326830, 'manupais22@gmail.com', '+54 9 11 6518 8743', 1, 1, 0)
+INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES('admin2', 'admin2', 'Nicolas', 'Flori', 38429158, 'nicolasflori@hotmail.com', '+54 9 11 6580 5444', 1, 1, 0)
+

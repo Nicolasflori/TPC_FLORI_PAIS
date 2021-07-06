@@ -12,7 +12,6 @@ namespace Dominio
         public int IDColor { get; set; }
         public int IDCategoria { get; set; }
         public int IDEstampado { get; set; }
-        public DateTime Fecha { get; set; }
-
+        public DateTime FechaCarga { get; set; }
     }
 }

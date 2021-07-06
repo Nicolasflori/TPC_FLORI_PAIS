@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TPC_PAIS_FLORI.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TPC_FLORI_PAIS.Global" Language="C#" %>

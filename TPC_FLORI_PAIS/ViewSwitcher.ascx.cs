@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.FriendlyUrls.Resolvers;
 
-namespace TPC_PAIS_FLORI
+namespace TPC_FLORI_PAIS
 {
     public partial class ViewSwitcher : System.Web.UI.UserControl
     {
