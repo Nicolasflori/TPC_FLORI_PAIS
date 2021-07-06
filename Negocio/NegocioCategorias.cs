@@ -50,7 +50,7 @@ namespace Negocio
                 AccesoDatos datos = new AccesoDatos();
                 try
                 {
-                    string valores = "values(" + "'" + nuevo.Descripcion + "'" + ", '" + nuevo.Precio + "')";
+                    string valores = "values(" + nuevo.Descripcion + "'" + ", '" + nuevo.Precio + "')";
                     datos.setearConsulta("insert into Categorias (Descripcion, Precio)" + valores);
                     datos.ejectutarAccion();
                 }
