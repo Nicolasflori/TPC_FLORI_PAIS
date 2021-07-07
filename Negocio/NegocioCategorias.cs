@@ -126,18 +126,15 @@ namespace Negocio
                     if (id == item.ID)
                         return item.Descripcion;
                 }
-
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
             finally
             {
                 datos.cerrarConexion();
             }
-
             return descripcion;
         }
         public decimal getprecioxid(int id)
@@ -165,9 +162,7 @@ namespace Negocio
                 {
                     if (id == item.ID)
                         return item.Precio;
-
                 }
-
             }
             catch (Exception ex)
             {

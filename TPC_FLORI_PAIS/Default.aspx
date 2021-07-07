@@ -20,15 +20,12 @@
             Negocio.NegocioCategorias NegocioCategorias = new Negocio.NegocioCategorias();
             Negocio.NegocioEstampado NegocioEstampado = new Negocio.NegocioEstampado();
 
-            string varColor = null;
-            string varCategoria = null;
-            string varEstampado = null;
-
             foreach (Dominio.ProductoPreCargado item in listaProductoPreCargado)
             {
-                varColor = NegocioColores.descripcionxid(item.IDColor);
-                varCategoria = NegocioCategorias.descripcionxid(item.ID);
-                varEstampado = NegocioEstampado.imagenxid(item.IDEstampado);
+                string varColor = NegocioColores.descripcionxid(item.IDColor);
+                string descEstampado = NegocioEstampado.descripcionxid(item.IDEstampado);
+                string varCategoria = NegocioCategorias.descripcionxid(item.IDCategoria) + " Estampada " + descEstampado;
+                string varEstampado = NegocioEstampado.imagenxid(item.IDEstampado);
                 string imagenRemera = "../recursos/Remera/"+ varColor + ".jpg";
                 string imagenEstampado = "../recursos/estampado/"+ varEstampado;
 
@@ -38,8 +35,8 @@
                 <img class="card-img-top position-absolute ml-3" src="<%=imagenEstampado%>" alt="Card image" style="max-width: 80%; max-height: 80%">
                 <img class="card-img-top" src="<%=imagenRemera%>" alt="Card image" >
                 <div class="card-body">
-                    <h5 class="card-title"><%=imagenRemera%></h5>
-                    <p class="card-text"><%=varEstampado %> <br> En prenda de color: <%=varColor %></p>
+                    <h5 class="card-title"><%=varCategoria%></h5>
+                    <p class="card-text">En prenda de color: <%=varColor %></p>
                     <div class="btn-group btn-group-sm">
                         <a href="ElegirTalle.aspx?id=<%=item.ID %>" class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>
                         <a class="btn btn-secondary btn-sm mr-1 my-1"><i class="fas fa-info-circle ml-1"></i>Ver Detalle</a>

@@ -36,17 +36,12 @@ namespace TPC_FLORI_PAIS
             listaTalles = NegocioTalles.listar();
             Session.Add("listadoProductoPreCargado", listaTalles);
 
-
-
-
-
             ListItem i;
             foreach (Talle item in listaTalles)
             {
                 i = new ListItem(item.Descripcion, item.ID.ToString());
                 ddListaTalles.Items.Add(i);
             }
-
 
             Producto producto = new Producto();
             producto.IDCategoria = seleccionado.IDCategoria;

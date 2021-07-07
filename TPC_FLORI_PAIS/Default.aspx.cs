@@ -18,14 +18,10 @@ namespace TPC_PAIS_FLORI
         {
             NegocioProductoPreCargado NegocioProductoPreCargado = new NegocioProductoPreCargado();
 
-
             try
             {
                 listaProductoPreCargado = NegocioProductoPreCargado.listar();
                 Session.Add("listadoProductoPreCargado", listaProductoPreCargado);
-
-
-
             }
             catch (Exception ex)
             {
