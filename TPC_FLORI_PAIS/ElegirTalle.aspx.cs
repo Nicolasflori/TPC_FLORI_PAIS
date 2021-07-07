@@ -10,27 +10,34 @@ namespace TPC_FLORI_PAIS
 {
     public partial class ElegirTalle : System.Web.UI.Page
     {
+        public List<ProductoPreCargado> listaProductoPreCargado;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Talle> listaTalles;
+            List<Talle> listaTalles= (List<Talle>)Session["ListadoTalles"];
             int id = int.Parse(Request.QueryString["id"]);
             Negocio.NegocioColores NegocioColores = new NegocioColores();
             Negocio.NegocioCategorias NegocioCategorias = new NegocioCategorias();
             Negocio.NegocioEstampado NegocioEstampado = new NegocioEstampado();
             NegocioTalles NegocioTalles = new NegocioTalles();
+            NegocioProductoPreCargado NegocioProductoPreCargado = new NegocioProductoPreCargado();
 
-            List<ProductoPreCargado> listado = (List<ProductoPreCargado>)Session["listadoProductoPreCargado"];
-            ProductoPreCargado seleccionado = listado.Find(x => x.ID == id);
+            listaProductoPreCargado = NegocioProductoPreCargado.listar();
+            ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == id);
 
-            int varcategoria = seleccionado.IDCategoria;
-            lblCategoria.Text = NegocioCategorias.descripcionxid(varcategoria);
-            int varestamapdo = seleccionado.IDEstampado;
-            LblEstampado.Text = NegocioEstampado.descripcionxid(varestamapdo);
-            int varcolor = seleccionado.IDColor;
+           
+            lblCategoria.Text = NegocioCategorias.descripcionxid(seleccionado.IDCategoria);
+            
+            LblEstampado.Text = NegocioEstampado.descripcionxid(seleccionado.IDEstampado);
+            
+            string colorprenda = NegocioColores.descripcionxid(seleccionado.IDColor);
+            string varEstampado= NegocioEstampado.descripcionxid(seleccionado.IDEstampado);
 
-            String imagen = "../recursos/Remera/" + varcolor + ".jpg";
-             Imagen.ImageUrl = imagen;
-            decimal aux = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);;
+            String imagenfondo = "../recursos/Remera/" + colorprenda + ".jpg";
+            Imagenfondo.ImageUrl = imagenfondo;
+            String imagenestamapado = "../recursos/estampado/" + varEstampado;
+            Imageestampado.ImageUrl = imagenestamapado;
+            decimal aux = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
             LblPrecio.Text = aux.ToString();
 
             listaTalles = NegocioTalles.listar();
@@ -51,6 +58,10 @@ namespace TPC_FLORI_PAIS
             producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
 
             Session.Add("ListadoProductos", producto);
+        }
+        protected void buttonAgregarCarrito_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CarritoDeCompra.aspx");
         }
     }
 }

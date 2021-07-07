@@ -15,13 +15,22 @@ namespace TPC_FLORI_PAIS
     {
 
         /// <summary>
-        /// Control Imagen.
+        /// Control Imagenfondo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Imagen;
+        protected global::System.Web.UI.WebControls.Image Imagenfondo;
+
+        /// <summary>
+        /// Control Imageestampado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Imageestampado;
 
         /// <summary>
         /// Control lblCategoria.
@@ -58,5 +67,14 @@ namespace TPC_FLORI_PAIS
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddListaTalles;
+
+        /// <summary>
+        /// Control AgregarCarrito.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AgregarCarrito;
     }
 }
