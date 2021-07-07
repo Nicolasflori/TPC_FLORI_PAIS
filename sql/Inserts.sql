@@ -42,22 +42,26 @@ INSERT INTO Categorias (Descripcion, Precio) VALUES
 INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
 ('Esqueleto', '1.png', 400)
 INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
-('Calavera Cuerpo Completo', '2.png', 400)
-INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
-('Calavera centrada', '3.png', 400)
+('Calavera', '2.png', 400)
 
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
 (1, 1, 1, GETDATE())
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
-(2, 2, 2, GETDATE())
+(2, 2, 1, GETDATE())
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
-(1, 3, 3, GETDATE())
+(1, 3, 1, GETDATE())
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
-(2, 4, 4, GETDATE())
+(2, 4, 1, GETDATE())
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
 (1, 5, 1, GETDATE())
 INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
-(2, 6, 2, GETDATE())
+(2, 6, 1, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(2, 4, 1, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(2, 4, 1, GETDATE())
+INSERT INTO ProductoPreCargado (IDEstampado, IDColor, IDCategoria, FechaCarga) VALUES
+(2, 2, 1, GETDATE())
 
 INSERT INTO CostosDeEnvio (Zona, Precio) VALUES
 (1, 405.14)
