@@ -28,14 +28,14 @@
                 varColor = NegocioColores.descripcionxid(item.ID);
                 varCategoria = NegocioCategorias.descripcionxid(item.ID);
                 varEstampado = NegocioEstampado.descripcionxid(item.ID);
-                string imagen = "../recursos/"+varCategoria + "/" + varColor + ".jpg";
+                string imagen = "../recursos/Remera/"+ varColor + ".jpg";
 
                 %>
         <div class="card mb-4">
             <div class="card-body">
-                <img class="card-img-top" src="<%=imagen %>" alt="Card image cap">
+                <img class="card-img-top" src="<%=imagen%>" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title"><%= imagen%></h5>
+                    <h5 class="card-title"><%=imagen%></h5>
                     <p class="card-text"><%=varEstampado %> <br> En prenda de color: <%=varColor %></p>
                     <div class="btn-group btn-group-sm">
                         <a href="ElegirTalle.aspx?id=<%=item.ID %>" class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>
