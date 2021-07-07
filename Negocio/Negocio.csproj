@@ -47,6 +47,7 @@
     <Compile Include="NegocioCostoEnvio.cs" />
     <Compile Include="NegocioEstampado.cs" />
     <Compile Include="NegocioProductoPreCargado.cs" />
+    <Compile Include="NegocioTalles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

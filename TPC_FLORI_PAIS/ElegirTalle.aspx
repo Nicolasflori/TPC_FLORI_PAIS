@@ -9,6 +9,7 @@
         <p>Descripción: <asp:Label ID="LblEstampado" runat="server" Text="Label" Font-Size="20px"></asp:Label></p>
         <h6 class="mb-2">Precio: $<span><asp:Label ID="LblPrecio" runat="server" Text="Label" Font-Size="15px"></asp:Label></span></h6>
         <p class="card-text"><small class="text-muted"></small></p>
+         <asp:DropDownList ID="ddListaTalles"  runat="server"></asp:DropDownList>
        <%-- <button class="btn btn-secondary" runat="server" onserverclick="Unnamed_ServerClick"> Volver atrás</button>--%>
     </div>
 

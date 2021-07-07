@@ -12,11 +12,12 @@ namespace TPC_FLORI_PAIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            List<Talle> listaTalles;
             int id = int.Parse(Request.QueryString["id"]);
-            Negocio.NegocioColores NegocioColores = new Negocio.NegocioColores();
-            Negocio.NegocioCategorias NegocioCategorias = new Negocio.NegocioCategorias();
-            Negocio.NegocioEstampado NegocioEstampado = new Negocio.NegocioEstampado();
-
+            Negocio.NegocioColores NegocioColores = new NegocioColores();
+            Negocio.NegocioCategorias NegocioCategorias = new NegocioCategorias();
+            Negocio.NegocioEstampado NegocioEstampado = new NegocioEstampado();
+            NegocioTalles NegocioTalles = new NegocioTalles();
 
             List<ProductoPreCargado> listado = (List<ProductoPreCargado>)Session["listadoProductoPreCargado"];
             ProductoPreCargado seleccionado = listado.Find(x => x.ID == id);
@@ -27,11 +28,34 @@ namespace TPC_FLORI_PAIS
             LblEstampado.Text = NegocioEstampado.descripcionxid(varestamapdo);
             int varcolor = seleccionado.IDColor;
 
-            //String imagen = "recursos" + "\" + lblCategoria.Text + "\ " + varcolor + ".jpg";
-            // Imagen.ImageUrl = imagen;
-            //decimal aux = seleccionado.Precio;
-            //LblPrecio.Text = aux.ToString();
+            String imagen = "../recursos/Remera/" + varcolor + ".jpg";
+             Imagen.ImageUrl = imagen;
+            decimal aux = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);;
+            LblPrecio.Text = aux.ToString();
 
+            listaTalles = NegocioTalles.listar();
+            Session.Add("listadoProductoPreCargado", listaTalles);
+
+
+
+
+
+            ListItem i;
+            foreach (Talle item in listaTalles)
+            {
+                i = new ListItem(item.Descripcion, item.ID.ToString());
+                ddListaTalles.Items.Add(i);
+            }
+
+
+            Producto producto = new Producto();
+            producto.IDCategoria = seleccionado.IDCategoria;
+            producto.IDColor = seleccionado.IDColor;
+            producto.IDTalle = ddListaTalles.SelectedIndex;
+            producto.IDEstampado = seleccionado.IDEstampado;
+            producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
+
+            Session.Add("ListadoProductos", producto);
         }
     }
 }
