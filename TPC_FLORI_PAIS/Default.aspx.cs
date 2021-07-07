@@ -13,17 +13,19 @@ namespace TPC_PAIS_FLORI
     {
         public List<ProductoPreCargado> listaProductoPreCargado;
         public List<Color> listaColores;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             NegocioProductoPreCargado NegocioProductoPreCargado = new NegocioProductoPreCargado();
-            NegocioColores NegocioColores = new NegocioColores();
+
+
             try
             {
                 listaProductoPreCargado = NegocioProductoPreCargado.listar();
                 Session.Add("listadoProductoPreCargado", listaProductoPreCargado);
 
-               
-               
+
+
             }
             catch (Exception ex)
             {

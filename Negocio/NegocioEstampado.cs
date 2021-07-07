@@ -140,6 +140,47 @@ namespace Negocio
 
             return descripcion;
         }
+
+        public string imagenxid(int id)
+        {
+            string imagen = null;
+            List<Estampado> lista = new List<Estampado>();
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT ID, Imagen FROM Estampados Where Id = " + id);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    var aux = new Estampado
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        Imagen = (string)datos.Lector["Imagen"],
+                    };
+
+                    lista.Add(aux);
+                }
+                foreach (Estampado item in lista)
+                {
+                    if (id == item.ID)
+                        return item.Imagen;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return imagen;
+        }
+
         public decimal getprecioxid(int id)
         {
             decimal precio = 0;
