@@ -11,27 +11,28 @@ namespace TPC_FLORI_PAIS
     public partial class ElegirTalle : System.Web.UI.Page
     {
         public List<ProductoPreCargado> listaProductoPreCargado;
-
+        private Producto producto { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Talle> listaTalles= (List<Talle>)Session["ListadoTalles"];
-            int id = int.Parse(Request.QueryString["id"]);
-            Negocio.NegocioColores NegocioColores = new NegocioColores();
-            Negocio.NegocioCategorias NegocioCategorias = new NegocioCategorias();
-            Negocio.NegocioEstampado NegocioEstampado = new NegocioEstampado();
-            NegocioTalles NegocioTalles = new NegocioTalles();
-            NegocioProductoPreCargado NegocioProductoPreCargado = new NegocioProductoPreCargado();
+            List<Talle> listaTalles = new List<Talle>();
+
+            int idproductoprecargado = int.Parse(Request.QueryString["id"]);
+            var NegocioColores = new NegocioColores();
+            var NegocioCategorias = new NegocioCategorias();
+            var NegocioEstampado = new NegocioEstampado();
+            var NegocioTalles = new NegocioTalles();
+            var NegocioProductoPreCargado = new NegocioProductoPreCargado();
 
             listaProductoPreCargado = NegocioProductoPreCargado.listar();
-            ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == id);
+            ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idproductoprecargado);
 
-           
+
             lblCategoria.Text = NegocioCategorias.descripcionxid(seleccionado.IDCategoria);
-            
-            LblEstampado.Text = NegocioEstampado.descripcionxid(seleccionado.IDEstampado);
-            
+
+            LblEstampado.Text = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
+
             string colorprenda = NegocioColores.descripcionxid(seleccionado.IDColor);
-            string varEstampado= NegocioEstampado.descripcionxid(seleccionado.IDEstampado);
+            string varEstampado = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
 
             String imagenfondo = "../recursos/Remera/" + colorprenda + ".jpg";
             Imagenfondo.ImageUrl = imagenfondo;
@@ -41,7 +42,6 @@ namespace TPC_FLORI_PAIS
             LblPrecio.Text = aux.ToString();
 
             listaTalles = NegocioTalles.listar();
-            Session.Add("listadoProductoPreCargado", listaTalles);
 
             ListItem i;
             foreach (Talle item in listaTalles)
@@ -50,17 +50,36 @@ namespace TPC_FLORI_PAIS
                 ddListaTalles.Items.Add(i);
             }
 
-            Producto producto = new Producto();
+            producto = new Producto();
             producto.IDCategoria = seleccionado.IDCategoria;
             producto.IDColor = seleccionado.IDColor;
-            producto.IDTalle = ddListaTalles.SelectedIndex;
+           
             producto.IDEstampado = seleccionado.IDEstampado;
             producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
-
-            Session.Add("ListadoProductos", producto);
+            
         }
+
         protected void buttonAgregarCarrito_Click(object sender, EventArgs e)
         {
+            var lista = new List<Producto>();
+            producto.IDTalle = ddListaTalles.SelectedIndex;
+            producto.Cantidad = int.Parse(TextBox1.Text);
+            producto.PrecioxProducto = producto.Cantidad * producto.Precio;
+            lista.Add(producto);
+
+            var productosCargados = (List<Producto>)Application["ListadosProductos"];
+
+            if (productosCargados == null)
+            {
+                Application["ListadosProductos"] = lista;
+            }
+            else
+            {
+                productosCargados.Add(producto);
+                Application["ListadosProductos"] = productosCargados;
+            }
+            var asdasd = (List<Producto>)Application["ListadosProductos"];
+
             Response.Redirect("CarritoDeCompra.aspx");
         }
     }

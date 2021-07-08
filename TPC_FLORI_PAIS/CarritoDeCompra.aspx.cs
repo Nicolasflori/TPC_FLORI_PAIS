@@ -11,35 +11,16 @@ namespace TPC_PAIS_FLORI
 {
     public partial class CarritoDeCompra : System.Web.UI.Page
     {
-        public List<ItemCarrito> carrito;
-
-        public ItemCarrito elemento;
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            carrito = (List<ItemCarrito>)Session["listaCarrito"];
-            elemento = new ItemCarrito();
+            var listaproducto = (List<Producto>)Application["ListadosProductos"];
+            ItemCarrito carrito = new ItemCarrito();
+            carrito.Items= listaproducto;
 
-            if (carrito == null)
-                carrito = new List<ItemCarrito>();
-            if (!IsPostBack)
-            {
-                
-                        List<Producto> listadoOriginal = (List<Producto>)Session["ListadoProductos"];
-                        elemento.Articulos = listadoOriginal.Find(x => x.ID.ToString() == Request.QueryString["id"]);
-                        carrito.Add(elemento);
-                    }
-                }
-                Repetidor.DataSource = carrito;
+            Repetidor.DataSource = carrito.Items;
 
-                Repetidor.DataBind();
-            }
-            Session.Add("ListaCarrito", carrito);
-        }
+            Repetidor.DataBind();
 
-        protected void Unnamed_ServerClick(object sender, EventArgs e)
-        {
-            Response.Redirect("Default.aspx");
         }
     }
 }

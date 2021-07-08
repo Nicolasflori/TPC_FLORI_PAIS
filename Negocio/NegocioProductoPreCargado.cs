@@ -43,6 +43,40 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        //public List<ProductoPreCargado> buscar(int id)
+        //{
+        //    List<ProductoPreCargado> lista = new List<ProductoPreCargado>();
+        //    AccesoDatos datos = new AccesoDatos();
+        //    try
+        //    {
+        //        datos.setearConsulta("SELECT ID, IDColor, IDCategoria, IDEstampado, FechaCarga FROM ProductoPreCargado;");
+        //        datos.ejecutarLectura();
+
+        //        while (datos.Lector.Read())
+        //        {
+        //            var aux = new ProductoPreCargado
+        //            {
+        //                ID = (int)datos.Lector["ID"],
+        //                IDColor = (int)datos.Lector["IDColor"],
+        //                IDCategoria = (int)datos.Lector["IDCategoria"],
+        //                IDEstampado = (int)datos.Lector["IDEstampado"],
+        //                FechaCarga = (DateTime)datos.Lector["FechaCarga"]
+        //            };
+
+        //            lista.Add(aux);
+        //        }
+        //        return lista;
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        throw ex;
+        //    }
+        //    finally
+        //    {
+        //        datos.cerrarConexion();
+        //    }
+        //}
 
         public void agregar(ProductoPreCargado nuevo)
         {

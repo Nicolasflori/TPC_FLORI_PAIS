@@ -16,28 +16,42 @@
         <table class="table">
         <thead>
             <tr>
-                <th scope="col">Tipo</th>
+                <th scope="col">Categoria</th>
                 <th scope="col">Color</th>
                 <th scope="col">Estampado</th>
-                <th scope="col">Precio</th>
+                <th scope="col">Talle</th>
+                <th scope="col">Precio Unitario</th>
                 <th scope="col">Cantidad</th>
+                <th scope="col">Precio Total por Producto</th>
                 <th scope="col">Eliminar del Carrito</th>
             </tr>
         </thead>
         <tbody>
             <asp:Repeater runat="server" ID="Repetidor">
-
                 <ItemTemplate>
-                    <tr>
+                    <tr>   
+                        <td><%#Eval("IDCategoria")%></td>
+                        <td><%#Eval("IDColor")%></td>
+                        <td><%#Eval("IDEstampado")%></td>
+                        <td><%#Eval("IDTalle")%></td>
+                        <td><%#Eval("Precio")%></td>
+                        <td><%#Eval("Cantidad")%></td>
+                        <td><%#Eval("PrecioxProducto")%></td>
+                        <td>Eliminar</td>
+                        <%--<td>
+                            <asp:Button Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar" OnClick="buttonEliminar_Click" CommandArgument='<%#Eval("Articulos.ID")%>' runat="server" />
+                        </td>--%>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>
 
         </tbody>
     </table>
+    
+                     
 
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-cart mr-1"></i>Comprar</button>
-    <button class="btn btn-secondary" runat="server" onserverclick="Unnamed_ServerClick">Agregar más artículos</button>
+ <%--   <button class="btn btn-secondary" runat="server" onserverclick="Unnamed_ServerClick">Agregar más artículos</button>--%>
 
     <div class="modal" id="myModal">
         <div class="modal-dialog">
