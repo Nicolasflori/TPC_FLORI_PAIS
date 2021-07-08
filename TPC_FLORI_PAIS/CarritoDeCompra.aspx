@@ -16,7 +16,7 @@
         <table class="table">
         <thead>
             <tr>
-                <th scope="col">Categoria</th>
+                <th scope="col">Tipo</th>
                 <th scope="col">Color</th>
                 <th scope="col">Estampado</th>
                 <th scope="col">Talle</th>
@@ -30,10 +30,10 @@
             <asp:Repeater runat="server" ID="Repetidor">
                 <ItemTemplate>
                     <tr>   
-                        <td><%#Eval("IDCategoria")%></td>
-                        <td><%#Eval("IDColor")%></td>
-                        <td><%#Eval("IDEstampado")%></td>
-                        <td><%#Eval("IDTalle")%></td>
+                        <td><%#Eval("Categoria")%></td>
+                        <td><%#Eval("Color")%></td>
+                        <td><%#Eval("Estampado")%></td>
+                        <td><%#Eval("Talle")%></td>
                         <td><%#Eval("Precio")%></td>
                         <td><%#Eval("Cantidad")%></td>
                         <td><%#Eval("PrecioxProducto")%></td>
