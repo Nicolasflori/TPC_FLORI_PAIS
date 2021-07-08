@@ -15,28 +15,15 @@
         </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-3" >
-        <% Negocio.NegocioColores NegocioColores = new Negocio.NegocioColores();
-            Negocio.NegocioCategorias NegocioCategorias = new Negocio.NegocioCategorias();
-            Negocio.NegocioEstampado NegocioEstampado = new Negocio.NegocioEstampado();
-
-            foreach (Dominio.ProductoPreCargado item in listaProductoPreCargado)
-            {
-                string varColor = NegocioColores.descripcionxid(item.IDColor);
-                string descEstampado = NegocioEstampado.descripcionxid(item.IDEstampado);
-                string varCategoria = NegocioCategorias.descripcionxid(item.IDCategoria) + " Estampada " + descEstampado;
-                string varEstampado = NegocioEstampado.imagenxid(item.IDEstampado);
-                string imagenRemera = "../recursos/Remera/"+ varColor + ".jpg";
-                string imagenEstampado = "../recursos/estampado/"+ varEstampado;
-
-                %>
+    <div class="row row-cols-1 row-cols-md-3">
+        <%foreach (Dominio.Producto item in listaProducto){%>
         <div class="card mb-4">
             <div class="card-body">
-                <img class="card-img-top position-absolute ml-3" src="<%=imagenEstampado%>" alt="Card image" style="max-width: 80%; max-height: 80%">
-                <img class="card-img-top" src="<%=imagenRemera%>" alt="Card image" >
+                <img class="card-img-top position-absolute ml-3" src="<%=item.ImagenEstampado%>" alt="Card image" style="max-width: 80%; max-height: 80%">
+                <img class="card-img-top" src="<%=item.ImagenColor%>" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title"><%=varCategoria%></h5>
-                    <p class="card-text">En prenda de color: <%=varColor %></p>
+                    <h5 class="card-title"><%=item.Categoria%></h5>
+                    <p class="card-text">En prenda de color: <%=item.Color%></p>
                     <div class="btn-group btn-group-sm">
                         <a href="ElegirTalle.aspx?id=<%=item.ID %>" class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>
                         <a class="btn btn-secondary btn-sm mr-1 my-1"><i class="fas fa-info-circle ml-1"></i>Ver Detalle</a>
@@ -47,8 +34,8 @@
         <%} %>
     </div>
 
-        <div class="input-group">
+    <div class="input-group">
         <input type="search" class="form-control rounded" placeholder="Búsqueda por tipo de estampado, prenda, etc." aria-label="search" name="search" id="search" aria-describedby="search-addon" />
-        <button type="button" class="btn btn-outline-primary" runat="server" id="button1" >Buscar</button>
+        <button type="button" class="btn btn-outline-primary" runat="server" id="button1">Buscar</button>
     </div>
 </asp:Content>
