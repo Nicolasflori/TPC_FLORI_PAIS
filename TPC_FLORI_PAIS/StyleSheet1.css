@@ -1,4 +1,6 @@
-﻿.jumbotron {
+﻿
+/* Jumbotron de Default/Carrito */ 
+.jumbotron {
     background-image: url("https://wallpapercave.com/wp/wp3130193.jpg");
     background-color: #17234E;
     min-height: 50%;
@@ -7,6 +9,7 @@
     background-size: cover;
 }
 
+/* Modal Login*/ 
 .container {
     padding: 2rem 0rem;
 }
@@ -14,22 +17,15 @@
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 400px;
-        .modal-content
+    }
 
-{
-    padding: 1rem;
+        .modal-dialog .modal-content {
+            padding: 1rem;
+        }
 }
 
-}
-}
-
-.modal-header {
-    .close
-
-{
+.modal-header .close {
     margin-top: -1.5rem;
-}
-
 }
 
 .form-title {
@@ -44,13 +40,8 @@
     padding: 1rem;
 }
 
-.social-buttons {
-    .btn
-
-{
+.social-buttons .btn {
     margin: 0 0.5rem 1rem;
-}
-
 }
 
 .signup-section {
