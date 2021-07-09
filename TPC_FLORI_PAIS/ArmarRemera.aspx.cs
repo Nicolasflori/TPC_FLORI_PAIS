@@ -24,6 +24,7 @@ namespace TPC_PAIS_FLORI
             var NegocioEstampado = new NegocioEstampado();
             var NegocioTalles = new NegocioTalles();
 
+            listaTalles = NegocioTalles.listar();
 
             if (!IsPostBack)
             {
@@ -56,15 +57,15 @@ namespace TPC_PAIS_FLORI
                 ddListaEstampados.DataTextField = "Descripcion";
                 ddListaEstampados.DataSource = listaEstampados;
                 ddListaEstampados.DataBind();
-            }
-            listaTalles = NegocioTalles.listar();
 
-            ListItem i;
-            foreach (Talle item in listaTalles)
-            {
-                i = new ListItem(item.Descripcion, item.ID.ToString());
-                ddListaTalles.Items.Add(i);
+                ListItem i;
+                foreach (Talle item in listaTalles)
+                {
+                    i = new ListItem(item.Descripcion, item.ID.ToString());
+                    ddListaTalles.Items.Add(i);
+                }
             }
+
         }
 
         protected void ddListaColores_SelectedIndexChanged(object sender, EventArgs e)
@@ -104,6 +105,10 @@ namespace TPC_PAIS_FLORI
             }
 
             Response.Redirect("CarritoDeCompra.aspx");
+        }
+        protected void Unnamed_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 

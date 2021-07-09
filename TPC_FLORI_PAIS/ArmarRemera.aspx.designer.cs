@@ -76,5 +76,14 @@ namespace TPC_PAIS_FLORI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AgregarCarrito;
+
+        /// <summary>
+        /// Atras control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Atras;
     }
 }
