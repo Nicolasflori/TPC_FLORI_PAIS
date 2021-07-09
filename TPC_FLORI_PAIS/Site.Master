@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Remeras FloriPais.NET</title>
+    <title><%: Page.Title %> - Remeras FLORIPAIS.NET</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -22,7 +22,7 @@
     <form runat="server">
 
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1F2A44;">
-            <a class="navbar-brand" href="#">Remeras FloriPais</a>
+            <a class="navbar-brand" href="#">Remeras FLORIPAIS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -96,7 +96,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Remeras FLORIPAIS.NET</p>
             </footer>
         </div>
     </form>

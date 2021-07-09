@@ -19,6 +19,15 @@
             <h2>Registrarse</h2>
             <p class="hint-text">Crea tu cuenta. Es gratis y solo tomará 1 minuto.</p>
             <div class="form-group">
+                <input type="text" class="form-control" name="usuario" placeholder="Usuario" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="contraseña" placeholder="Contraseña" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirmar_contraseña" placeholder="Confirmar Contraseña" required="required">
+            </div>
+            <div class="form-group">
                 <div class="row">
                     <div class="col">
                         <input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required">
@@ -29,16 +38,13 @@
                 </div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="usuario" placeholder="Usuario" required="required">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="contraseña" placeholder="Contraseña" required="required">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="confirmar_contraseña" placeholder="Confirmar Contraseña" required="required">
-            </div>
-            <div class="form-group">
                 <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="dni" placeholder="DNI" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="telefono" placeholder="Teléfono" required="required">
             </div>
             <div class="form-group">
                 <label class="form-check-label">
