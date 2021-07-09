@@ -11,13 +11,13 @@ namespace TPC_FLORI_PAIS
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-
         public Usuarios usuario;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
         protected void buttonRegistrar_Click(object sender, EventArgs e)
         {
             NegocioUsuarios NegocioUsuarios = new NegocioUsuarios();
@@ -31,7 +31,8 @@ namespace TPC_FLORI_PAIS
             usuario.Telefono = Request.Form.Get("telefono");
 
             NegocioUsuarios.agregar(usuario);
-            Response.Redirect("Default.aspx");
+            var page = HttpContext.Current.CurrentHandler as Page;
+            ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario Registrado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
         }
     }
 }
