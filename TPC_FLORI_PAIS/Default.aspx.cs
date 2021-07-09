@@ -15,6 +15,7 @@ namespace TPC_PAIS_FLORI
         public List<Producto> listaProducto;
         public List<Color> listaColores;
 
+
         protected void Page_Load(object sender, EventArgs e)
         {
             NegocioProductoPreCargado NegocioProductoPreCargado = new NegocioProductoPreCargado();
@@ -27,6 +28,8 @@ namespace TPC_PAIS_FLORI
                 this.listaProducto = new List<Producto>();
                 listaProductoPreCargado = NegocioProductoPreCargado.listar();
 
+
+
                 foreach(ProductoPreCargado item in listaProductoPreCargado)
                 {
                     listaProducto.Add(new Producto() {
@@ -35,7 +38,10 @@ namespace TPC_PAIS_FLORI
                         Estampado = NegocioEstampado.descripcionxid(item.IDEstampado),
                         Categoria = NegocioColores.descripcionxid(item.IDCategoria) + " Estampada " + NegocioEstampado.descripcionxid(item.IDEstampado),
                         ImagenColor = "../recursos/Remera/" + NegocioColores.descripcionxid(item.IDColor) + ".jpg",
-                        ImagenEstampado = "../recursos/estampado/" + NegocioEstampado.imagenxid(item.IDEstampado) });
+                        ImagenEstampado = "../recursos/estampado/" + NegocioEstampado.imagenxid(item.IDEstampado),
+                        Precio = NegocioCategorias.getprecioxid(item.IDCategoria) + NegocioEstampado.getprecioxid(item.IDEstampado)
+                    });
+                    
                 }
                 
               //  Session.Add("listadoProducto", listaProducto);

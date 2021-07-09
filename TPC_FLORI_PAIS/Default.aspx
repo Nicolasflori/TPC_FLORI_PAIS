@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TPC_PAIS_FLORI._Default" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
@@ -15,6 +16,8 @@
         </div>
     </div>
 
+
+
     <div class="row row-cols-1 row-cols-md-3">
         <%foreach (Dominio.Producto item in listaProducto){%>
         <div class="card mb-4">
@@ -26,8 +29,10 @@
                     <p class="card-text">En prenda de color: <%=item.Color%></p>
                     <div class="btn-group btn-group-sm">
                         <a href="ElegirTalle.aspx?id=<%=item.ID %>" class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>
+                        <h4 class="card-text ml-2 p-1"><%=item.Precio.ToString("C")%></h4>
                         <!--<a class="btn btn-secondary btn-sm mr-1 my-1"><i class="fas fa-info-circle ml-1"></i>Ver Detalle</a>-->
                     </div>
+
                 </div>
             </div>
         </div>
