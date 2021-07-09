@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TPC_PAIS_FLORI._Default" %>
 
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
@@ -15,8 +14,6 @@
             <h1>Remeras Estampadas</h1>
         </div>
     </div>
-
-
 
     <div class="row row-cols-1 row-cols-md-3">
         <%foreach (Dominio.Producto item in listaProducto){%>
