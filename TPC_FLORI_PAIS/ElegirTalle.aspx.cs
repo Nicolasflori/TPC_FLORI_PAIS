@@ -82,5 +82,10 @@ namespace TPC_FLORI_PAIS
 
             Response.Redirect("CarritoDeCompra.aspx");
         }
+
+        protected void Unnamed_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
     }
 }
