@@ -36,7 +36,7 @@ namespace TPC_PAIS_FLORI
                         ID = item.ID,
                         Color = NegocioColores.descripcionxid(item.IDColor),
                         Estampado = NegocioEstampado.descripcionxid(item.IDEstampado),
-                        Categoria = NegocioColores.descripcionxid(item.IDCategoria) + " Estampada " + NegocioEstampado.descripcionxid(item.IDEstampado),
+                        Categoria = " Estampado " + NegocioEstampado.descripcionxid(item.IDEstampado),
                         ImagenColor = "../recursos/Remera/" + NegocioColores.descripcionxid(item.IDColor) + ".jpg",
                         ImagenEstampado = "../recursos/estampado/" + NegocioEstampado.imagenxid(item.IDEstampado),
                         Precio = NegocioCategorias.getprecioxid(item.IDCategoria) + NegocioEstampado.getprecioxid(item.IDEstampado)

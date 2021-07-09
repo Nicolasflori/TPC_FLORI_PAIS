@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Talles.aspx.cs" Inherits="TPC_PAIS_FLORI.Talles" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

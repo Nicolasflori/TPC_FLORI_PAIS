@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
     <h1>Continuar con la Compra</h1>
 
     <asp:Image ID="Imagenfondo" runat="server" Style="max-width: 60%; max-height: 60%;" alt="Card image" />
