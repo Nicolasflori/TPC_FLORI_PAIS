@@ -38,9 +38,7 @@
                         <td><%#Eval("Cantidad")%></td>
                         <td><%#Eval("PrecioxProducto")%></td>
                         <td>Eliminar</td>
-                        <%--<td>
-                            <asp:Button Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar" OnClick="buttonEliminar_Click" CommandArgument='<%#Eval("Articulos.ID")%>' runat="server" />
-                        </td>--%>
+                        <%--<td><asp:Button Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar" OnClick="buttonEliminar_Click" CommandArgument='<%#Eval("ID")%>' runat="server" /></td>--%>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>
@@ -49,7 +47,7 @@
     </table>  
 
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-cart mr-1"></i>Comprar</button>
- <%--   <button class="btn btn-secondary" runat="server" onserverclick="Unnamed_ServerClick">Agregar más artículos</button>--%>
+       <button class="btn btn-secondary" runat="server" onserverclick="Unnamed_ServerClick">Agregar más productos</button>
 
     <div class="modal" id="myModal">
         <div class="modal-dialog">

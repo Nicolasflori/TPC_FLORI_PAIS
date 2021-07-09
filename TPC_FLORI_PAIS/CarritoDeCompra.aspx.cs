@@ -40,5 +40,29 @@ namespace TPC_PAIS_FLORI
             Repetidor.DataBind();
 
         }
+
+        protected void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var argument = ((Button)sender).CommandArgument;
+                List<ItemCarrito> carrito = (List<ItemCarrito>)Session["listaCarrito"];
+                ItemCarrito elim = carrito.Find(x => x.ID.ToString() == argument);
+                carrito.Remove(elim);
+                Session.Add("listadosProductos", carrito);
+                Repetidor.DataSource = null;
+                Repetidor.DataSource = carrito;
+                Repetidor.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("Error.aspx");
+            }
+        }
+
+        protected void Unnamed_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
     }
 }

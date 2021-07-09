@@ -17,6 +17,7 @@ namespace TPC_PAIS_FLORI
             List<Color> listaColores = new List<Color>();
             List<Estampado> listaEstampados = new List<Estampado>();
             List<Talle> listaTalles = new List<Talle>();
+            List<Producto> listaProductos = new List<Producto>();
             producto = new Producto();
 
             var NegocioColores = new NegocioColores();
@@ -28,6 +29,8 @@ namespace TPC_PAIS_FLORI
 
             if (!IsPostBack)
             {
+                producto = new Producto();
+
                 producto.IDCategoria = 1;
                 producto.IDColor = 1;
                 producto.IDEstampado = 1;
@@ -36,13 +39,12 @@ namespace TPC_PAIS_FLORI
                 producto.Estampado = NegocioEstampado.descripcionxid(producto.IDEstampado);
                 producto.Categoria = NegocioCategorias.descripcionxid(producto.IDCategoria) + " Estampada " + NegocioEstampado.descripcionxid(producto.IDEstampado);
                 producto.ImagenColor = "../recursos/Remera/" + NegocioColores.descripcionxid(producto.IDColor) + ".jpg";
-                producto.ImagenEstampado = "../recursos/estampado/" + NegocioEstampado.imagenxid(producto.IDEstampado);
+                producto.ImagenEstampado = "../recursos/estampado/" + NegocioEstampado.imagenxid(producto.IDEstampado); 
 
                 String imagenfondo = producto.ImagenColor;
                 Imagenfondo.ImageUrl = imagenfondo;
                 String imagenestamapado = producto.ImagenEstampado;
                 Imageestampado.ImageUrl = imagenestamapado;
-
 
                 listaColores = NegocioColores.listar();
 
@@ -64,8 +66,10 @@ namespace TPC_PAIS_FLORI
                     i = new ListItem(item.Descripcion, item.ID.ToString());
                     ddListaTalles.Items.Add(i);
                 }
-            }
 
+                listaProductos.Add(producto);
+                Session.Add("listadoProducto", listaProductos);
+            }
         }
 
         protected void ddListaColores_SelectedIndexChanged(object sender, EventArgs e)
