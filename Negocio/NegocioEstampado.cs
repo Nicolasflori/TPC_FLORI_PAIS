@@ -8,8 +8,6 @@ namespace Negocio
 {
    public class NegocioEstampado
     {
-
-
         public List<Estampado> listar()
         {
             List<Estampado> lista = new List<Estampado>();

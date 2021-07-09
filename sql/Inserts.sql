@@ -2513,5 +2513,5 @@ INSERT INTO Permisos (Descripcion) VALUES('Administrador')
 INSERT INTO Permisos (Descripcion) VALUES('Cliente')
 
 INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES('admin', 'admin', 'Manuel', 'Pais', 38326830, 'manupais22@gmail.com', '+54 9 11 6518 8743', 1, 1, 0)
-INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES('admin2', 'admin2', 'Nicolas', 'Flori', 38429158, 'nicolasflori@hotmail.com', '+54 9 11 6580 5444', 1, 2, 0)
+INSERT INTO Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono, IDDireccion, IDPermiso, Baja) VALUES('admin2', 'admin2', 'Nicolas', 'Flori', 38429158, 'nicolasflori@hotmail.com', '+54 9 11 6580 5444', 1, 1, 0)
 

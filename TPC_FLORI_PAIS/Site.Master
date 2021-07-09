@@ -96,7 +96,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Remeras FLORIPAIS.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Remeras FLORIPAIS</p>
             </footer>
         </div>
     </form>

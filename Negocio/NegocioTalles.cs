@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominio;
+
 namespace Negocio
 {
    public class NegocioTalles
@@ -41,6 +42,7 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+
         public string descripcionxid(int id)
         {
             string descripcion = null;

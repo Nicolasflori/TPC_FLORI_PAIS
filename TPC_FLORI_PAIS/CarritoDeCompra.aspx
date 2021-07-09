@@ -46,9 +46,7 @@
             </asp:Repeater>
 
         </tbody>
-    </table>
-    
-                     
+    </table>  
 
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-cart mr-1"></i>Comprar</button>
  <%--   <button class="btn btn-secondary" runat="server" onserverclick="Unnamed_ServerClick">Agregar más artículos</button>--%>

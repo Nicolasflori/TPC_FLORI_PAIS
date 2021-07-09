@@ -26,7 +26,7 @@
                     <p class="card-text">En prenda de color: <%=item.Color%></p>
                     <div class="btn-group btn-group-sm">
                         <a href="ElegirTalle.aspx?id=<%=item.ID %>" class="btn btn-primary btn-sm mr-1 my-1"><i class="fas fa-shopping-cart mr-1"></i>Comprar</a>
-                        <a class="btn btn-secondary btn-sm mr-1 my-1"><i class="fas fa-info-circle ml-1"></i>Ver Detalle</a>
+                        <!--<a class="btn btn-secondary btn-sm mr-1 my-1"><i class="fas fa-info-circle ml-1"></i>Ver Detalle</a>-->
                     </div>
                 </div>
             </div>

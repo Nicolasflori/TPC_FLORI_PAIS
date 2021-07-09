@@ -52,7 +52,7 @@
                     Acepto las <a class="text-info" href="#">Condiciones de Uso</a> y las <a class="text-info" href="#">Políticas de Privacidad</a></label>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg btn-block">Registrarse ahora!</button>
+                <asp:button type="submit" class="btn btn-success btn-lg btn-block" runat="server" OnClick="buttonRegistrar_Click" Text="Registrarse ahora!"/>
             </div>
         </form>
 

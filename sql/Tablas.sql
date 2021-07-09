@@ -69,7 +69,7 @@ Descripcion varchar(100)
 GO
 Create Table Usuarios(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
-Usuario varchar(10) not null unique,
+Usuario varchar(12) not null unique,
 Contraseña varchar(10) not null,
 Nombre varchar(50) not null,
 Apellido varchar(100) not null,
@@ -77,7 +77,7 @@ DNI INT NOT NULL unique,
 Email varchar(50) not null,
 Telefono varchar(50) not null,
 IDDireccion int foreign key references Direcciones(ID),
-IDPermiso int foreign key references Permisos(ID),
+IDPermiso int foreign key references Permisos(ID) DEFAULT 2,
 Baja bit not null default(0)
 )
 GO
