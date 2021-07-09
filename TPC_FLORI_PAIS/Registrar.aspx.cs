@@ -27,8 +27,6 @@ namespace TPC_FLORI_PAIS
             usuario.Nombre = Request.Form.Get("nombre");
             usuario.Apellido = Request.Form.Get("apellido");
             usuario.Email = Request.Form.Get("email");
-            usuario.DNI = Request.Form.Get("dni");
-            usuario.Telefono = Request.Form.Get("telefono");
 
             NegocioUsuarios.agregar(usuario);
             var page = HttpContext.Current.CurrentHandler as Page;

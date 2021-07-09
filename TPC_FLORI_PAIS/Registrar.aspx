@@ -41,12 +41,6 @@
                 <input type="email" class="form-control" name="email" placeholder="Email" required="required">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="dni" placeholder="DNI" required="required">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="telefono" placeholder="Teléfono" required="required">
-            </div>
-            <div class="form-group">
                 <label class="form-check-label">
                     <input type="checkbox" required="required">
                     Acepto las <a class="text-info" href="#">Condiciones de Uso</a> y las <a class="text-info" href="#">Políticas de Privacidad</a></label>
