@@ -101,6 +101,7 @@ namespace Negocio
                         ID = (int)datos.Lector["ID"],
                         Descripcion = (string)datos.Lector["Descripcion"],
 
+
                     };
 
                     lista.Add(aux);

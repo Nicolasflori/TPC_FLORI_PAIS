@@ -26,19 +26,15 @@ namespace TPC_FLORI_PAIS
             listaProductoPreCargado = NegocioProductoPreCargado.listar();
             ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idproductoprecargado);
 
-
             lblCategoria.Text = NegocioCategorias.descripcionxid(seleccionado.IDCategoria);
 
             LblEstampado.Text = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
 
-            string colorprenda = NegocioColores.descripcionxid(seleccionado.IDColor);
-            string varEstampado = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
-
-            String imagenfondo = "../recursos/Remera/" + colorprenda + ".jpg";
+            String imagenfondo = "../recursos/Remera/" + NegocioColores.descripcionxid(seleccionado.IDColor) + ".jpg";
             Imagenfondo.ImageUrl = imagenfondo;
-            String imagenestamapado = "../recursos/estampado/" + varEstampado;
+            String imagenestamapado = "../recursos/estampado/" + NegocioEstampado.imagenxid(seleccionado.IDEstampado);
             Imageestampado.ImageUrl = imagenestamapado;
-            decimal aux = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
+            decimal aux = NegocioCategorias.getprecioxid(seleccionado.IDCategoria) + NegocioEstampado.getprecioxid(seleccionado.IDEstampado);
             LblPrecio.Text = aux.ToString();
 
             listaTalles = NegocioTalles.listar();
@@ -49,11 +45,11 @@ namespace TPC_FLORI_PAIS
                 i = new ListItem(item.Descripcion, item.ID.ToString());
                 ddListaTalles.Items.Add(i);
             }
-
+            
             producto = new Producto();
             producto.IDCategoria = seleccionado.IDCategoria;
             producto.IDColor = seleccionado.IDColor;
-           
+            producto.Talle = NegocioTalles.descripcionxid2(ddListaTalles.SelectedValue.ToString());
             producto.IDEstampado = seleccionado.IDEstampado;
             producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
             

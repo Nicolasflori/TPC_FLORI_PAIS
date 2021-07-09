@@ -40,7 +40,7 @@ INSERT INTO Categorias (Descripcion, Precio) VALUES
 ('Campera Canguro Capucha', 2400)
 
 INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
-('Esqueleto', '1.png', 400)
+('Esqueleto', '1.png', 600)
 INSERT INTO Estampados (Descripcion, Imagen, Precio) VALUES
 ('Calavera', '2.png', 400)
 
