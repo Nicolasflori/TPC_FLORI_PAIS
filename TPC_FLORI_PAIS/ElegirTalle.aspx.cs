@@ -78,7 +78,7 @@ namespace TPC_FLORI_PAIS
                 productosCargados.Add(producto);
                 Application["ListadosProductos"] = productosCargados;
             }
-            var asdasd = (List<Producto>)Application["ListadosProductos"];
+            
 
             Response.Redirect("CarritoDeCompra.aspx");
         }

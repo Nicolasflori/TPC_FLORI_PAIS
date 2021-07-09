@@ -29,15 +29,16 @@ namespace TPC_PAIS_FLORI
 
                 foreach(ProductoPreCargado item in listaProductoPreCargado)
                 {
-                    listaProducto.Add(new Producto() {           
+                    listaProducto.Add(new Producto() {
+                        ID = item.ID,
                         Color = NegocioColores.descripcionxid(item.IDColor),
                         Estampado = NegocioEstampado.descripcionxid(item.IDEstampado),
                         Categoria = NegocioColores.descripcionxid(item.IDCategoria) + " Estampada " + NegocioEstampado.descripcionxid(item.IDEstampado),
-                        ImagenColor = "../recursos/Remera/" + NegocioColores.descripcionxid(item.IDColor) + ".jpg", 
+                        ImagenColor = "../recursos/Remera/" + NegocioColores.descripcionxid(item.IDColor) + ".jpg",
                         ImagenEstampado = "../recursos/estampado/" + NegocioEstampado.imagenxid(item.IDEstampado) });
                 }
                 
-                Session.Add("listadoProducto", listaProducto);
+              //  Session.Add("listadoProducto", listaProducto);
             }
             catch (Exception ex)
             {
