@@ -18,8 +18,7 @@ namespace TPC_PAIS_FLORI
             List<Estampado> listaEstampados = new List<Estampado>();
             List<Talle> listaTalles = new List<Talle>();
             List<Producto> listaProductos = new List<Producto>();
-            producto = new Producto();
-
+            
             var NegocioColores = new NegocioColores();
             var NegocioCategorias = new NegocioCategorias();
             var NegocioEstampado = new NegocioEstampado();
@@ -66,14 +65,14 @@ namespace TPC_PAIS_FLORI
                     i = new ListItem(item.Descripcion, item.ID.ToString());
                     ddListaTalles.Items.Add(i);
                 }
+                Application["ProductoArmado"] = producto;
 
-                listaProductos.Add(producto);
-                Session.Add("listadoProducto", listaProductos);
             }
         }
 
         protected void ddListaColores_SelectedIndexChanged(object sender, EventArgs e)
         {
+            var producto = (Producto)Application["ProductoArmado"];
             producto.IDColor = int.Parse(ddListaColores.SelectedValue);
             producto.ImagenColor = "../recursos/Remera/" + ddListaColores.SelectedItem.Text + ".jpg";
             String imagenfondo = producto.ImagenColor;
@@ -82,6 +81,7 @@ namespace TPC_PAIS_FLORI
 
         protected void ddListaEstampados_SelectedIndexChanged(object sender, EventArgs e)
         {
+            var producto = (Producto)Application["ProductoArmado"];
             producto.IDEstampado = int.Parse(ddListaEstampados.SelectedValue);
             producto.ImagenEstampado = "../recursos/estampado/" + ddListaEstampados.SelectedValue + ".png";
             String imagenestamapado = producto.ImagenEstampado;
@@ -91,8 +91,13 @@ namespace TPC_PAIS_FLORI
         protected void AgregarCarrito_Click(object sender, EventArgs e)
         {
             var lista = new List<Producto>();
+            var producto = (Producto)Application["ProductoArmado"];
+            var NegocioCategorias = new NegocioCategorias();
+            var NegocioEstampado = new NegocioEstampado();
+
             producto.IDTalle = int.Parse(ddListaTalles.SelectedValue);
             producto.Cantidad = int.Parse(TextBox1.Text);
+            producto.Precio = NegocioCategorias.getprecioxid(producto.IDCategoria) + NegocioEstampado.getprecioxid(producto.IDEstampado);
             producto.PrecioxProducto = producto.Cantidad * producto.Precio;
             lista.Add(producto);
 
