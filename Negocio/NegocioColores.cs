@@ -46,8 +46,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                string valores = "values(" + "'" + nuevo.Descripcion + "'" + "')";
-                datos.setearConsulta("insert into ProductoPreCargado (Descripcion)" + valores);
+                string valores = "values('" + nuevo.Descripcion + "')";
+                datos.setearConsulta("insert into Colores (Descripcion)" + valores);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)

@@ -39,8 +39,19 @@
                     <a class="nav-link" href="ComoComprar">Como Comprar</a>
                     <a class="nav-link" href="About">Nosotros</a>
                     <a class="nav-link" href="Contact">Contacto</a>
-                </div>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="ABMColores">Colores</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
             </div>
+         </div>
+         
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <div class="btn-nav">
