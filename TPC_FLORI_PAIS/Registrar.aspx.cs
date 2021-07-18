@@ -21,7 +21,7 @@ namespace TPC_FLORI_PAIS
         protected void buttonRegistrar_Click(object sender, EventArgs e)
         {
             NegocioUsuarios NegocioUsuarios = new NegocioUsuarios();
-            this.usuario = new Usuarios();
+            usuario = new Usuarios();
             usuario.Usuario = Request.Form.Get("usuario");
             usuario.Contraseña = Request.Form.Get("contraseña");
             usuario.Nombre = Request.Form.Get("nombre");
@@ -31,6 +31,7 @@ namespace TPC_FLORI_PAIS
             NegocioUsuarios.agregar(usuario);
             var page = HttpContext.Current.CurrentHandler as Page;
             ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario Registrado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
+            Application["UsuarioOnLine"] = usuario; 
         }
     }
 }

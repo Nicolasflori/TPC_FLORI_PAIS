@@ -13,7 +13,13 @@
             <h1>Carrito de Compras</h1>
         </div>
     </div>
-        <table class="table">
+    <div>
+     <div class="btn-nav">
+       <button type="button" class="btn btn-info btn-ro und" data-toggle="modal" data-target="#loginModal">Acceder</button>
+        </div>
+      <div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn ml-2" href="/Registrar">Crear Cuenta!</a></div>
+      </div> 
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">Tipo</th>
