@@ -14,8 +14,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                string valores = "values(" + "'" + nuevo.Usuario + "'" + ", '" + nuevo.Contraseña + "'" + ", '" + nuevo.Nombre + "'" + ", '" + nuevo.Apellido + "'" + ", '" + nuevo.DNI + "'" + ", '" + nuevo.Email + "'" + ", '" + nuevo.Telefono + "')";
-                datos.setearConsulta("insert into Usuarios (Usuario, Contraseña, Nombre, Apellido, DNI, Email, Telefono)" + valores);
+                string valores = "values(" + "'" + nuevo.Usuario + "'" + ", '" + nuevo.Contraseña + "'" + ", '" + nuevo.Nombre + "'" + ", '" + nuevo.Apellido + "'" + ", '" + nuevo.Email + "')";
+                datos.setearConsulta("insert into Usuarios (Usuario, Contraseña, Nombre, Apellido, Email)" + valores);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -26,6 +26,11 @@ namespace Negocio
             {
                 datos.cerrarConexion();
             }
+        }
+
+        public void loguear(Usuarios usuario)
+        {
+
         }
     }
 }
