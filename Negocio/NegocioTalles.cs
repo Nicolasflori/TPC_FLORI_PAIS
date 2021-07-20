@@ -15,7 +15,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, Descripcion FROM Talles;");
+                datos.setearConsulta("SELECT ID, Descripcion FROM Talles WHERE baja=0;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -125,6 +125,60 @@ namespace Negocio
             }
 
             return descripcion;
+        }
+        public void agregar(Talle nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                string valores = "values('" + nuevo.Descripcion + "')";
+                datos.setearConsulta("insert into Talles (Descripcion)" + valores);
+                datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void modificar(Talle talle)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Update Talles SET Descripcion='" + talle.Descripcion + "' WHERE ID=" + talle.ID);
+                datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("UPDATE Talles SET baja=1 Where Id = " + id);
+                datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }

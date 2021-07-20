@@ -112,6 +112,9 @@
     <Content Include="ABM\Estampados\Estampados.aspx" />
     <Content Include="ABM\Estampados\Estampados_Det.aspx" />
     <Content Include="ABM\Estampados\Estampados_New.aspx" />
+    <Content Include="ABM\Talles\Talles.aspx" />
+    <Content Include="ABM\Talles\Talles_Det.aspx" />
+    <Content Include="ABM\Talles\Talles_New.aspx" />
     <Content Include="About.aspx" />
     <Content Include="ArmarRemera.aspx" />
     <Content Include="CarritoDeCompra.aspx" />
@@ -237,6 +240,27 @@
     </Compile>
     <Compile Include="ABM\Estampados\Estampados_New.aspx.designer.cs">
       <DependentUpon>Estampados_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Talles\Talles.aspx.cs">
+      <DependentUpon>Talles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Talles\Talles.aspx.designer.cs">
+      <DependentUpon>Talles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Talles\Talles_Det.aspx.cs">
+      <DependentUpon>Talles_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Talles\Talles_Det.aspx.designer.cs">
+      <DependentUpon>Talles_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Talles\Talles_New.aspx.cs">
+      <DependentUpon>Talles_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Talles\Talles_New.aspx.designer.cs">
+      <DependentUpon>Talles_New.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
