@@ -103,7 +103,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ABMColores.aspx" />
+    <Content Include="ABM\Colores\Colores.aspx" />
+    <Content Include="ABM\Colores\Colores_Det.aspx" />
+    <Content Include="ABM\Colores\Colores_New.aspx" />
     <Content Include="About.aspx" />
     <Content Include="ArmarRemera.aspx" />
     <Content Include="CarritoDeCompra.aspx" />
@@ -167,12 +169,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ABMColores.aspx.cs">
-      <DependentUpon>ABMColores.aspx</DependentUpon>
+    <Compile Include="ABM\Colores\Colores.aspx.cs">
+      <DependentUpon>Colores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ABMColores.aspx.designer.cs">
-      <DependentUpon>ABMColores.aspx</DependentUpon>
+    <Compile Include="ABM\Colores\Colores.aspx.designer.cs">
+      <DependentUpon>Colores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Colores\Colores_Det.aspx.cs">
+      <DependentUpon>Colores_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Colores\Colores_Det.aspx.designer.cs">
+      <DependentUpon>Colores_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Colores\Colores_New.aspx.cs">
+      <DependentUpon>Colores_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Colores\Colores_New.aspx.designer.cs">
+      <DependentUpon>Colores_New.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

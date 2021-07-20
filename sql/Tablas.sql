@@ -4,7 +4,8 @@ USE PAIS_FLORI_DB
 GO
 CREATE TABLE Colores(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
-Descripcion VARCHAR(100) NOT NULL
+Descripcion VARCHAR(100) NOT NULL,
+Baja bit not null default(0)
 )
 GO
 CREATE TABLE Talles(

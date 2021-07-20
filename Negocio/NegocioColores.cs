@@ -15,7 +15,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, Descripcion FROM Colores;");
+                datos.setearConsulta("SELECT ID, Descripcion FROM Colores WHERE baja=0");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -60,12 +60,12 @@ namespace Negocio
             }
         }
 
-        public void modificar(Color nuevo)
+        public void modificar(Color color)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update Colores SET Descripcion= '" + nuevo.Descripcion );
+                datos.setearConsulta("Update Colores SET Descripcion='" + color.Descripcion + "' WHERE ID=" + color.ID);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -83,7 +83,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Delete From Color Where Id = " + id);
+                datos.setearConsulta("UPDATE Colores SET baja=1 Where Id = " + id);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
