@@ -106,6 +106,12 @@
     <Content Include="ABM\Colores\Colores.aspx" />
     <Content Include="ABM\Colores\Colores_Det.aspx" />
     <Content Include="ABM\Colores\Colores_New.aspx" />
+    <Content Include="ABM\CostoEnvio\CostoEnvio.aspx" />
+    <Content Include="ABM\CostoEnvio\CostoEnvio_Det.aspx" />
+    <Content Include="ABM\CostoEnvio\CostoEnvio_New.aspx" />
+    <Content Include="ABM\Estampados\Estampados.aspx" />
+    <Content Include="ABM\Estampados\Estampados_Det.aspx" />
+    <Content Include="ABM\Estampados\Estampados_New.aspx" />
     <Content Include="About.aspx" />
     <Content Include="ArmarRemera.aspx" />
     <Content Include="CarritoDeCompra.aspx" />
@@ -189,6 +195,48 @@
     </Compile>
     <Compile Include="ABM\Colores\Colores_New.aspx.designer.cs">
       <DependentUpon>Colores_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\CostoEnvio\CostoEnvio.aspx.cs">
+      <DependentUpon>CostoEnvio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\CostoEnvio\CostoEnvio.aspx.designer.cs">
+      <DependentUpon>CostoEnvio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\CostoEnvio\CostoEnvio_Det.aspx.cs">
+      <DependentUpon>CostoEnvio_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\CostoEnvio\CostoEnvio_Det.aspx.designer.cs">
+      <DependentUpon>CostoEnvio_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\CostoEnvio\CostoEnvio_New.aspx.cs">
+      <DependentUpon>CostoEnvio_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\CostoEnvio\CostoEnvio_New.aspx.designer.cs">
+      <DependentUpon>CostoEnvio_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Estampados\Estampados.aspx.cs">
+      <DependentUpon>Estampados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Estampados\Estampados.aspx.designer.cs">
+      <DependentUpon>Estampados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Estampados\Estampados_Det.aspx.cs">
+      <DependentUpon>Estampados_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Estampados\Estampados_Det.aspx.designer.cs">
+      <DependentUpon>Estampados_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Estampados\Estampados_New.aspx.cs">
+      <DependentUpon>Estampados_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\Estampados\Estampados_New.aspx.designer.cs">
+      <DependentUpon>Estampados_New.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

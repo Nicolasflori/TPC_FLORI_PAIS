@@ -14,7 +14,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, Descripcion, Precio FROM Estampados;");
+                datos.setearConsulta("SELECT ID, Descripcion, Imagen, Precio FROM Estampados WHERE baja=0;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -23,8 +23,8 @@ namespace Negocio
                     {
                         ID = (int)datos.Lector["ID"],
                         Descripcion = (string)datos.Lector["Descripcion"],
+                        Imagen= (string)datos.Lector["Imagen"],
                         Precio = (decimal)datos.Lector["Precio"],
-
                     };
 
                     lista.Add(aux);
@@ -47,8 +47,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                string valores = "values(" + "'" + nuevo.Descripcion + "'" + ", '" + nuevo.Precio + "')";
-                datos.setearConsulta("insert into Estampados (Descripcion, Precio)" + valores);
+                string valores = "values(" + "'" + nuevo.Descripcion + "'" + "," + "'" + nuevo.Imagen + "'" + ", '" + nuevo.Precio + "')";
+                datos.setearConsulta("insert into Estampados (Descripcion,Imagen, Precio)" + valores);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -66,7 +66,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update Estampados SET Descripcion= '" + nuevo.Descripcion + "', Precio= '" + nuevo.Precio);
+                datos.setearConsulta("Update Estampados SET Descripcion= '" + nuevo.Descripcion + "', Imagen=' " + nuevo.Imagen + " ', Precio= '" + nuevo.Precio +"' where ID= '" +nuevo.ID+"'" );
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -84,7 +84,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Delete From Estampados Where Id = " + id);
+                datos.setearConsulta("UPDATE Estampados SET baja = 1 Where Id = " + id);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)

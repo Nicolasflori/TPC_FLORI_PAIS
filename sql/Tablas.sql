@@ -10,7 +10,8 @@ Baja bit not null default(0)
 GO
 CREATE TABLE Talles(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
-Descripcion VARCHAR(100) NOT NULL
+Descripcion VARCHAR(100) NOT NULL,
+Baja bit not null default(0)
 )
 GO
 CREATE TABLE Categorias(
@@ -23,7 +24,8 @@ CREATE TABLE Estampados(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 Descripcion VARCHAR(100) NOT NULL,
 Imagen varchar (100),
-Precio money not null
+Precio money not null,
+Baja bit not null default(0)
 )
 GO
 CREATE TABLE ProductoPreCargado(
@@ -31,25 +33,29 @@ ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 IDEstampado INT null foreign key  references Estampados(ID),
 IDColor INT  not null foreign key  references Colores(ID),
 IDCategoria INT not null foreign key  references Categorias(ID),
-FechaCarga datetime not null
+FechaCarga datetime not null,
+Baja bit not null default(0)
 )
 GO
 Create Table CostosDeEnvio(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 Zona INT NOT NULL,
-Precio money not null
+Precio money not null,
+Baja bit not null default(0)
 )
 GO
 Create Table Provincias(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 IDCostoEnvio INT  not null foreign key  references CostosDeEnvio(ID),
-Descripcion VARCHAR(100) NOT NULL
+Descripcion VARCHAR(100) NOT NULL,
+Baja bit not null default(0)
 )
 GO
 Create Table Ciudades(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 IDProvincia INT not  null foreign key  references Provincias(ID),
-Descripcion VARCHAR(100) NOT NULL
+Descripcion VARCHAR(100) NOT NULL,
+Baja bit not null default(0)
 )
 GO
 Create Table Direcciones(
@@ -60,7 +66,8 @@ Calle varchar(100) not null,
 Numeracion int not null,
 Depto varchar(10) null,
 Piso varchar(10) null,
-CP varchar(4) null
+CP varchar(4) null,
+Baja bit not null default(0)
 )
 GO
 Create Table Permisos(

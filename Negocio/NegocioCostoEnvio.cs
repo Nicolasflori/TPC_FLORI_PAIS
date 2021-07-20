@@ -15,7 +15,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, Precio, Zona FROM Categorias;");
+                datos.setearConsulta("SELECT ID, Zona, Precio FROM CostosDeEnvio WHERE baja=0;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -23,10 +23,8 @@ namespace Negocio
                     var aux = new CostoEnvio
                     {
                         ID = (int)datos.Lector["ID"], 
-                        Precio = (decimal)datos.Lector["Precio"],
                         Zona = (int)datos.Lector["Zona"],
-                       
-
+                        Precio = (decimal)datos.Lector["Precio"],
                     };
 
                     lista.Add(aux);
@@ -68,7 +66,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update CostosDeEnvio SET Precio= '" + nuevo.Precio + "', Precio= '" + nuevo.Zona);
+                datos.setearConsulta("Update CostosDeEnvio SET Zona= '" + nuevo.Zona + "', Precio= '" + nuevo.Precio + "' WHERE ID= '" +nuevo.ID + "'" );
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -86,7 +84,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Delete From CostoDeEnvio Where Id = " + id);
+                datos.setearConsulta("UPDATE CostosDeEnvio SET baja = 1 Where Id = " + id);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -99,7 +97,47 @@ namespace Negocio
             }
         }
 
-       
+        public int zonaxid(int id)
+        {
+            int zona = 0;
+            List<CostoEnvio> lista = new List<CostoEnvio>();
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT ID, Zona, Precio FROM CostosDeEnvio WHERE baja=0;");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    var aux = new CostoEnvio
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        Zona = (int)datos.Lector["Zona"],
+                        Precio = (decimal)datos.Lector["Precio"],
+                    };
+
+                    lista.Add(aux);
+                }
+                foreach (CostoEnvio item in lista)
+                {
+                    if (id == item.ID)
+                        return item.Zona;
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return zona;
+        }
     }
 }
 
