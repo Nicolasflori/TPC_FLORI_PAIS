@@ -24,7 +24,7 @@ namespace TPC_PAIS_FLORI
             var NegocioEstampado = new NegocioEstampado();
             var NegocioTalles = new NegocioTalles();
 
-            listaTalles = NegocioTalles.listar();
+            
 
             if (!IsPostBack)
             {
@@ -59,12 +59,13 @@ namespace TPC_PAIS_FLORI
                 ddListaEstampados.DataSource = listaEstampados;
                 ddListaEstampados.DataBind();
 
-                ListItem i;
-                foreach (Talle item in listaTalles)
-                {
-                    i = new ListItem(item.Descripcion, item.ID.ToString());
-                    ddListaTalles.Items.Add(i);
-                }
+                listaTalles = NegocioTalles.listar();
+
+                ddListaTalles.DataValueField = "ID";
+                ddListaTalles.DataTextField = "Descripcion";
+                ddListaTalles.DataSource = listaTalles;
+                ddListaTalles.DataBind();
+
                 Application["ProductoArmado"] = producto;
 
             }

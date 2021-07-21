@@ -102,7 +102,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update ProductoPreCargado SET IDColor= '" + nuevo.IDColor + "', IDCategoria= '" + nuevo.IDCategoria + "', IDEstampado= '" + nuevo.IDEstampado + "', FechaCarga= '" + nuevo.FechaCarga + "' WHERE id= " + nuevo.ID);
+                datos.setearConsulta("Update ProductoPreCargado SET IDColor= '" + nuevo.IDColor + "', IDCategoria= '" + nuevo.IDCategoria + "', IDEstampado= '" + nuevo.IDEstampado +  "' WHERE id= " + nuevo.ID);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)

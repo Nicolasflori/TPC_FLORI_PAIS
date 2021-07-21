@@ -19,46 +19,42 @@ namespace TPC_FLORI_PAIS.ABM.ProductosPreCargados
         List<Color> listaColores = new List<Color>();
         List<Estampado> listaEstampado = new List<Estampado>();
         List<ProductoPreCargado> listaProductoPreCargado = new List<ProductoPreCargado>();
+        
+
 
         protected void Page_Load(object sender, EventArgs e)
-        {
-            listaColores = negocioColores.listar();
-
-            ListItem b;
-            foreach (Color item in listaColores)
+        { if (!IsPostBack)
             {
-                b = new ListItem(item.Descripcion, item.ID.ToString());
-                DropDownListColores.Items.Add(b);
+                listaColores = negocioColores.listar();
+
+                DropDownListColores.DataValueField = "ID";
+                DropDownListColores.DataTextField = "Descripcion";
+                DropDownListColores.DataSource = listaColores;
+                DropDownListColores.DataBind();
+
+                listaEstampado = negocioEstampado.listar();
+
+                DropDownListEstampados.DataValueField = "ID";
+                DropDownListEstampados.DataTextField = "Descripcion";
+                DropDownListEstampados.DataSource = listaEstampado;
+                DropDownListEstampados.DataBind();
+
+                listaCategoria = negocioCategorias.listar();
+
+                DropDownListCategoria.DataValueField = "ID";
+                DropDownListCategoria.DataTextField = "Descripcion";
+                DropDownListCategoria.DataSource = listaCategoria;
+                DropDownListCategoria.DataBind();
+
+                int idProductoPreCargado = int.Parse(Request.QueryString["id"]);
+
+                listaProductoPreCargado = negocioProductoPreCargado.listar();
+                ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idProductoPreCargado);
+                DropDownListColores.SelectedValue = seleccionado.IDColor.ToString();
+                DropDownListCategoria.SelectedValue = seleccionado.IDCategoria.ToString();
+                DropDownListEstampados.SelectedValue = seleccionado.IDEstampado.ToString();
+
             }
-           
-            
-            listaCategoria = negocioCategorias.listar();
-            ListItem a;
-            foreach (Categoria item in listaCategoria)
-            {
-                a = new ListItem(item.Descripcion, item.ID.ToString());
-                DropDownListCategoria.Items.Add(a);
-            }
-            
-
-            listaEstampado = negocioEstampado.listar();
-
-            ListItem c;
-            foreach (Estampado item in listaEstampado)
-            {
-                c = new ListItem(item.Descripcion, item.ID.ToString());
-                DropDownListEstampados.Items.Add(c);
-            }
-
-            int idProductoPreCargado= int.Parse(Request.QueryString["id"]);
-
-            listaProductoPreCargado = negocioProductoPreCargado.listar();
-            ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idProductoPreCargado);
-            DropDownListColores.SelectedIndex= seleccionado.IDColor-1;
-            DropDownListCategoria.SelectedIndex = seleccionado.IDCategoria - 1;
-            DropDownListEstampados.SelectedIndex = seleccionado.IDEstampado - 1;
-
-
         }
 
         protected void btn_Modificar_Click(object sender, EventArgs e)
@@ -67,11 +63,12 @@ namespace TPC_FLORI_PAIS.ABM.ProductosPreCargados
             ProductoPreCargado productoPreCargado = new ProductoPreCargado()
             {
                 ID = idproductoPreCargado,
-                IDColor = DropDownListColores.SelectedIndex+1,
-                IDCategoria = DropDownListCategoria.SelectedIndex + 1,
-                IDEstampado = DropDownListEstampados.SelectedIndex + 1
+                IDColor = int.Parse(DropDownListColores.SelectedValue),
+                IDCategoria = int.Parse(DropDownListCategoria.SelectedValue),
+                IDEstampado = int.Parse(DropDownListEstampados.SelectedValue)
 
             };
+
             negocioProductoPreCargado.modificar(productoPreCargado);
 
             Response.Redirect("ProductosPreCargados.aspx");

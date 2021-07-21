@@ -40,9 +40,9 @@
 
                                             <div class="row form-horizontal">
                                                 <div class="panel-body">
-                                                    <asp:DropDownList ID="DropDownListColores" runat="server"></asp:DropDownList>
-                                                    <asp:DropDownList ID="DropDownListCategoria" runat="server"></asp:DropDownList>
-                                                       <asp:DropDownList ID="DropDownListEstampados" runat="server"></asp:DropDownList>
+                                                    <asp:DropDownList ID="DropDownListColores" AutoPostBack="true" runat="server"></asp:DropDownList>
+                                                    <asp:DropDownList ID="DropDownListCategoria" AutoPostBack="true"  runat="server"></asp:DropDownList>
+                                                       <asp:DropDownList ID="DropDownListEstampados"  AutoPostBack="true" runat="server"></asp:DropDownList>
                                                 </div>
                                                 </div>
                                             </div>

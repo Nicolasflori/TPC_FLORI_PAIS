@@ -31,7 +31,7 @@ namespace TPC_PAIS_FLORI
                     producto.Categoria = NegocioCategorias.descripcionxid(producto.IDCategoria);
                     producto.Color = NegocioColores.descripcionxid(producto.IDColor);
                     producto.Estampado = NegocioEstampado.descripcionxid(producto.IDEstampado);
-                    producto.Talle = NegocioTalles.descripcionxid(producto.IDTalle+1);
+                    producto.Talle = NegocioTalles.descripcionxid(producto.IDTalle);
                 }
             }
 

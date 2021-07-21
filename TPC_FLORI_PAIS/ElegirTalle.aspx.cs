@@ -15,50 +15,54 @@ namespace TPC_FLORI_PAIS
         protected void Page_Load(object sender, EventArgs e)
         {
             List<Talle> listaTalles = new List<Talle>();
-
-            int idproductoprecargado = int.Parse(Request.QueryString["id"]);
-            var NegocioColores = new NegocioColores();
-            var NegocioCategorias = new NegocioCategorias();
-            var NegocioEstampado = new NegocioEstampado();
-            var NegocioTalles = new NegocioTalles();
-            var NegocioProductoPreCargado = new NegocioProductoPreCargado();
-
-            listaProductoPreCargado = NegocioProductoPreCargado.listar();
-            ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idproductoprecargado);
-
-            lblCategoria.Text = NegocioCategorias.descripcionxid(seleccionado.IDCategoria);
-
-            LblEstampado.Text = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
-
-            String imagenfondo = "../recursos/Remera/" + NegocioColores.descripcionxid(seleccionado.IDColor) + ".jpg";
-            Imagenfondo.ImageUrl = imagenfondo;
-            String imagenestamapado = "../recursos/estampado/" + NegocioEstampado.imagenxid(seleccionado.IDEstampado);
-            Imageestampado.ImageUrl = imagenestamapado;
-            decimal aux = NegocioCategorias.getprecioxid(seleccionado.IDCategoria) + NegocioEstampado.getprecioxid(seleccionado.IDEstampado);
-            LblPrecio.Text = aux.ToString();
-
-            listaTalles = NegocioTalles.listar();
-
-            ListItem i;
-            foreach (Talle item in listaTalles)
-            {
-                i = new ListItem(item.Descripcion, item.ID.ToString());
-                ddListaTalles.Items.Add(i);
-            }
-            
             producto = new Producto();
-            producto.IDCategoria = seleccionado.IDCategoria;
-            producto.IDColor = seleccionado.IDColor;
-            producto.Talle = NegocioTalles.descripcionxid2(ddListaTalles.SelectedValue.ToString());
-            producto.IDEstampado = seleccionado.IDEstampado;
-            producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
-            
+
+            if (!IsPostBack)
+            {
+                int idproductoprecargado = int.Parse(Request.QueryString["id"]);
+                var NegocioColores = new NegocioColores();
+                var NegocioCategorias = new NegocioCategorias();
+                var NegocioEstampado = new NegocioEstampado();
+                var NegocioTalles = new NegocioTalles();
+                var NegocioProductoPreCargado = new NegocioProductoPreCargado();
+
+                listaProductoPreCargado = NegocioProductoPreCargado.listar();
+                ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idproductoprecargado);
+
+                lblCategoria.Text = NegocioCategorias.descripcionxid(seleccionado.IDCategoria);
+
+                LblEstampado.Text = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
+
+                String imagenfondo = "../recursos/Remera/" + NegocioColores.descripcionxid(seleccionado.IDColor) + ".jpg";
+                Imagenfondo.ImageUrl = imagenfondo;
+                String imagenestamapado = "../recursos/estampado/" + NegocioEstampado.imagenxid(seleccionado.IDEstampado);
+                Imageestampado.ImageUrl = imagenestamapado;
+                decimal aux = NegocioCategorias.getprecioxid(seleccionado.IDCategoria) + NegocioEstampado.getprecioxid(seleccionado.IDEstampado);
+                LblPrecio.Text = aux.ToString();
+
+                listaTalles = NegocioTalles.listar();
+
+                ddListaTalles.DataSource = listaTalles;
+                ddListaTalles.DataValueField = "ID";
+                ddListaTalles.DataTextField = "Descripcion";
+                ddListaTalles.DataBind();
+
+               
+
+                producto.IDCategoria = seleccionado.IDCategoria;
+                producto.IDColor = seleccionado.IDColor;
+                producto.IDEstampado = seleccionado.IDEstampado;
+                producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
+
+                Application["ProductoSeleccionado"] = producto;
+            }
         }
 
         protected void buttonAgregarCarrito_Click(object sender, EventArgs e)
         {
             var lista = new List<Producto>();
-            producto.IDTalle = ddListaTalles.SelectedIndex;
+            var producto = (Producto)Application["ProductoSeleccionado"];
+            producto.IDTalle = int.Parse(ddListaTalles.SelectedValue);
             producto.Cantidad = int.Parse(TextBox1.Text);
             producto.PrecioxProducto = producto.Cantidad * producto.Precio;
             lista.Add(producto);
@@ -75,7 +79,6 @@ namespace TPC_FLORI_PAIS
                 Application["ListadosProductos"] = productosCargados;
             }
             
-
             Response.Redirect("CarritoDeCompra.aspx");
         }
 
