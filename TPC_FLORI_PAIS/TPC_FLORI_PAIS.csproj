@@ -112,6 +112,8 @@
     <Content Include="ABM\Estampados\Estampados.aspx" />
     <Content Include="ABM\Estampados\Estampados_Det.aspx" />
     <Content Include="ABM\Estampados\Estampados_New.aspx" />
+    <Content Include="ABM\ProductosPreCargados\ProductosPreCargados.aspx" />
+    <Content Include="ABM\ProductosPreCargados\ProductosPreCargados_Det.aspx" />
     <Content Include="ABM\Talles\Talles.aspx" />
     <Content Include="ABM\Talles\Talles_Det.aspx" />
     <Content Include="ABM\Talles\Talles_New.aspx" />
@@ -240,6 +242,20 @@
     </Compile>
     <Compile Include="ABM\Estampados\Estampados_New.aspx.designer.cs">
       <DependentUpon>Estampados_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados.aspx.cs">
+      <DependentUpon>ProductosPreCargados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados.aspx.designer.cs">
+      <DependentUpon>ProductosPreCargados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados_Det.aspx.cs">
+      <DependentUpon>ProductosPreCargados_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados_Det.aspx.designer.cs">
+      <DependentUpon>ProductosPreCargados_Det.aspx</DependentUpon>
     </Compile>
     <Compile Include="ABM\Talles\Talles.aspx.cs">
       <DependentUpon>Talles.aspx</DependentUpon>
