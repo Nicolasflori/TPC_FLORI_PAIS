@@ -33,7 +33,7 @@ ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 IDEstampado INT null foreign key  references Estampados(ID),
 IDColor INT  not null foreign key  references Colores(ID),
 IDCategoria INT not null foreign key  references Categorias(ID),
-FechaCarga datetime not null,
+FechaCarga datetime not null default(GETDATE()),
 Baja bit not null default(0)
 )
 GO

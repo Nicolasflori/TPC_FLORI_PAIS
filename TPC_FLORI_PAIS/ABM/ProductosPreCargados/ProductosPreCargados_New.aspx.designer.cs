@@ -11,26 +11,17 @@ namespace TPC_FLORI_PAIS.ABM.ProductosPreCargados
 {
 
 
-    public partial class ProductosPreCargados_Det
+    public partial class ProductosPreCargados_New
     {
 
         /// <summary>
-        /// Control btn_Modificar.
+        /// Control btn_Agregar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Modificar;
-
-        /// <summary>
-        /// Control btn_Eliminar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Eliminar;
+        protected global::System.Web.UI.WebControls.Button btn_Agregar;
 
         /// <summary>
         /// Control btn_Volver.

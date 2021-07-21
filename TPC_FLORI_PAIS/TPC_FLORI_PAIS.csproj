@@ -114,6 +114,7 @@
     <Content Include="ABM\Estampados\Estampados_New.aspx" />
     <Content Include="ABM\ProductosPreCargados\ProductosPreCargados.aspx" />
     <Content Include="ABM\ProductosPreCargados\ProductosPreCargados_Det.aspx" />
+    <Content Include="ABM\ProductosPreCargados\ProductosPreCargados_New.aspx" />
     <Content Include="ABM\Talles\Talles.aspx" />
     <Content Include="ABM\Talles\Talles_Det.aspx" />
     <Content Include="ABM\Talles\Talles_New.aspx" />
@@ -256,6 +257,13 @@
     </Compile>
     <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados_Det.aspx.designer.cs">
       <DependentUpon>ProductosPreCargados_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados_New.aspx.cs">
+      <DependentUpon>ProductosPreCargados_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM\ProductosPreCargados\ProductosPreCargados_New.aspx.designer.cs">
+      <DependentUpon>ProductosPreCargados_New.aspx</DependentUpon>
     </Compile>
     <Compile Include="ABM\Talles\Talles.aspx.cs">
       <DependentUpon>Talles.aspx</DependentUpon>

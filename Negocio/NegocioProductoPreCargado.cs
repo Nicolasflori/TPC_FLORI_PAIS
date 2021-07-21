@@ -15,7 +15,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, IDColor, IDCategoria, IDEstampado, FechaCarga FROM ProductoPreCargado;");
+                datos.setearConsulta("SELECT ID, IDColor, IDCategoria, IDEstampado, FechaCarga FROM ProductoPreCargado where baja=0;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -83,8 +83,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                string valores = "values(" + "'" + nuevo.IDColor + "'" + ", '" + nuevo.IDCategoria + "'" + ", '" + nuevo.IDEstampado + "'" + ", '" + nuevo.FechaCarga + "')";
-                datos.setearConsulta("insert into ProductoPreCargado (IDColor, IDCategoria, IDEstampado, FechaCarga)" + valores);
+                string valores = "values(" + "'" + nuevo.IDColor + "'" + ", '" + nuevo.IDCategoria + "'" + ", '" + nuevo.IDEstampado + "')";
+                datos.setearConsulta("insert into ProductoPreCargado (IDColor, IDCategoria, IDEstampado)" + valores);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
@@ -120,7 +120,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Delete From ProductoPreCargado Where Id = " + id);
+                datos.setearConsulta("UPDATE ProductoPreCargado SET baja=1 Where Id = " + id);
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
