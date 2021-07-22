@@ -28,9 +28,33 @@ namespace Negocio
             }
         }
 
-        public void loguear(Usuarios usuario)
+        public bool loguear(Usuarios usuario)
         {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT ID, IDPermiso FROM Usuarios WHERE Usuario = @Usuario AND Constraseña = @Contraseña");
+                datos.agregarParametro("@Usuario", usuario.Usuario);
+                datos.agregarParametro("@Contraseña", usuario.Contraseña);
 
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    usuario.ID = (int)datos.Lector["ID"];
+                    usuario.IDPermiso = (int)datos.Lector["IDPermiso"];
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }
