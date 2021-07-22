@@ -14,5 +14,12 @@ namespace TPC_PAIS_FLORI
         {
 
         }
+
+        protected void logout(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Request.Cookies.Clear();
+            Response.Redirect("Default.aspx");
+        }
     }
 }

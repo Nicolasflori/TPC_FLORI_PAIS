@@ -44,7 +44,8 @@
                     <a class="nav-link" href="Pedidos/Pedidos">Pedidos</a>
                 </div>
             </div>
-
+            <% if (Session["usuario"] == null)
+                {%>
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <div class="btn-nav">
@@ -55,6 +56,15 @@
                     <div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn ml-2" href="/Registrar">Crear Cuenta!</a></div>
                 </li>
             </ul>
+            <%} %>
+                        <% if (Session["usuario"] != null)
+                {%>
+             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <div class="btn-nav"><asp:Button class="btn btn-primary btn-small navbar-btn ml-2" runat="server" OnClick="logout" Text="Salir" /></div>
+                </li>
+            </ul>
+            <%} %>
         </nav>
         <% if (Session["usuario"] != null && ((Dominio.Usuarios)Session["usuario"]).IDPermiso == 1)
             { %>
