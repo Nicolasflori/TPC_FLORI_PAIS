@@ -14,13 +14,17 @@ namespace TPC_FLORI_PAIS.ABM.Estampados
         public List<Estampado> listaEstampados;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                txt_Descripcion.Text = NegocioEstampados.descripcionxid(int.Parse(Request.QueryString["id"]));
-                listaEstampados = NegocioEstampados.listar();
-                Estampado seleccionado = listaEstampados.Find(x => x.ID ==(int.Parse(Request.QueryString["id"])));
-                txt_Imagen.Text = seleccionado.Imagen;
-                txt_Precio.Text = seleccionado.Precio.ToString();
+                if (!IsPostBack)
+                {
+                    txt_Descripcion.Text = NegocioEstampados.descripcionxid(int.Parse(Request.QueryString["id"]));
+                    listaEstampados = NegocioEstampados.listar();
+                    Estampado seleccionado = listaEstampados.Find(x => x.ID == (int.Parse(Request.QueryString["id"])));
+                    txt_Imagen.Text = seleccionado.Imagen;
+                    txt_Precio.Text = seleccionado.Precio.ToString();
+                }
             }
         }
 

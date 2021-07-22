@@ -17,9 +17,13 @@ namespace TPC_FLORI_PAIS.ABM.Colores
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                CargarColores();
+                if (!IsPostBack)
+                {
+                    CargarColores();
+                }
             }
         }
 

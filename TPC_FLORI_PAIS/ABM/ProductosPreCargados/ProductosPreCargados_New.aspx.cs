@@ -23,32 +23,36 @@ namespace TPC_FLORI_PAIS.ABM.ProductosPreCargados
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            listaColores = negocioColores.listar();
-
-            ListItem b;
-            foreach (Color item in listaColores)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                b = new ListItem(item.Descripcion, item.ID.ToString());
-                DropDownListColores.Items.Add(b);
-            }
+                listaColores = negocioColores.listar();
+
+                ListItem b;
+                foreach (Color item in listaColores)
+                {
+                    b = new ListItem(item.Descripcion, item.ID.ToString());
+                    DropDownListColores.Items.Add(b);
+                }
 
 
-            listaCategoria = negocioCategorias.listar();
-            ListItem a;
-            foreach (Categoria item in listaCategoria)
-            {
-                a = new ListItem(item.Descripcion, item.ID.ToString());
-                DropDownListCategoria.Items.Add(a);
-            }
+                listaCategoria = negocioCategorias.listar();
+                ListItem a;
+                foreach (Categoria item in listaCategoria)
+                {
+                    a = new ListItem(item.Descripcion, item.ID.ToString());
+                    DropDownListCategoria.Items.Add(a);
+                }
 
 
-            listaEstampado = negocioEstampado.listar();
+                listaEstampado = negocioEstampado.listar();
 
-            ListItem c;
-            foreach (Estampado item in listaEstampado)
-            {
-                c = new ListItem(item.Descripcion, item.ID.ToString());
-                DropDownListEstampados.Items.Add(c);
+                ListItem c;
+                foreach (Estampado item in listaEstampado)
+                {
+                    c = new ListItem(item.Descripcion, item.ID.ToString());
+                    DropDownListEstampados.Items.Add(c);
+                }
             }
         }
 

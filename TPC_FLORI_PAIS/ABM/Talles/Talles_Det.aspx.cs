@@ -14,9 +14,13 @@ namespace TPC_FLORI_PAIS.ABM.Talles
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                txt_Descripcion.Text = negocioTalles.descripcionxid2(Request.QueryString["id"]);
+                if (!IsPostBack)
+                {
+                    txt_Descripcion.Text = negocioTalles.descripcionxid2(Request.QueryString["id"]);
+                }
             }
         }
 

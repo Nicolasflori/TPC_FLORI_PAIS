@@ -14,11 +14,16 @@ namespace TPC_FLORI_PAIS.ABM.Estampados
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                CargarEstampados();
+                if (!IsPostBack)
+                {
+                    CargarEstampados();
+                }
             }
         }
+
         protected void CargarEstampados()
         {
             grid_Estampados.DataSource = DataSetEstampados();

@@ -15,12 +15,17 @@ namespace TPC_FLORI_PAIS.ABM.CostoEnvio
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                txt_Zona.Text = negocioCostoEnvio.zonaxid(int.Parse(Request.QueryString["id"])).ToString();
-                listaCostosEnvio = negocioCostoEnvio.listar();
-                Dominio.CostoEnvio seleccionado = listaCostosEnvio.Find(x => x.ID == (int.Parse(Request.QueryString["id"])));
-                txt_Precio.Text = seleccionado.Precio.ToString();
+                if (!IsPostBack)
+                {
+                    txt_Zona.Text = negocioCostoEnvio.zonaxid(int.Parse(Request.QueryString["id"])).ToString();
+                    listaCostosEnvio = negocioCostoEnvio.listar();
+                    Dominio.CostoEnvio seleccionado = listaCostosEnvio.Find(x => x.ID == (int.Parse(Request.QueryString["id"])));
+                    txt_Precio.Text = seleccionado.Precio.ToString();
+                }
             }
         }
 

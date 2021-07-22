@@ -20,40 +20,44 @@ namespace TPC_FLORI_PAIS.ABM.ProductosPreCargados
         List<Estampado> listaEstampado = new List<Estampado>();
         List<ProductoPreCargado> listaProductoPreCargado = new List<ProductoPreCargado>();
         
-
-
         protected void Page_Load(object sender, EventArgs e)
-        { if (!IsPostBack)
+        {
+
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                listaColores = negocioColores.listar();
+                if (!IsPostBack)
+                {
+                    listaColores = negocioColores.listar();
 
-                DropDownListColores.DataValueField = "ID";
-                DropDownListColores.DataTextField = "Descripcion";
-                DropDownListColores.DataSource = listaColores;
-                DropDownListColores.DataBind();
+                    DropDownListColores.DataValueField = "ID";
+                    DropDownListColores.DataTextField = "Descripcion";
+                    DropDownListColores.DataSource = listaColores;
+                    DropDownListColores.DataBind();
 
-                listaEstampado = negocioEstampado.listar();
+                    listaEstampado = negocioEstampado.listar();
 
-                DropDownListEstampados.DataValueField = "ID";
-                DropDownListEstampados.DataTextField = "Descripcion";
-                DropDownListEstampados.DataSource = listaEstampado;
-                DropDownListEstampados.DataBind();
+                    DropDownListEstampados.DataValueField = "ID";
+                    DropDownListEstampados.DataTextField = "Descripcion";
+                    DropDownListEstampados.DataSource = listaEstampado;
+                    DropDownListEstampados.DataBind();
 
-                listaCategoria = negocioCategorias.listar();
+                    listaCategoria = negocioCategorias.listar();
 
-                DropDownListCategoria.DataValueField = "ID";
-                DropDownListCategoria.DataTextField = "Descripcion";
-                DropDownListCategoria.DataSource = listaCategoria;
-                DropDownListCategoria.DataBind();
+                    DropDownListCategoria.DataValueField = "ID";
+                    DropDownListCategoria.DataTextField = "Descripcion";
+                    DropDownListCategoria.DataSource = listaCategoria;
+                    DropDownListCategoria.DataBind();
 
-                int idProductoPreCargado = int.Parse(Request.QueryString["id"]);
+                    int idProductoPreCargado = int.Parse(Request.QueryString["id"]);
 
-                listaProductoPreCargado = negocioProductoPreCargado.listar();
-                ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idProductoPreCargado);
-                DropDownListColores.SelectedValue = seleccionado.IDColor.ToString();
-                DropDownListCategoria.SelectedValue = seleccionado.IDCategoria.ToString();
-                DropDownListEstampados.SelectedValue = seleccionado.IDEstampado.ToString();
+                    listaProductoPreCargado = negocioProductoPreCargado.listar();
+                    ProductoPreCargado seleccionado = listaProductoPreCargado.Find(x => x.ID == idProductoPreCargado);
+                    DropDownListColores.SelectedValue = seleccionado.IDColor.ToString();
+                    DropDownListCategoria.SelectedValue = seleccionado.IDCategoria.ToString();
+                    DropDownListEstampados.SelectedValue = seleccionado.IDEstampado.ToString();
 
+                }
             }
         }
 

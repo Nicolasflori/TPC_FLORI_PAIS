@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.Common;
 using Dominio;
 using Negocio;
 
@@ -10,9 +17,13 @@ namespace TPC_FLORI_PAIS.ABM.Colores
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                txt_Descripcion.Text = NegocioColores.descripcionxid(int.Parse(Request.QueryString["id"]));
+                if (!IsPostBack)
+                {
+                    txt_Descripcion.Text = NegocioColores.descripcionxid(int.Parse(Request.QueryString["id"]));
+                }
             }
         }
 

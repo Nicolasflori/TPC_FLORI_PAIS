@@ -13,11 +13,16 @@ namespace TPC_FLORI_PAIS.ABM.Talles
         NegocioTalles negocioTalles = new NegocioTalles();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                CargarTalles();
+                if (!IsPostBack)
+                {
+                    CargarTalles();
+                }
             }
         }
+
         protected void CargarTalles()
         {
             grid_Talles.DataSource = DataSetTalles();

@@ -13,11 +13,16 @@ namespace TPC_FLORI_PAIS.ABM.ProductosPreCargados
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                CargarProductosPreCargados();
+                if (!IsPostBack)
+                {
+                    CargarProductosPreCargados();
+                }
             }
         }
+
         protected void CargarProductosPreCargados()
         {
             grid_ProductosPreCargados.Columns[1].HeaderText = "Color";

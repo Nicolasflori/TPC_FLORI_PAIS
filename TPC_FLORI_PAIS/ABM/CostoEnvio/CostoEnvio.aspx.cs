@@ -15,11 +15,16 @@ namespace TPC_FLORI_PAIS.ABM.CostoEnvio
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            Permisos permisos = new Permisos();
+            if (permisos.validarPermiso() == true)
             {
-                CargarCostoEnvio();
+                if (!IsPostBack)
+                {
+                    CargarCostoEnvio();
+                }
             }
         }
+
         protected void CargarCostoEnvio()
         {
             grid_CostoEnvio.DataSource = DataSetCostoEnvio();
