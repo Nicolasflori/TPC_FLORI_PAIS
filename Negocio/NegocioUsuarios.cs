@@ -33,7 +33,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, IDPermiso FROM Usuarios WHERE Usuario = @Usuario AND Constraseña = @Contraseña");
+                datos.setearConsulta("SELECT ID, IDPermiso FROM Usuarios WHERE Usuario = @Usuario AND Contraseña = @Contraseña");
                 datos.agregarParametro("@Usuario", usuario.Usuario);
                 datos.agregarParametro("@Contraseña", usuario.Contraseña);
 

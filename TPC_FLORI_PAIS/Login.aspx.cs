@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Dominio;
+using Negocio;
 
 namespace TPC_FLORI_PAIS
 {
@@ -16,10 +18,35 @@ namespace TPC_FLORI_PAIS
 
         protected void buttonIngresar_Click(object sender, EventArgs e)
         {
+            Usuarios usuario = new Usuarios();
+            NegocioUsuarios negocio = new NegocioUsuarios();
+            try
+            {
+                usuario = new Usuarios() ;
+                usuario.Usuario = Request.Form.Get("usuario");
+                usuario.Contraseña = Request.Form.Get("contraseña");
+                if(negocio.loguear(usuario))
+                {
+                    Session.Add("usuario", usuario);
+                    var page = HttpContext.Current.CurrentHandler as Page;
+                    ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario logueado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
+                }
+                else
+                {
+                    Session.Add("error", "Usuario o Contraseña incorrecta");
+                    var page = HttpContext.Current.CurrentHandler as Page;
+                    ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario o Contraseña incorrecta" + "');window.location ='" + "Default.aspx" + "';", true);
+                }
 
-            var page = HttpContext.Current.CurrentHandler as Page;
-            ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario logueado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
 
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+            //Response.Redirect("Error.aspx");
         }
     }
 }
