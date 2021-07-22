@@ -12,7 +12,6 @@ namespace TPC_PAIS_FLORI
 {
     public partial class CarritoDeCompra : System.Web.UI.Page
     {
-        public Usuarios usuario;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,7 +23,6 @@ namespace TPC_PAIS_FLORI
             var listaproducto = (List<Producto>)Application["ListadosProductos"];
             Carrito carrito = new Carrito();
 
-            usuario = (Usuarios)Application["UsuarioOnLine"];
             if (listaproducto != null)
             { 
                 foreach (Producto producto in listaproducto)

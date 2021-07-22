@@ -14,7 +14,6 @@ namespace TPC_PAIS_FLORI
         public List<ProductoPreCargado> listaProductoPreCargado;
         public List<Producto> listaProducto;
         public List<Color> listaColores;
-        public Usuarios usuario;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,14 +21,6 @@ namespace TPC_PAIS_FLORI
             NegocioColores NegocioColores = new NegocioColores();
             NegocioCategorias NegocioCategorias = new NegocioCategorias();
             NegocioEstampado NegocioEstampado = new NegocioEstampado();
-
-            var usuario = (Usuarios)Application["UsuarioOnLine"];
-            if (usuario==null)
-            {
-                usuario = new Usuarios();
-                Application["UsuarioOnLine"] = usuario;
-            }
-            usuario = (Usuarios)Application["UsuarioOnLine"];
 
             try
             {

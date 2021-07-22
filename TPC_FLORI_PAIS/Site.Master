@@ -57,11 +57,17 @@
                 </li>
             </ul>
             <%} %>
-                        <% if (Session["usuario"] != null)
+            <% if (Session["usuario"] != null)
                 {%>
-             <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                    <div class="btn-nav">
+                        <a class="btn btn-info btn-ro" href="/Cuenta">Mi Cuenta</a>
+                    </div>
+                </li>
                 <li>
-                    <div class="btn-nav"><asp:Button class="btn btn-primary btn-small navbar-btn ml-2" runat="server" OnClick="logout" Text="Salir" /></div>
+                    <div class="btn-nav">
+                        <asp:Button class="btn btn-primary btn-small navbar-btn ml-2" runat="server" OnClick="logout" Text="Salir" /></div>
                 </li>
             </ul>
             <%} %>

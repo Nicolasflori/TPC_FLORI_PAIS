@@ -13,12 +13,7 @@
             <h1>Carrito de Compras</h1>
         </div>
     </div>
-    <div>
-     <div class="btn-nav">
-       <button type="button" class="btn btn-info btn-ro und" data-toggle="modal" data-target="#loginModal">Acceder</button>
-        </div>
-      <div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn ml-2" href="/Registrar">Crear Cuenta!</a></div>
-      </div> 
+
     <table class="table">
         <thead>
             <tr>
@@ -43,8 +38,7 @@
                         <td><%#Eval("Precio")%></td>
                         <td><%#Eval("Cantidad")%></td>
                         <td><%#Eval("PrecioxProducto")%></td>
-                        <%--<td><asp:LinkButton Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar" OnClick="buttonEliminar_Click" CommandName="DeleteRow" CommandArgument='<%# Container.ItemIndex %>' runat="server" /></td>--%>
-                        <td><asp:LinkButton ID="lnkUpdate" Text="Delete" runat="server" CommandName="DeleteRow" CommandArgument='<%# Container.ItemIndex %>'/></td>
+                        <td><asp:LinkButton ID="lnkUpdate" Text="Eliminar" runat="server" CommandName="DeleteRow" CommandArgument='<%# Container.ItemIndex %>'/></td>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

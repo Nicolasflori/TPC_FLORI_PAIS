@@ -7,20 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TPC_PAIS_FLORI
+namespace TPC_FLORI_PAIS
 {
 
 
-    public partial class CarritoDeCompra
+    public partial class WebForm3
     {
-
-        /// <summary>
-        /// Repetidor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repetidor;
     }
 }

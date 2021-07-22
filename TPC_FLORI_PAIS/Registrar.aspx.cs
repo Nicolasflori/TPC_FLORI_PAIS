@@ -31,7 +31,6 @@ namespace TPC_FLORI_PAIS
             NegocioUsuarios.agregar(usuario);
             var page = HttpContext.Current.CurrentHandler as Page;
             ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario Registrado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
-            Application["UsuarioOnLine"] = usuario; 
         }
     }
 }
