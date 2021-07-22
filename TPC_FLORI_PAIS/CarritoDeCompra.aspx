@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CarritoDeCompra.aspx.cs" Inherits="TPC_PAIS_FLORI.CarritoDeCompra" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" enableEventValidation="false" CodeBehind="CarritoDeCompra.aspx.cs" Inherits="TPC_PAIS_FLORI.CarritoDeCompra" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
@@ -33,7 +33,7 @@
             </tr>
         </thead>
         <tbody>
-            <asp:Repeater runat="server" ID="Repetidor">
+            <asp:Repeater ID="Repetidor" runat="server" OnItemCommand="Repetidor_ItemCommand" >
                 <ItemTemplate>
                     <tr>   
                         <td><%#Eval("Categoria")%></td>
@@ -43,8 +43,8 @@
                         <td><%#Eval("Precio")%></td>
                         <td><%#Eval("Cantidad")%></td>
                         <td><%#Eval("PrecioxProducto")%></td>
-                        <td>Eliminar</td>
-                        <%--<td><asp:Button Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar" OnClick="buttonEliminar_Click" CommandArgument='<%#Eval("ID")%>' runat="server" /></td>--%>
+                        <%--<td><asp:LinkButton Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar" OnClick="buttonEliminar_Click" CommandName="DeleteRow" CommandArgument='<%# Container.ItemIndex %>' runat="server" /></td>--%>
+                        <td><asp:LinkButton ID="lnkUpdate" Text="Delete" runat="server" CommandName="DeleteRow" CommandArgument='<%# Container.ItemIndex %>'/></td>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

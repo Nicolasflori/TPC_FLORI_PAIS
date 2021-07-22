@@ -31,7 +31,7 @@ namespace TPC_FLORI_PAIS
 
                 lblCategoria.Text = NegocioCategorias.descripcionxid(seleccionado.IDCategoria);
 
-                LblEstampado.Text = NegocioEstampado.imagenxid(seleccionado.IDEstampado);
+                LblEstampado.Text = NegocioEstampado.descripcionxid(seleccionado.IDEstampado);
 
                 String imagenfondo = "../recursos/Remera/" + NegocioColores.descripcionxid(seleccionado.IDColor) + ".jpg";
                 Imagenfondo.ImageUrl = imagenfondo;
@@ -52,7 +52,7 @@ namespace TPC_FLORI_PAIS
                 producto.IDCategoria = seleccionado.IDCategoria;
                 producto.IDColor = seleccionado.IDColor;
                 producto.IDEstampado = seleccionado.IDEstampado;
-                producto.Precio = NegocioCategorias.getprecioxid(seleccionado.ID) + NegocioEstampado.getprecioxid(seleccionado.ID);
+                producto.Precio = NegocioCategorias.getprecioxid(seleccionado.IDCategoria) + NegocioEstampado.getprecioxid(seleccionado.IDEstampado);
 
                 Application["ProductoSeleccionado"] = producto;
             }
