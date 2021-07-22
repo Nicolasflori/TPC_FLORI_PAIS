@@ -48,7 +48,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <div class="btn-nav">
-                        <a class="btn btn-info btn-ro li-modal" href="Login.aspx">Acceder</a>
+                        <a class="btn btn-info btn-ro" href="/Login">Acceder</a>
                     </div>
                 </li>
                 <li>
@@ -56,13 +56,6 @@
                 </li>
             </ul>
         </nav>
-
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                </div>
-            </div>
-        </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -105,11 +98,5 @@
         </div>
     </form>
 
-    <script>
-        $('.li-modal').on('click', function (e) {
-            e.preventDefault();
-            $('#loginModal').modal('show').find('.modal-content').load($(this).attr('href'));
-        });
-    </script>
 </body>
 </html>

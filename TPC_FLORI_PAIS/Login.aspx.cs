@@ -13,5 +13,13 @@ namespace TPC_FLORI_PAIS
         {
 
         }
+
+        protected void buttonIngresar_Click(object sender, EventArgs e)
+        {
+
+            var page = HttpContext.Current.CurrentHandler as Page;
+            ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario logueado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
+
+        }
     }
 }

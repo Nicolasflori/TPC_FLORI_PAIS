@@ -50,22 +50,8 @@
             </div>
         </form>
 
-        <div class="text-center">Ya tienes una cuenta? <a class="text-info li-modal" href="Login.aspx">Ingresar</a></div>
+        <div class="text-center">Ya tienes una cuenta? <a class="text-info" href="Login">Ingresar</a></div>
 
     </div>
-
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            </div>
-        </div>
-    </div>
-
-    <script>
-        $('.li-modal').on('click', function (e) {
-            e.preventDefault();
-            $('#loginModal').modal('show').find('.modal-content').load($(this).attr('href'));
-        });
-    </script>
 
 </asp:Content>
