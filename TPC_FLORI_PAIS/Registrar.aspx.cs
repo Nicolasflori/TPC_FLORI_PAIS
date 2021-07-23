@@ -33,6 +33,11 @@ namespace TPC_FLORI_PAIS
                 var page = HttpContext.Current.CurrentHandler as Page;
                 ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "El usuario ya existe!" + "');window.location ='" + "Registrar.aspx" + "';", true);
             }
+            else if (usuario.Usuario.Length > 12)
+            {
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "El usuario debe tener menos de 12 caracteres!" + "');window.location ='" + "Registrar.aspx" + "';", true);
+            }
             else if (usuario.Usuario.Length < 3)
             {
                 var page = HttpContext.Current.CurrentHandler as Page;
