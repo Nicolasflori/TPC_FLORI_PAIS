@@ -7,20 +7,29 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace TPC_PAIS_FLORI
+namespace TPC_FLORI_PAIS
 {
 
 
-    public partial class SiteMaster
+    public partial class FinalizarCompra
     {
 
         /// <summary>
-        /// Control MainContent.
+        /// Control Repetidor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Repeater Repetidor;
+
+        /// <summary>
+        /// Control btn_Comprar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Comprar;
     }
 }

@@ -30,6 +30,12 @@ namespace TPC_FLORI_PAIS
                     Session.Add("usuario", usuario);
                     var page = HttpContext.Current.CurrentHandler as Page;
                     ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario logueado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
+                    var listaproducto = (List<Producto>)Application["ListadosProductos"];
+                    if (listaproducto != null)
+                    {
+                        Response.Redirect("CarritoDeCompra.aspx");
+                    }
+
                 }
                 else
                 {
