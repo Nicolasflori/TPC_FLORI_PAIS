@@ -32,28 +32,11 @@
                     <div class="ibox-content">
                         <!-- CONTENIDO -->
                         <div class="row form-horizontal">
-                            <!--<div class="col-md-8 form-group">
-
-                                <label class="col-md-2 control-label">
-                                    Filtrar
-                                </label>
-                                <div class="col-md-10">
-                                    <asp:TextBox runat="server" ID="txt_Buscar" CssClass="form-control" placeholder="Codigo, descripción o familia" />
-                                </div>
-
-
-                            </div>
-                            <div class="col-md-4  form-group">
-                                <div class="col-md-12">
-                                    <asp:Button Text="Buscar" ID="btn_Buscar" runat="server" CssClass="btn btn-primary" OnClick="btn_Buscar_Click" />
-                                </div>
-                            </div>--> 
                             <div class="col-md-4  form-group">
                                 <div class="col-md-12">
                                     <asp:Button Text="Agregar" ID="btn_Agregar" runat="server" CssClass="btn btn-primary" OnClick="btn_Agregar_Click" />
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="row form-horizontal">
@@ -84,11 +67,5 @@
             </div>
         </div>
     </div>
-    
-    
-    <section  class="row wrapper wrapper-content">
-        <div style="width: 100%; height: 400px; overflow: scroll">
-            <asp:GridView runat="server" ID="GridView1" CssClass="table table-responsive table-hover" GridLines="None" AutoGenerateColumns="True" ></asp:GridView>
-        </div>
-    </section>
+
 </asp:Content>

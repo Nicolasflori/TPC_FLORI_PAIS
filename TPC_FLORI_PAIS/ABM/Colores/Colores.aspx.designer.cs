@@ -15,24 +15,6 @@ namespace TPC_FLORI_PAIS.ABM.Colores
     {
 
         /// <summary>
-        /// txt_Buscar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Buscar;
-
-        /// <summary>
-        /// btn_Buscar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Buscar;
-
-        /// <summary>
         /// btn_Agregar control.
         /// </summary>
         /// <remarks>
@@ -49,14 +31,5 @@ namespace TPC_FLORI_PAIS.ABM.Colores
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grid_Colores;
-
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
