@@ -28,9 +28,37 @@ namespace TPC_FLORI_PAIS
             usuario.Apellido = Request.Form.Get("apellido");
             usuario.Email = Request.Form.Get("email");
 
-            NegocioUsuarios.agregar(usuario);
-            var page = HttpContext.Current.CurrentHandler as Page;
-            ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario Registrado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
+            if (NegocioUsuarios.buscarUsuario(usuario.Usuario) == true)
+            {
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "El usuario ya existe!" + "');window.location ='" + "Registrar.aspx" + "';", true);
+            }
+            else if (usuario.Usuario.Length < 3)
+            {
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "El usuario debe tener mas de 3 caracteres!" + "');window.location ='" + "Registrar.aspx" + "';", true);
+            }
+            else if (usuario.Contraseña != Request.Form.Get("confirmar_contraseña"))
+            {
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Las contraseñas no coinciden!" + "');window.location ='" + "Registrar.aspx" + "';", true);
+            }
+            else if (usuario.Contraseña.Length < 5)
+            {
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "La contraseña debe tener mas de 5 caracteres!" + "');window.location ='" + "Registrar.aspx" + "';", true);
+            }
+            else if (NegocioUsuarios.buscarMailExistente(usuario.Email) == true)
+            {
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "EMail ya registrado!" + "');window.location ='" + "Registrar.aspx" + "';", true);
+            }
+            else
+            {
+                NegocioUsuarios.agregar(usuario);
+                var page = HttpContext.Current.CurrentHandler as Page;
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario Registrado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);
+            }
         }
     }
 }

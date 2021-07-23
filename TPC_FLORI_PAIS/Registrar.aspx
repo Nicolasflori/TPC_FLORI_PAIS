@@ -15,7 +15,7 @@
     </head>
 
     <div class="signup-form">
-        <form action="/examples/actions/confirmation.php" method="post">
+        <form action="/examples/actions/confirmation.php" method="get" onsubmit="return userValid();">
             <h2>Registrarse</h2>
             <p class="hint-text">Crea tu cuenta. Es gratis y solo tomará 1 minuto.</p>
             <div class="form-group">
@@ -46,7 +46,7 @@
                     Acepto las <a class="text-info" href="#">Condiciones de Uso</a> y las <a class="text-info" href="#">Políticas de Privacidad</a></label>
             </div>
             <div class="form-group">
-                <asp:Button type="submit" class="btn btn-success btn-lg btn-block" runat="server" OnClick="buttonRegistrar_Click" Text="Registrarse ahora!" />
+                <asp:Button ID="registrar" type="submit" class="btn btn-success btn-lg btn-block" runat="server" OnClick="buttonRegistrar_Click" Text="Registrarse ahora!" />
             </div>
         </form>
 

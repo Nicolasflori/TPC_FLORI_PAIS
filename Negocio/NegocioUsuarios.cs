@@ -148,6 +148,48 @@ namespace Negocio
                 throw ex;
             }
         }
+        public bool buscarMailExistente(string mail)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT Email FROM Usuarios WHERE Email = @mail");
+                datos.agregarParametro("@mail", mail);
+                datos.ejecutarLectura();
+                if (datos.Lector.Read())
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public bool buscarUsuario(string user)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT Usuario FROM Usuarios WHERE Usuario = @user");
+                datos.agregarParametro("@user", user);
+                datos.ejecutarLectura();
+                if (datos.Lector.Read())
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
 
     }
 }
