@@ -31,7 +31,7 @@
                                         <Columns>
                                             <asp:TemplateField>
                                                 <ItemTemplate>
-                                                    <asp:HyperLink NavigateUrl='<%# "Productos_Det.aspx?id=" + Eval("ID").ToString() %>' runat="server">
+                                                    <asp:HyperLink NavigateUrl='<%# "Pedidos_Det.aspx?id=" + Eval("ID").ToString() %>' runat="server">
                                                         <span class="fas fa-pencil-alt"></span>
                                                     </asp:HyperLink>
                                                 </ItemTemplate>
