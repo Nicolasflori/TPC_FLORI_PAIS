@@ -7,21 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <br></br>
-    <h2><%: Title %>.</h2>
-    <br></br>
-    <h3>Si tiene alguna duda en especial puede enviarnos un mail.</h3>
+    <h2 class="mb-2"><%: Title %> </h2>
+    <h4 class="mb-3">Si tiene alguna duda en especial puede enviarnos un mail</h4>
+    <p>Te responderemos lo antes posible!</p>
       <div class="contact_body">
-        <form action="mailto:nicolasflori@hotmail.com" method="post" enctype="text/plain"><br/>
-          Tu Nombre:<br />
-          <input type="text" name="name" size="78" /><br/><br/>
+          Asunto:<br />
+            <asp:TextBox runat="server" ID="txtAsunto" CssClass="form-control" Font-Size="Large" required/>
           E-mail:<br />
-          <input type="text" name="mail" size="78" /><br/><br/>
+            <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" Font-Size="Large" required/>
           Comentarios:<br />
-          <textarea name="email" id="email" cols="80" rows="10"></textarea
-          ><br /><br />
-          <input type="submit" value="Enviar " />
-          <input type="reset" value="Resetear" />
-        </form>
+            <asp:TextBox runat="server" ID="txtCuerpo" CssClass="form-control" Font-Size="Large" TextMode="MultiLine" Rows="5" required/>
+          <br /><br />
+            <asp:Button Text="Enviar" runat="server" class="btn btn-primary" OnClick="btnEnviar" ID="buttonEnviar"/> 
+            <asp:Button Text="Resetear" runat="server" class="btn btn-secondary" OnClick="btnReset" ID="buttonReset"/>
       </div>
 </asp:Content>

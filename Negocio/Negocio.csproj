@@ -47,6 +47,7 @@
     <Compile Include="NegocioColores.cs" />
     <Compile Include="NegocioCostoEnvio.cs" />
     <Compile Include="NegocioDireccion.cs" />
+    <Compile Include="NegocioEmail.cs" />
     <Compile Include="NegocioEstampado.cs" />
     <Compile Include="NegocioProductoPreCargado.cs" />
     <Compile Include="NegocioProvincia.cs" />
