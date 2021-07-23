@@ -95,7 +95,7 @@ IDUsuario int  not null foreign key references Usuarios(ID),
 SubTotalProductos money not null,
 CostoDeEnvio money not null,
 Total money not null,
-Estado varchar(50)not null check(Estado='Borrador' or Estado='Pagado' or Estado= 'Entregado' or Estado= 'Cancelado'),
+Estado varchar(50)not null check(Estado='En Proceso' or Estado='Pagado' or Estado= 'Entregado' or Estado= 'Cancelado'),
 FormaPago varchar(50) not null,
 Fecha date not null default(GETDATE()),
 FechaEntrega date check(FechaEntrega>=GETDATE())

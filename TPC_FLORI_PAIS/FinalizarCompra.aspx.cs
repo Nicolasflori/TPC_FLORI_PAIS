@@ -92,7 +92,8 @@ namespace TPC_FLORI_PAIS
             string Asunto = "Remeras FLORIPAIS - Compra Realizada!";
             string Cuerpo = "Estás recibiendo este e-mail porque hiciste una compra en Remeras FloriPais. \n\n" +
                             "Muchas gracias por confiar en nosotros!. \n\n" +
-                            "El envío por correo Argentino demora entre 3 y 7 días hábiles. \n\n" +
+                            "A continuacion el link para completar el pago: linkfalso.com \n\n" +
+                            "Despues de que confirmemos el pago, el envío por correo Argentino demora entre 3 y 7 días hábiles. \n\n" +
                             "Por cualquier consulta comunicate con nosotros a traves de nuestras redes sociales: \n\n" +
                             "Instagram: @RemerasFloriPais\n" +
                             "Facebook: @RemerasFloriPais\n\n" +
