@@ -11,12 +11,12 @@ namespace TPC_FLORI_PAIS
 {
     public partial class WebForm3 : System.Web.UI.Page
     {
-        public Usuarios usuario;
+        public Usuarios usuarioAux;
         public Direccion direccion;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtnombre.Text = ((Dominio.Usuarios)Session["usuario"]).Usuario;
         }
 
         protected void buttonGuardar_Click(object sender, EventArgs e)
@@ -25,16 +25,15 @@ namespace TPC_FLORI_PAIS
             NegocioDireccion negocioDireccion = new NegocioDireccion();
 
             ////Te genera un nuevo usuario y se pisa el usuario logueado
-            usuario = new Usuarios();
+            usuarioAux = new Usuarios();
             direccion = new Direccion();
 
-            usuario.Nombre = Request.Form.Get("nombre");
-            usuario.Apellido = Request.Form.Get("apellido");
-            usuario.Email = Request.Form.Get("email");
-            usuario.DNI = Request.Form.Get("dni");
-            usuario.Telefono = Request.Form.Get("telefono");
-            usuario.ID = ((Dominio.Usuarios)Session["usuario"]).ID;
-
+            usuarioAux.Nombre = txtnombre.Text;         
+            usuarioAux.Apellido = Request.Form.Get("apellido");
+            usuarioAux.Email = Request.Form.Get("email");
+            usuarioAux.DNI = Request.Form.Get("dni");
+            usuarioAux.Telefono = Request.Form.Get("telefono");
+            usuarioAux.ID = ((Dominio.Usuarios)Session["usuario"]).ID;
             direccion.IDCiudad = negocioDireccion.buscarIDCiudad(Request.Form.Get("ciudad"));
             direccion.IDProvincia = negocioDireccion.buscarIDProvincia(Request.Form.Get("provincia"));
             direccion.Calle = Request.Form.Get("calle");
@@ -54,7 +53,7 @@ namespace TPC_FLORI_PAIS
                 negocioDireccion.modificar(direccion);
             }
 
-            negocioUsuarios.modificar(usuario);
+            negocioUsuarios.modificar(usuarioAux);
 
             var page = HttpContext.Current.CurrentHandler as Page;
             ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Usuario Modificado con Éxito!" + "');window.location ='" + "Default.aspx" + "';", true);

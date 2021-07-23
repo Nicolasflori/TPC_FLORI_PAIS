@@ -21,43 +21,53 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                        <asp:TextBox runat="server" class="form-control" name="nombre" placeholder="Nombre" id="txtnombre"/>
+                        <asp:RequiredFieldValidator runat="server" id="val" controltovalidate="txtnombre" errormessage="Ingrese un Nombre!" ForeColor="Red"/>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" name="apellido" placeholder="Apellido">
+                        <asp:TextBox runat="server" class="form-control" name="apellido" placeholder="Apellido" id="txtapellido" />  
+                        <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator1" controltovalidate="txtapellido" errormessage="Ingrese un Apellido!" ForeColor="Red"/>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email">
+                <asp:TextBox runat="server" class="form-control" name="email" placeholder="Email" id="txtemail" />  
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator2" controltovalidate="txtemail" errormessage="Ingrese un Email!" ForeColor="Red"/>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="dni" placeholder="DNI">
+                <asp:TextBox runat="server" class="form-control" name="dni" placeholder="DNI" id="txtdni" />
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator3" controltovalidate="txtdni" errormessage="Ingrese un DNI!" ForeColor="Red"/>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+                <asp:TextBox runat="server" class="form-control" name="telefono" placeholder="Teléfono" id="txttelefono" />
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator4" controltovalidate="txttelefono" errormessage="Ingrese un Telefono!" ForeColor="Red"/>
             </div>
             <h2>Dirección</h2>
             <div class="form-group">
-                <input type="text" class="form-control" name="ciudad" placeholder="Ciudad">
+                <asp:TextBox runat="server" class="form-control" name="ciudad" placeholder="Ciudad" id="txtciudad" />
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator5" controltovalidate="txtciudad" errormessage="Ingrese una Ciudad!" ForeColor="Red" />
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="provincia" placeholder="Provincia">
+                <asp:TextBox runat="server" class="form-control" name="provincia" placeholder="Provincia" id="txtprovincia" />  
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator6" controltovalidate="txtprovincia" errormessage="Ingrese una Provincia!" ForeColor="Red"/>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="calle" placeholder="Calle">
+                <asp:TextBox runat="server" class="form-control" name="calle" placeholder="Calle" id="txtcalle" />  
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator7" controltovalidate="txtcalle" errormessage="Ingrese una Calle!" ForeColor="Red"/>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="numeracion" placeholder="Numeración">
+                <asp:TextBox runat="server" class="form-control" name="numeracion" placeholder="Numeración" id="txtnumeracion" />  
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator8" controltovalidate="txtnumeracion" errormessage="Ingrese una Numeracion!" ForeColor="Red"/>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="piso" placeholder="Piso">
+                <asp:TextBox runat="server" class="form-control" name="piso" placeholder="Piso" id="txtpiso" />  
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="depto" placeholder="Depto">
+                <asp:TextBox runat="server" class="form-control" name="depto" placeholder="Depto" id="txtdepto" />  
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="cp" placeholder="Código Postal">
+                <asp:TextBox runat="server" class="form-control" name="cp" placeholder="Código Postal" id="txtcp" />  
+                <asp:RequiredFieldValidator runat="server" id="RequiredFieldValidator9" controltovalidate="txtcp" errormessage="Ingrese un Codigo Postal!" ForeColor="Red"/>
             </div>
 
             <div class="form-group">
