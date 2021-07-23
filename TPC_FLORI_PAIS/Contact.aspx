@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <h2 class="mb-2"><%: Title %> </h2>
-    <h4 class="mb-3">Si tiene alguna duda en especial puede enviarnos un mail</h4>
+    <h4 class="mb-3">Si tenes alguna duda en especial, mandanos un mail</h4>
     <p>Te responderemos lo antes posible!</p>
       <div class="contact_body">
           Asunto:<br />
