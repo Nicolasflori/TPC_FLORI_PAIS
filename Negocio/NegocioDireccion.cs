@@ -115,5 +115,44 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+
+        public Direccion buscarxid(int idDireccion)
+        {
+            Direccion direccion = new Direccion();
+            
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT ID, IDCiudad, IDProvincia, Calle, Numeracion, Depto, Piso, CP FROM Direcciones where baja=0 and ID= " + idDireccion);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    direccion = new Direccion
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        IDCiudad = (int)datos.Lector["IDCiudad"],
+                        IDProvincia = (int)datos.Lector["IDProvincia"],
+                        Calle = (string)datos.Lector["Calle"],
+                        Numeracion = (int)datos.Lector["Numeracion"],
+                        Depto = (string)datos.Lector["Depto"],
+                        Piso = (string)datos.Lector["Piso"],
+                        CP = (string)datos.Lector["CP"],
+                    };
+
+                }
+              
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return direccion;
+        }
     }
 }

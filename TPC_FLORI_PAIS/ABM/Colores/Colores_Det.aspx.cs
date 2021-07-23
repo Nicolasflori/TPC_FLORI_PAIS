@@ -39,8 +39,6 @@ namespace TPC_FLORI_PAIS.ABM.Colores
             Response.Redirect("Colores.aspx");
         }
 
-      
-
         protected void btn_Volver_Click(object sender, EventArgs e)
         {
             Response.Redirect("Colores.aspx");
@@ -53,7 +51,5 @@ namespace TPC_FLORI_PAIS.ABM.Colores
 
             Response.Redirect("Colores.aspx");
         }
-
-       
     }
 }

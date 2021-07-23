@@ -16,12 +16,16 @@ namespace TPC_FLORI_PAIS
         NegocioEstampado NegocioEstampado = new NegocioEstampado();
         NegocioTalles NegocioTalles = new NegocioTalles();
         NegocioCarrito NegocioCarrito = new NegocioCarrito();
+        NegocioDireccion NegocioDireccion = new NegocioDireccion();
+        NegocioCostoEnvio NegocioCostoEnvio = new NegocioCostoEnvio();
+        NegocioProvincia NegocioProvincia = new NegocioProvincia();
         Carrito carrito = new Carrito();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             listaproducto = (List<Producto>)Application["ListadosProductos"];
             var usuario = new Usuarios();
+
             usuario = (Usuarios)Session["usuario"];
 
             if (listaproducto != null)
@@ -37,17 +41,22 @@ namespace TPC_FLORI_PAIS
                     producto.Talle = NegocioTalles.descripcionxid(producto.IDTalle);
                 }
 
-                //Direccion direccion = NegocioDireccion.buscarxid(usuario.IDDireccion);
-                //Provincia provincia = NegocioProvincia.buscarxid(direccion.IDProvincia); ;
-                //CostosDeEnvio costoEnvio = NegocioCostosDeEnvio.buscarxid(provincia.IDCostoEnvio);
+                //Direccion direccion = negocioDireccion.buscarxid(usuario.IDDireccion);
+                //var costoEnvio = negocioCostoEnvio.buscarxid(direccion.IDProvincia);
+                //var costoEnvio = negocioCostoEnvio.buscarxid(direccion.IDProvincia);
+
+                Direccion direccion = NegocioDireccion.buscarxid(usuario.IDDireccion);
+                Provincia provincia = NegocioProvincia.buscarxid(direccion.IDProvincia);
+                CostoEnvio costoEnvio = NegocioCostoEnvio.buscarxid(provincia.IDCostoEnvio);
+
 
                 carrito = new Carrito()
                 {
                     IDUsuario = usuario.ID,
                     Items = listaproducto,
                     SubTotalProductos = precioTotalProductos,
-                    //CostoDeEnvio = costoEnvio.Precio,
-                    //Total = precioTotalProductos + costoEnvio.Precio,
+                    CostoDeEnvio = costoEnvio.Precio,
+                    Total = precioTotalProductos + costoEnvio.Precio,
                     Estado = "Borrador",
                     FormaPago = ddMetodoPago.Text,
 

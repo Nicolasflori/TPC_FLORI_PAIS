@@ -52,7 +52,15 @@
                                                     </asp:HyperLink>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
-                                            <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
+                                            <asp:BoundField HeaderText="ID de Compra" DataField="ID" />
+                                            <asp:BoundField HeaderText="ID Usuario" DataField="IDUsuario" />
+                                            <asp:BoundField HeaderText="Sub Total Productos" DataField="SubTotalProductos" />
+                                            <asp:BoundField HeaderText="Costo De Envio" DataField="CostoDeEnvio" />
+                                            <asp:BoundField HeaderText="Total" DataField="Total" />
+                                            <asp:BoundField HeaderText="Estado" DataField="Estado" />
+                                            <asp:BoundField HeaderText="Forma de Pago" DataField="FormaPago" />
+                                            <asp:BoundField HeaderText="Fecha" DataField="Fecha" />
+                                            <asp:BoundField HeaderText="Fecha Entrega" DataField="FechaEntrega" />
                                         </Columns>
                                         <PagerStyle CssClass="pagination-ys" HorizontalAlign="Center" />
                                     </asp:GridView>

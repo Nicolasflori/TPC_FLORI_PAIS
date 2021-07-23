@@ -9,13 +9,26 @@ namespace Negocio
 {
     public class NegocioCarrito
     {
-        public List<Carrito> listar(int idUsuario)
+        public List<Carrito> listar(Usuarios usuario)
         {
-            List<Carrito> lista = new List<Carrito>();
-            AccesoDatos datos = new AccesoDatos();
+            var lista = new List<Carrito>();
+            var datos = new AccesoDatos();
+            string query = "";
+
             try
             {
-                datos.setearConsulta("SELECT ID, Estado FROM Carrito");
+                if (usuario.IDPermiso == 1)
+                {
+                    // Usuario Administrador
+                    query = "SELECT ID, IDUsuario, SubTotalProductos, CostoDeEnvio, Total, Estado, FormaPago, Fecha, FechaEntrega FROM Carrito";
+                }
+                else if (usuario.IDPermiso == 2)
+                {
+                    // Usuario Cliente
+                    query = "SELECT ID, IDUsuario, SubTotalProductos, CostoDeEnvio, Total, Estado, FormaPago, Fecha, FechaEntrega FROM Carrito WHERE IDUsuario = " + usuario.ID;
+                }
+
+                datos.setearConsulta(query);
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -23,7 +36,14 @@ namespace Negocio
                     var aux = new Carrito
                     {
                         ID = (int)datos.Lector["ID"],
+                        IDUsuario = (int)datos.Lector["IDUsuario"],
+                        SubTotalProductos = (decimal)datos.Lector["SubTotalProductos"],
+                        CostoDeEnvio = (decimal)datos.Lector["CostoDeEnvio"],
+                        Total = (decimal)datos.Lector["Total"],
                         Estado = (string)datos.Lector["Estado"],
+                        FormaPago = (string)datos.Lector["FormaPago"],
+                        Fecha = (DateTime)datos.Lector["Fecha"],
+                        FechaEntrega = (DateTime)datos.Lector["FechaEntrega"],
                     };
 
                     lista.Add(aux);
@@ -32,7 +52,45 @@ namespace Negocio
             }
             catch (Exception ex)
             {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
 
+        public List<Producto> listarDet(int idCarrito)
+        {
+            var lista = new List<Producto>();
+            var datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT ID, IDEstampado, IDColor, IDCategoria, IDTalle, Precio, Cantidad, PrecioxProducto, IDCarrito FROM CarritoDet WHERE IDCarrito = " + idCarrito);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    var aux = new Producto
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        IDEstampado = (int)datos.Lector["IDEstampado"],
+                        IDColor = (int)datos.Lector["IDColor"],
+                        IDCategoria = (int)datos.Lector["IDCategoria"],
+                        IDTalle = (int)datos.Lector["IDTalle"],
+                        Precio = (decimal)datos.Lector["Precio"],
+                        Cantidad = (int)datos.Lector["Cantidad"],
+                        PrecioxProducto = (decimal)datos.Lector["PrecioxProducto"],
+                        IDCarrito = (int)datos.Lector["IDCarrito"],
+                    };
+
+                    lista.Add(aux);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
                 throw ex;
             }
             finally

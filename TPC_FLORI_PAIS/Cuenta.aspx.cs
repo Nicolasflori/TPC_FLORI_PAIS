@@ -23,6 +23,8 @@ namespace TPC_FLORI_PAIS
         {
             NegocioUsuarios negocioUsuarios = new NegocioUsuarios();
             NegocioDireccion negocioDireccion = new NegocioDireccion();
+
+            ////Te genera un nuevo usuario y se pisa el usuario logueado
             usuario = new Usuarios();
             direccion = new Direccion();
 

@@ -138,6 +138,47 @@ namespace Negocio
 
             return zona;
         }
+        public int getcostoxidprovincia(int id)
+        {
+            int costo = 0;
+
+
+
+
+            return costo;
+        }
+
+        public CostoEnvio buscarxid(int IDCostoEnvio)
+        {
+            CostoEnvio costoEnvio = new CostoEnvio();
+
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT ID, Zona, Precio FROM  CostosDeEnvio where baja=0 and ID= " + IDCostoEnvio);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    costoEnvio = new CostoEnvio
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        Zona = (int)datos.Lector["Zona"],
+                        Precio = (decimal)datos.Lector["Precio"],
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return costoEnvio;
+        }
     }
 }
 

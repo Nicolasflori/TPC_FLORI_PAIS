@@ -49,6 +49,7 @@
     <Compile Include="NegocioDireccion.cs" />
     <Compile Include="NegocioEstampado.cs" />
     <Compile Include="NegocioProductoPreCargado.cs" />
+    <Compile Include="NegocioProvincia.cs" />
     <Compile Include="NegocioTalles.cs" />
     <Compile Include="NegocioUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
