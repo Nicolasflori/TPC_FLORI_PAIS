@@ -68,7 +68,6 @@ namespace TPC_FLORI_PAIS
                 Repetidor.DataSource = carrito.Items;
                 Repetidor.DataBind();
 
-                c_FechaEntrega.SelectedDate = DateTime.Today.AddDays(3);
             }
             else
             {
@@ -79,7 +78,6 @@ namespace TPC_FLORI_PAIS
         protected void btn_Comprar_Click(object sender, EventArgs e)
         {
             carrito.FormaPago = ddMetodoPago.Text;
-            carrito.FechaEntrega = c_FechaEntrega.SelectedDate;
 
             // Cargo la cabecera del pedido
             var idCarrito = NegocioCarrito.agregar(carrito);

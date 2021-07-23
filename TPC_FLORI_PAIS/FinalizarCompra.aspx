@@ -20,9 +20,6 @@
         <asp:ListItem>Pago Facil</asp:ListItem>
     </asp:DropDownList>
 
-    <h4>Fecha Entrega</h4>
-    <asp:Calendar ID="c_FechaEntrega" runat="server"></asp:Calendar>
-
     <table class="table">
         <thead>
             <tr>

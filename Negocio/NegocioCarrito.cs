@@ -43,7 +43,6 @@ namespace Negocio
                         Estado = (string)datos.Lector["Estado"],
                         FormaPago = (string)datos.Lector["FormaPago"],
                         Fecha = (DateTime)datos.Lector["Fecha"],
-                        FechaEntrega = (DateTime)datos.Lector["FechaEntrega"],
                     };
 
                     lista.Add(aux);
@@ -137,9 +136,8 @@ namespace Negocio
                                              nuevo.CostoDeEnvio.ToString().Replace(",", ".") + ", " + 
                                              nuevo.Total.ToString().Replace(",", ".") + ", '" + 
                                              nuevo.Estado + "' , '" + 
-                                             nuevo.FormaPago + "', '" + 
-                                             nuevo.FechaEntrega.ToString("dd/MM/yyyy") + "')";
-                datos.setearConsulta("insert into Carrito (IDUsuario, SubTotalProductos, CostoDeEnvio, Total, Estado, FormaPago, FechaEntrega)" + valores);
+                                             nuevo.FormaPago + " ')";
+                datos.setearConsulta("insert into Carrito (IDUsuario, SubTotalProductos, CostoDeEnvio, Total, Estado, FormaPago)" + valores);
                 datos.ejectutarAccion();
                 
                 return ultimoCarrito();
