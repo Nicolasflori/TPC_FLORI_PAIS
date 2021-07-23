@@ -81,7 +81,7 @@ namespace Negocio
         public bool chequearDireccion(int id)
         {
             AccesoDatos datos = new AccesoDatos();
-            int? direccion = null;
+            //int? direccion = null;
             try
             {
                 datos.setearConsulta("SELECT IDDireccion FROM Usuarios WHERE ID = @id");
@@ -89,9 +89,9 @@ namespace Negocio
                 datos.ejecutarLectura();
 
                 datos.Lector.Read();
-                direccion = (int?)datos.Lector["IDDireccion"];
+                //direccion = (int?)datos.Lector["IDDireccion"];
 
-                if(direccion == null)
+                if(datos.Lector["IDDireccion"] == null)
                 {
                     return false;
                 }
@@ -102,7 +102,6 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -189,6 +188,31 @@ namespace Negocio
 
                 throw ex;
             }
+        }
+
+        public Usuarios buscarUser(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            Usuarios usuario = new Usuarios();
+            try
+            {
+                datos.setearConsulta("SELECT Nombre, Apellido, Email, DNI, Telefono, IDDireccion FROM Usuarios WHERE ID = @id");
+                datos.agregarParametro("@id", id);
+                datos.ejecutarLectura();
+                datos.Lector.Read();
+                usuario.Nombre = (string)datos.Lector["Nombre"];
+                usuario.Apellido = (string)datos.Lector["Apellido"];
+                usuario.Email = (string)datos.Lector["Email"];
+                usuario.DNI = Convert.ToString((int)datos.Lector["DNI"]);
+                usuario.Telefono = (string)datos.Lector["Telefono"];
+                //usuario.IDDireccion = (int)datos.Lector["IDDireccion"];
+                return usuario;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
     }

@@ -19,6 +19,7 @@ namespace TPC_FLORI_PAIS
         NegocioDireccion NegocioDireccion = new NegocioDireccion();
         NegocioCostoEnvio NegocioCostoEnvio = new NegocioCostoEnvio();
         NegocioProvincia NegocioProvincia = new NegocioProvincia();
+        NegocioUsuarios NegocioUsuarios = new NegocioUsuarios();
         Carrito carrito = new Carrito();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -41,13 +42,10 @@ namespace TPC_FLORI_PAIS
                     producto.Talle = NegocioTalles.descripcionxid(producto.IDTalle);
                 }
 
-                //Direccion direccion = negocioDireccion.buscarxid(usuario.IDDireccion);
-                //var costoEnvio = negocioCostoEnvio.buscarxid(direccion.IDProvincia);
-                //var costoEnvio = negocioCostoEnvio.buscarxid(direccion.IDProvincia);
-
-                Direccion direccion = NegocioDireccion.buscarxid(usuario.IDDireccion);
-                Provincia provincia = NegocioProvincia.buscarxid(direccion.IDProvincia);
-                CostoEnvio costoEnvio = NegocioCostoEnvio.buscarxid(provincia.IDCostoEnvio);
+                usuario = NegocioUsuarios.buscarUser(((Dominio.Usuarios)Session["usuario"]).ID);
+                //Direccion direccion = NegocioDireccion.buscarxid(usuario.IDDireccion);
+                //Provincia provincia = NegocioProvincia.buscarxid(direccion.IDProvincia);
+                //CostoEnvio costoEnvio = NegocioCostoEnvio.buscarxid(provincia.IDCostoEnvio);
 
 
                 carrito = new Carrito()
@@ -55,8 +53,9 @@ namespace TPC_FLORI_PAIS
                     IDUsuario = usuario.ID,
                     Items = listaproducto,
                     SubTotalProductos = precioTotalProductos,
-                    CostoDeEnvio = costoEnvio.Precio,
-                    Total = precioTotalProductos + costoEnvio.Precio,
+                    //CostoDeEnvio = costoEnvio.Precio,
+                    //Total = precioTotalProductos + costoEnvio.Precio,
+                    Total = precioTotalProductos + 405,
                     Estado = "Borrador",
                     FormaPago = ddMetodoPago.Text,
 

@@ -27,8 +27,6 @@ namespace TPC_PAIS_FLORI
                 this.listaProducto = new List<Producto>();
                 listaProductoPreCargado = NegocioProductoPreCargado.listar();
 
-
-
                 foreach(ProductoPreCargado item in listaProductoPreCargado)
                 {
                     listaProducto.Add(new Producto() {

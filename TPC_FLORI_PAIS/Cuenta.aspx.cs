@@ -16,7 +16,25 @@ namespace TPC_FLORI_PAIS
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtnombre.Text = ((Dominio.Usuarios)Session["usuario"]).Usuario;
+            NegocioUsuarios NegocioUsuarios = new NegocioUsuarios();
+            NegocioDireccion NegocioDireccion = new NegocioDireccion();
+
+            //usuarioAux = NegocioUsuarios.buscarUser(((Dominio.Usuarios)Session["usuario"]).ID);
+            //direccion = NegocioDireccion.buscarxid(usuarioAux.IDDireccion);
+
+            //txtnombre.Text = usuarioAux.Nombre;
+            //txtapellido.Text = usuarioAux.Apellido;
+            //txtemail.Text = usuarioAux.Email;
+            //txtdni.Text = usuarioAux.DNI;
+            //txttelefono.Text = usuarioAux.Telefono;
+
+            //txtciudad.Text = NegocioDireccion.buscarCiudad(direccion.IDCiudad);
+            //txtprovincia.Text = NegocioDireccion.buscarProvincia(direccion.IDProvincia);
+            //txtcalle.Text = direccion.Calle;
+            //txtnumeracion.Text = Convert.ToString(direccion.Numeracion);
+            //txtpiso.Text = direccion.Piso;
+            //txtdepto.Text = direccion.Depto;
+            //txtcp.Text = direccion.CP;
         }
 
         protected void buttonGuardar_Click(object sender, EventArgs e)
@@ -24,25 +42,24 @@ namespace TPC_FLORI_PAIS
             NegocioUsuarios negocioUsuarios = new NegocioUsuarios();
             NegocioDireccion negocioDireccion = new NegocioDireccion();
 
-            ////Te genera un nuevo usuario y se pisa el usuario logueado
             usuarioAux = new Usuarios();
             direccion = new Direccion();
 
             usuarioAux.Nombre = txtnombre.Text;         
-            usuarioAux.Apellido = Request.Form.Get("apellido");
-            usuarioAux.Email = Request.Form.Get("email");
-            usuarioAux.DNI = Request.Form.Get("dni");
-            usuarioAux.Telefono = Request.Form.Get("telefono");
+            usuarioAux.Apellido = txtapellido.Text;
+            usuarioAux.Email = txtemail.Text;
+            usuarioAux.DNI = txtdni.Text;
+            usuarioAux.Telefono = txttelefono.Text;
             usuarioAux.ID = ((Dominio.Usuarios)Session["usuario"]).ID;
-            direccion.IDCiudad = negocioDireccion.buscarIDCiudad(Request.Form.Get("ciudad"));
-            direccion.IDProvincia = negocioDireccion.buscarIDProvincia(Request.Form.Get("provincia"));
-            direccion.Calle = Request.Form.Get("calle");
-            direccion.Numeracion = Int32.Parse(Request.Form.Get("numeracion")); 
-            direccion.Piso = Request.Form.Get("piso");
-            direccion.Depto = Request.Form.Get("depto");
-            direccion.CP = Request.Form.Get("cp");
+            direccion.IDCiudad = negocioDireccion.buscarIDCiudad(txtciudad.Text);
+            direccion.IDProvincia = negocioDireccion.buscarIDProvincia(txtprovincia.Text);
+            direccion.Calle = txtcalle.Text;
+            direccion.Numeracion = Int32.Parse(txtnumeracion.Text); 
+            direccion.Piso = txtpiso.Text;
+            direccion.Depto = txtdepto.Text;
+            direccion.CP = txtcp.Text;
 
-            if (negocioUsuarios.chequearDireccion(((Dominio.Usuarios)Session["usuario"]).ID) == false)
+            if (negocioUsuarios.chequearDireccion(((Dominio.Usuarios)Session["usuario"]).ID) != false)
             {
                 negocioDireccion.agregar(direccion);
                 negocioDireccion.setearIDDireccion(((Dominio.Usuarios)Session["usuario"]).ID);

@@ -66,8 +66,6 @@ namespace Negocio
             }
         }
 
-
-
         public int buscarIDCiudad(string ciudad)
         {
             int IDCiudad;
@@ -123,7 +121,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT ID, IDCiudad, IDProvincia, Calle, Numeracion, Depto, Piso, CP FROM Direcciones where baja=0 and ID= " + idDireccion);
+                datos.setearConsulta("SELECT ID, IDCiudad, IDProvincia, Calle, Numeracion, Depto, Piso, CP FROM Direcciones WHERE ID = @id;");
+                datos.agregarParametro("@id", idDireccion);
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -153,6 +152,52 @@ namespace Negocio
             }
 
             return direccion;
+        }
+
+        public string buscarCiudad(int id)
+        {
+           string Ciudad;
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT Descripcion FROM Ciudades WHERE ID = @id;");
+                datos.agregarParametro("@id", id);
+                datos.ejecutarLectura();
+                datos.Lector.Read();
+                Ciudad = (string)datos.Lector["Descripcion"];
+                return Ciudad;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public string buscarProvincia(int id)
+        {
+            string Provincia;
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT Descripcion FROM Provincias WHERE ID = @id;");
+                datos.agregarParametro("@id", id);
+                datos.ejecutarLectura();
+                datos.Lector.Read();
+                Provincia = (string)datos.Lector["Descripcion"];
+                return Provincia;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }

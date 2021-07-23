@@ -13,13 +13,14 @@
             <h1>Finalizar Compra</h1>
         </div>
     </div>
-
+    <h3>Seleccione método de pago</h3>
     <asp:DropDownList ID="ddMetodoPago" runat="server">
         <asp:ListItem>Mercado Pago</asp:ListItem>
         <asp:ListItem>Transferencia</asp:ListItem>
         <asp:ListItem>Pago Facil</asp:ListItem>
     </asp:DropDownList>
-
+    <br></br>
+    <h3>Items a comprar:</h3>
     <table class="table">
         <thead>
             <tr>
@@ -49,7 +50,7 @@
 
         </tbody>
     </table>
-    <asp:Button ID="btn_Comprar" CssClass="btn btn-primary btn-sm mr-1 my-1" OnClick="btn_Comprar_Click" runat="server" Text="Comprar" />
+    <asp:Button ID="btn_Comprar" CssClass="btn btn-primary btn-sm" OnClick="btn_Comprar_Click" runat="server" Text="Comprar" />
     <asp:Button ID="Atras" class="btn btn-secondary" runat="server" OnClick="Atras_Click" Text="Volver atrás" />
 
 </asp:Content>
