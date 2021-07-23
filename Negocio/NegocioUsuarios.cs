@@ -128,5 +128,26 @@ namespace Negocio
             }
         }
 
+        public string buscarMail(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            string email;
+
+            try
+            {
+                datos.setearConsulta("SELECT Email FROM Usuarios WHERE ID = @id");
+                datos.agregarParametro("@id", id);
+                datos.ejecutarLectura();
+                datos.Lector.Read();
+                email = (string)datos.Lector["Email"];
+                return email;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
     }
 }

@@ -89,11 +89,36 @@ namespace TPC_FLORI_PAIS
                 NegocioCarrito.agregarDet(item);
             }
 
+            NegocioUsuarios NegocioUsuarios = new NegocioUsuarios();
+
+            // Enviar Mail
+            string Asunto = "Remeras FLORIPAIS - Compra Realizada!";
+            string Cuerpo = "Estás recibiendo este e-mail porque hiciste una compra en Remeras FloriPais. \n\n" +
+                            "Muchas gracias por confiar en nosotros!. \n\n" +
+                            "El envío por correo Argentino demora entre 3 y 7 días hábiles. \n\n" +
+                            "Por cualquier consulta comunicate con nosotros a traves de nuestras redes sociales: \n\n" +
+                            "Instagram: @RemerasFloriPais\n" +
+                            "Facebook: @RemerasFloriPais\n\n" +
+                            "También podes contactarte respondiendo a este mail \n" +
+                            "Atentamente \n" +
+                            "Remeras FloriPais.";
+
+            string Email = NegocioUsuarios.buscarMail(((Dominio.Usuarios)Session["usuario"]).ID);
+            NegocioEmail emailService = new NegocioEmail();
+            emailService.armarCorreo(Email, Asunto, Cuerpo);
+            try
+            {
+                emailService.enviarEmail();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
             // Cartel de confirmacion de compra
             var page = HttpContext.Current.CurrentHandler as Page;
             ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "COMPRA REALIZADA CORRECTAMENTE. RECIBIRA UN MAIL CON EL DETALLE DE LA COMPRA!" + "');window.location ='" + "Default.aspx" + "';", true);
 
-            // Enviar Mail
 
             // Borrar Sesiones
             Application["ListadosProductos"] = null;
