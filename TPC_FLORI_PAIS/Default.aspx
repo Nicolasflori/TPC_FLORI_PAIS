@@ -28,7 +28,7 @@
                  <%} %>
                 <% if (Session["usuario"] != null && ((Dominio.Usuarios)Session["usuario"]).IDPermiso == 1)
                       {%>
-                <img class="card-img-top position-absolute ml-3" src="<%=item.ImagenEstampado%>" alt="Card image" style="max-width: 80%; max-height: 60%">
+                <img class="card-img-top position-absolute ml-3" src="<%=item.ImagenEstampado%>" alt="Card image" style="max-width: 80%; max-height: 80%">
                 <%} %>
                 <% if (Session["usuario"] != null && ((Dominio.Usuarios)Session["usuario"]).IDPermiso == 2)
                       {%>
