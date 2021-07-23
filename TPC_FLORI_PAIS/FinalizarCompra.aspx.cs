@@ -115,7 +115,7 @@ namespace TPC_FLORI_PAIS
 
             // Cartel de confirmacion de compra
             var page = HttpContext.Current.CurrentHandler as Page;
-            ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "COMPRA REALIZADA CORRECTAMENTE. RECIBIRA UN MAIL CON EL DETALLE DE LA COMPRA!" + "');window.location ='" + "Default.aspx" + "';", true);
+            ScriptManager.RegisterStartupScript(page, page.GetType(), "alert", "alert('" + "Compra realizada correctamente. Recibirá un mail con el link de pago!" + "');window.location ='" + "Default.aspx" + "';", true);
 
 
             // Borrar Sesiones
