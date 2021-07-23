@@ -15,24 +15,6 @@ namespace TPC_FLORI_PAIS.Pedidos
     {
 
         /// <summary>
-        /// txt_Buscar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Buscar;
-
-        /// <summary>
-        /// btn_Buscar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Buscar;
-
-        /// <summary>
         /// grid_Pedidos control.
         /// </summary>
         /// <remarks>

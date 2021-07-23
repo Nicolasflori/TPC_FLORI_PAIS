@@ -15,6 +15,33 @@ namespace TPC_FLORI_PAIS.Pedidos
     {
 
         /// <summary>
+        /// btn_Pagar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Pagar;
+
+        /// <summary>
+        /// btn_Enviado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Enviado;
+
+        /// <summary>
+        /// btn_Entregado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Entregado;
+
+        /// <summary>
         /// grid_Productos control.
         /// </summary>
         /// <remarks>

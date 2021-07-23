@@ -19,6 +19,12 @@
                         </div>
                         <!-- END TITULO -->
                     </div>
+                        <% if (Session["usuario"] != null && ((Dominio.Usuarios)Session["usuario"]).IDPermiso == 1)
+                    {%>
+                    <asp:Button Text="Marcar como Pago" runat="server" CssClass="btn btn-primary btn-sm" ID="btn_Pagar"  ValidationGroup="AA" />
+                    <asp:Button Text="Marcar como Enviado" runat="server" CssClass="btn btn-primary btn-sm" ID="btn_Enviado"  ValidationGroup="AA" />
+                    <asp:Button Text="Marcar como Entregado" runat="server" CssClass="btn btn-primary btn-sm" ID="btn_Entregado"  ValidationGroup="AA" />
+                    <%} %>
                     <div class="ibox-content">
                         <div class="row form-horizontal">
                             <div class="col-md-12">
