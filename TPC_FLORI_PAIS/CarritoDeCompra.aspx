@@ -25,7 +25,7 @@
                 <th scope="col">Talle</th>
                 <th scope="col">Precio Unitario</th>
                 <th scope="col">Cantidad</th>
-                <th scope="col">Precio Total por Producto</th>
+                <th scope="col">Precio Total</th>
                 <th scope="col">Eliminar del Carrito</th>
             </tr>
         </thead>

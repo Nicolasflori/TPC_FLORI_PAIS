@@ -42,11 +42,9 @@ namespace TPC_FLORI_PAIS
                     producto.Talle = NegocioTalles.descripcionxid(producto.IDTalle);
                 }
 
-                usuario = NegocioUsuarios.buscarUser(((Dominio.Usuarios)Session["usuario"]).ID);
-                //Direccion direccion = NegocioDireccion.buscarxid(usuario.IDDireccion);
+                Direccion direccion = NegocioDireccion.buscarxid(usuario.IDDireccion);
                 //Provincia provincia = NegocioProvincia.buscarxid(direccion.IDProvincia);
                 //CostoEnvio costoEnvio = NegocioCostoEnvio.buscarxid(provincia.IDCostoEnvio);
-
 
                 carrito = new Carrito()
                 {

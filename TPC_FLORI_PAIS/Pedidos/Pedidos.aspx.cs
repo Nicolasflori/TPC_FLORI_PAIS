@@ -23,7 +23,7 @@ namespace TPC_FLORI_PAIS.Pedidos
             {
                 Response.Redirect("..\\Default.aspx");
             }
-
+            
             carrito = NegocioCarrito.listar(usuario);
 
             // Mostrar listado

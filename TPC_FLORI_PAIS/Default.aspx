@@ -14,7 +14,10 @@
             <h1>Remeras Estampadas</h1>
         </div>
     </div>
-
+        <div class="input-group mb-3">
+        <input type="search" class="form-control rounded" placeholder="Búsqueda por bombre de estampado o color de prenda." aria-label="search" name="search" id="search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary" runat="server" id="button1" onserverclick="Unnamed_ServerClick">Buscar</button>
+    </div>
     <div class="row row-cols-1 row-cols-md-3">
         <%foreach (Dominio.Producto item in listaProducto){%>
         <div class="card mb-4">
@@ -34,10 +37,5 @@
             </div>
         </div>
         <%} %>
-    </div>
-
-    <div class="input-group">
-        <input type="search" class="form-control rounded" placeholder="Búsqueda por tipo de estampado, prenda, etc." aria-label="search" name="search" id="search" aria-describedby="search-addon" />
-        <button type="button" class="btn btn-outline-primary" runat="server" id="button1">Buscar</button>
     </div>
 </asp:Content>

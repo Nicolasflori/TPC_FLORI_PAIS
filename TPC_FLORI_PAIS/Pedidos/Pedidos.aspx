@@ -47,9 +47,9 @@
                                         <Columns>
                                             <asp:TemplateField>
                                                 <ItemTemplate>
-                                                    <asp:HyperLink NavigateUrl='<%# "Pedidos_Det.aspx?id=" + Eval("ID").ToString() %>' runat="server">
+                                                    <!--<asp:HyperLink NavigateUrl='<%# "Pedidos_Det.aspx?id=" + Eval("ID").ToString() %>' runat="server">
                                                         <span class="fas fa-pencil-alt"></span>
-                                                    </asp:HyperLink>
+                                                    </asp:HyperLink>-->
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:BoundField HeaderText="ID de Compra" DataField="ID" />
@@ -60,7 +60,6 @@
                                             <asp:BoundField HeaderText="Estado" DataField="Estado" />
                                             <asp:BoundField HeaderText="Forma de Pago" DataField="FormaPago" />
                                             <asp:BoundField HeaderText="Fecha" DataField="Fecha" />
-                                            <asp:BoundField HeaderText="Fecha Entrega" DataField="FechaEntrega" />
                                         </Columns>
                                         <PagerStyle CssClass="pagination-ys" HorizontalAlign="Center" />
                                     </asp:GridView>

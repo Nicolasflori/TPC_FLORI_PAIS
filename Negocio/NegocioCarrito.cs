@@ -38,7 +38,7 @@ namespace Negocio
                         ID = (int)datos.Lector["ID"],
                         IDUsuario = (int)datos.Lector["IDUsuario"],
                         SubTotalProductos = (decimal)datos.Lector["SubTotalProductos"],
-                        CostoDeEnvio = (decimal)datos.Lector["CostoDeEnvio"],
+                        CostoDeEnvio = 405,
                         Total = (decimal)datos.Lector["Total"],
                         Estado = (string)datos.Lector["Estado"],
                         FormaPago = (string)datos.Lector["FormaPago"],
