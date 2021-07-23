@@ -22,5 +22,6 @@ namespace Dominio
         public decimal Precio { get; set; }
         public int Cantidad { get; set; }
         public decimal PrecioxProducto { get; set; }
+        public int IDCarrito { get; set; }
     }
 }

@@ -89,15 +89,26 @@ IDPermiso int foreign key references Permisos(ID) DEFAULT 2,
 Baja bit not null default(0)
 )
 GO
-Create Table Pedidos(
+Create Table Carrito(
 ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 IDUsuario int  not null foreign key references Usuarios(ID),
-IDCarrito INT not null,
-IDEstampado INT null references Estampados(ID),
-IDColor INT  not null references Colores(ID),
-IDCategoria INT not null references Categorias(ID),
-IDTalle INT not null references Categorias(ID),
-Precio money not null,
-Cantidad int not null check(cantidad>0),
+SubTotalProductos money not null,
+CostoDeEnvio money not null,
+Total money not null,
+Estado varchar(50)not null check(Estado='Borrador' or Estado='Pagado' or Estado= 'Entregado' or Estado= 'Cancelado'),
+FormaPago varchar(50) not null,
+Fecha date not null default(GETDATE()),
+FechaEntrega date check(FechaEntrega>=GETDATE())
 )
 GO
+Create Table CarritoDet(
+ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+IDEstampado INT null foreign key  references Estampados(ID),
+IDColor INT  not null foreign key  references Colores(ID),
+IDCategoria INT not null foreign key  references Categorias(ID),
+IDTalle INT not null foreign key  references Talles(ID),
+Precio money not null,
+Cantidad int not null,
+PrecioxProducto money not null,
+IDCarrito int not null foreign key references Carrito(ID)
+)
