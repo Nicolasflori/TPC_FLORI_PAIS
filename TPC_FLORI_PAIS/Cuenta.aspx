@@ -34,6 +34,9 @@
             <div class="form-group">
                 <input type="text" class="form-control" name="dni" placeholder="DNI">
             </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+            </div>
             <h2>Dirección</h2>
             <div class="form-group">
                 <input type="text" class="form-control" name="ciudad" placeholder="Ciudad">

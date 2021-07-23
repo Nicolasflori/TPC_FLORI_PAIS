@@ -99,6 +99,19 @@ Estado varchar(50)not null check(Estado='Borrador' or Estado='Pagado' or Estado=
 FormaPago varchar(50) not null,
 Fecha date not null default(GETDATE()),
 FechaEntrega date check(FechaEntrega>=GETDATE())
+<<<<<<< Updated upstream
+)
+GO
+Create Table Carrito(
+ID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
+IDUsuario int  not null foreign key references Usuarios(ID),
+SubTotalProductos money not null,
+CostoDeEnvio money not null,
+Total money not null,
+Estado varchar(50)not null check(Estado='Borrador' or Estado='Pagado' or Estado= 'Entregado' or Estado= 'Cancelado'),
+FormaPago varchar(50) not null,
+Fecha date not null default(GETDATE()),
+FechaEntrega date check(FechaEntrega>=GETDATE())
 )
 GO
 Create Table CarritoDet(
