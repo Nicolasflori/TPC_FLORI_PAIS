@@ -11,14 +11,11 @@
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
             <div class="col-lg-12">
-                <div class="ibox float-e-margins">
+                <div class="ibox float-e-margins mb-2">
                     <div class="ibox-title">
                         <!-- TITULO -->
-                        <h5>Productos</h5>
+                        <h5>Listado de prendas de la compra.</h5>
                         <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
                         </div>
                         <!-- END TITULO -->
                     </div>
@@ -31,9 +28,9 @@
                                         <Columns>
                                             <asp:TemplateField>
                                                 <ItemTemplate>
-                                                    <asp:HyperLink NavigateUrl='<%# "Pedidos_Det.aspx?id=" + Eval("ID").ToString() %>' runat="server">
+                                                    <!--<asp:HyperLink NavigateUrl='<%# "Pedidos_Det.aspx?id=" + Eval("ID").ToString() %>' runat="server">
                                                         <span class="fas fa-pencil-alt"></span>
-                                                    </asp:HyperLink>
+                                                    </asp:HyperLink>-->
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:BoundField HeaderText="IDEstampado" DataField="IDEstampado" />
@@ -54,9 +51,4 @@
             </div>
         </div>
     </div>
-    <section class="row wrapper wrapper-content">
-        <div style="width: 100%; height: 400px; overflow: scroll">
-            <asp:GridView runat="server" ID="GridView1" CssClass="table table-responsive table-hover" GridLines="None" AutoGenerateColumns="True"></asp:GridView>
-        </div>
-    </section>
 </asp:Content>
